@@ -1,0 +1,21 @@
+# ── Carpetas que NO se suben ─────────────────────────────────
+# Data lab: datos crudos del cliente, extracciones y venv. No sube nada.
+backend/datalab/
+
+# Config local de Claude Code
+.claude/
+
+# ── Basura del sistema / dependencias ────────────────────────
+.DS_Store
+**/.DS_Store
+node_modules/
+dist/
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Variables de entorno
+.env
+.env.local
+*.local
