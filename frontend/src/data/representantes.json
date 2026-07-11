@@ -1,0 +1,4570 @@
+[
+  {
+    "distrito": "I",
+    "municipio": "Cuilapam de Guerrero",
+    "rep_casilla": 19,
+    "importe_casilla": 9500,
+    "rep_generales": 4.75,
+    "importe_generales": 14250
+  },
+  {
+    "distrito": "I",
+    "municipio": "Oaxaca de Juárez",
+    "rep_casilla": 191,
+    "importe_casilla": 95500,
+    "rep_generales": 47.75,
+    "importe_generales": 143250
+  },
+  {
+    "distrito": "I",
+    "municipio": "San Andrés Ixtlahuaca",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "I",
+    "municipio": "San Jacinto Amilpas",
+    "rep_casilla": 13,
+    "importe_casilla": 6500,
+    "rep_generales": 3.25,
+    "importe_generales": 9750
+  },
+  {
+    "distrito": "I",
+    "municipio": "San Pedro Ixtlahuaca",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "I",
+    "municipio": "San Raymundo Jalpan",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "I",
+    "municipio": "Santa Cruz Xoxocotlán",
+    "rep_casilla": 75,
+    "importe_casilla": 37500,
+    "rep_generales": 18.75,
+    "importe_generales": 56250
+  },
+  {
+    "distrito": "I",
+    "municipio": "Santa María Atzompa",
+    "rep_casilla": 21,
+    "importe_casilla": 10500,
+    "rep_generales": 5.25,
+    "importe_generales": 15750
+  },
+  {
+    "distrito": "II",
+    "municipio": "Guadalupe Etla",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "II",
+    "municipio": "Magdalena Apasco",
+    "rep_casilla": 7,
+    "importe_casilla": 3500,
+    "rep_generales": 1.75,
+    "importe_generales": 5250
+  },
+  {
+    "distrito": "II",
+    "municipio": "Nazareno Etla",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "II",
+    "municipio": "Reyes Etla",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "II",
+    "municipio": "San Agustín Etla",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "II",
+    "municipio": "San Andrés Zautla",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "II",
+    "municipio": "San Antonio Huitepec",
+    "rep_casilla": 7,
+    "importe_casilla": 3500,
+    "rep_generales": 1.75,
+    "importe_generales": 5250
+  },
+  {
+    "distrito": "II",
+    "municipio": "San Felipe Tejalapam",
+    "rep_casilla": 8,
+    "importe_casilla": 4000,
+    "rep_generales": 2,
+    "importe_generales": 6000
+  },
+  {
+    "distrito": "II",
+    "municipio": "San Francisco Telixtlahuaca",
+    "rep_casilla": 14,
+    "importe_casilla": 7000,
+    "rep_generales": 3.5,
+    "importe_generales": 10500
+  },
+  {
+    "distrito": "II",
+    "municipio": "San Jerónimo Sosola",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "II",
+    "municipio": "San Juan Bautista Atatlahuca",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "II",
+    "municipio": "San Juan Bautista Guelache",
+    "rep_casilla": 7,
+    "importe_casilla": 3500,
+    "rep_generales": 1.75,
+    "importe_generales": 5250
+  },
+  {
+    "distrito": "II",
+    "municipio": "San Juan Bautista Jayacatlan",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "II",
+    "municipio": "San Juan del Estado",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "II",
+    "municipio": "Lorenzo Cacaotepec",
+    "rep_casilla": 13,
+    "importe_casilla": 6500,
+    "rep_generales": 3.25,
+    "importe_generales": 9750
+  },
+  {
+    "distrito": "II",
+    "municipio": "San Miguel Peras",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "II",
+    "municipio": "San Pablo Cuatro Venados",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "II",
+    "municipio": "San Pablo Etla",
+    "rep_casilla": 11,
+    "importe_casilla": 5500,
+    "rep_generales": 2.75,
+    "importe_generales": 8250
+  },
+  {
+    "distrito": "II",
+    "municipio": "San Pablo Huitzo",
+    "rep_casilla": 9,
+    "importe_casilla": 4500,
+    "rep_generales": 2.25,
+    "importe_generales": 6750
+  },
+  {
+    "distrito": "II",
+    "municipio": "Santa Inés del Monte",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "II",
+    "municipio": "Santa María Peñoles",
+    "rep_casilla": 9,
+    "importe_casilla": 4500,
+    "rep_generales": 2.25,
+    "importe_generales": 6750
+  },
+  {
+    "distrito": "II",
+    "municipio": "Santiago Suchilquitongo",
+    "rep_casilla": 11,
+    "importe_casilla": 5500,
+    "rep_generales": 2.75,
+    "importe_generales": 8250
+  },
+  {
+    "distrito": "II",
+    "municipio": "Santiago Tenango",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "II",
+    "municipio": "Santiago Tlazoyaltepec",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "II",
+    "municipio": "Santo Tomás Mazaltepec",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "II",
+    "municipio": "Soledad Etla",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "II",
+    "municipio": "Trinidad Zaachila",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "II",
+    "municipio": "Villa de Etla",
+    "rep_casilla": 12,
+    "importe_casilla": 6000,
+    "rep_generales": 3,
+    "importe_generales": 9000
+  },
+  {
+    "distrito": "II",
+    "municipio": "Villa de Zaachila",
+    "rep_casilla": 32,
+    "importe_casilla": 16000,
+    "rep_generales": 8,
+    "importe_generales": 24000
+  },
+  {
+    "distrito": "III",
+    "municipio": "Abejones",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "III",
+    "municipio": "Guelatao de Juárez",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "III",
+    "municipio": "Ixtlán de Juárez",
+    "rep_casilla": 13,
+    "importe_casilla": 6500,
+    "rep_generales": 3.25,
+    "importe_generales": 9750
+  },
+  {
+    "distrito": "III",
+    "municipio": "Natividad",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "III",
+    "municipio": "Nuevo Zooquiapam",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "III",
+    "municipio": "San Andrés Solaga",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "III",
+    "municipio": "San Andrés Yaa",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "III",
+    "municipio": "San Baltazar Yatzechi El Bajo",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "III",
+    "municipio": "San Bartolomé Zoogocho",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "III",
+    "municipio": "San Cristóbal Lachiroag",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "III",
+    "municipio": "San Francisco Cajonos",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "III",
+    "municipio": "San Ildefonso Villa Alta",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "III",
+    "municipio": "San Juan Atepec",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "III",
+    "municipio": "San Juan Chicomezuchil",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "III",
+    "municipio": "San Juan Evangelista Analco",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "III",
+    "municipio": "San Juan Juquila Vijanos",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "III",
+    "municipio": "San Juan Quiotepec",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "III",
+    "municipio": "San Juan Tabaa",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "III",
+    "municipio": "San Juan Yae",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "III",
+    "municipio": "San Juan Yatzona",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "III",
+    "municipio": "San Mateo Cajonos",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "III",
+    "municipio": "San Melchor Betaza",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "III",
+    "municipio": "San Miguel Aloapam",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "III",
+    "municipio": "San Miguel Amatlán",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "III",
+    "municipio": "San Miguel del Río",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "III",
+    "municipio": "San Miguel Talea de Castro",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "III",
+    "municipio": "San Miguel Yotao",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "III",
+    "municipio": "San Pablo Macuiltianguis",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "III",
+    "municipio": "San Pablo Yaganiza",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "III",
+    "municipio": "San Pedro Cajonos",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "III",
+    "municipio": "San Pedro Yareni",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "III",
+    "municipio": "San Pedro Yolox",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "III",
+    "municipio": "Santa Ana Yareni",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "III",
+    "municipio": "Santa Catarina Ixtepeji",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "III",
+    "municipio": "Santa Catarina Lachatao",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "III",
+    "municipio": "Santa María Jaltianguis",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "III",
+    "municipio": "Santa María Temaxcalapa",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "III",
+    "municipio": "Santa María Yalina",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "III",
+    "municipio": "Santa María Yavesia",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "III",
+    "municipio": "Santiago Camotlán",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "III",
+    "municipio": "Santiago Comaltepec",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "III",
+    "municipio": "Santiago Lalopa",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "III",
+    "municipio": "Santiago Laxopa",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "III",
+    "municipio": "Santiago Xiacui",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "III",
+    "municipio": "Santiago Zoochila",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "III",
+    "municipio": "Santo Domingo Roayaga",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "III",
+    "municipio": "Santo Domingo Xagacia",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "III",
+    "municipio": "Tanetze de Zaragoza",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "III",
+    "municipio": "Teococuilco de Marcos Pérez",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "III",
+    "municipio": "Villa Capulalpam de Méndez",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "III",
+    "municipio": "Villa Hidalgo Yalalag",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "IV",
+    "municipio": "Asunción Tlacolulita",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "IV",
+    "municipio": "Magdalena Teitipac",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "IV",
+    "municipio": "Nejapa de Madero",
+    "rep_casilla": 12,
+    "importe_casilla": 6000,
+    "rep_generales": 3,
+    "importe_generales": 9000
+  },
+  {
+    "distrito": "IV",
+    "municipio": "Rojas de Cuauhtémoc",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "IV",
+    "municipio": "San Bartolo Yautepec",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "IV",
+    "municipio": "San Bartolomé Quialana",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "IV",
+    "municipio": "San Carlos Yautepec",
+    "rep_casilla": 19,
+    "importe_casilla": 9500,
+    "rep_generales": 4.75,
+    "importe_generales": 14250
+  },
+  {
+    "distrito": "IV",
+    "municipio": "San Dionisio Ocotepec",
+    "rep_casilla": 12,
+    "importe_casilla": 6000,
+    "rep_generales": 3,
+    "importe_generales": 9000
+  },
+  {
+    "distrito": "IV",
+    "municipio": "San Francisco Lachigolo",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "IV",
+    "municipio": "San Jerónimo Tlacochahuaya",
+    "rep_casilla": 8,
+    "importe_casilla": 4000,
+    "rep_generales": 2,
+    "importe_generales": 6000
+  },
+  {
+    "distrito": "IV",
+    "municipio": "San Juan del Río",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "IV",
+    "municipio": "San Juan Guelavía",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "IV",
+    "municipio": "San Juan Juquila Mixes",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "IV",
+    "municipio": "San Juan Lajarcia",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "IV",
+    "municipio": "San Juan Teitipac",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "IV",
+    "municipio": "San Lorenzo Albarradas",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "IV",
+    "municipio": "San Lucas Quiaviní",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "IV",
+    "municipio": "San Pablo Villa de Mitla",
+    "rep_casilla": 16,
+    "importe_casilla": 8000,
+    "rep_generales": 4,
+    "importe_generales": 12000
+  },
+  {
+    "distrito": "IV",
+    "municipio": "San Pedro Mártir Quiechapa",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "IV",
+    "municipio": "San Pedro Quiatoni",
+    "rep_casilla": 13,
+    "importe_casilla": 6500,
+    "rep_generales": 3.25,
+    "importe_generales": 9750
+  },
+  {
+    "distrito": "IV",
+    "municipio": "San Pedro Totolapam",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "IV",
+    "municipio": "San Sebastián Abasolo",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "IV",
+    "municipio": "San Sebastián Teitipac",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "IV",
+    "municipio": "Santa Ana del Valle",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "IV",
+    "municipio": "Santa Ana Tavela",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "IV",
+    "municipio": "Santa Catarina Quieri",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "IV",
+    "municipio": "Santa Catarina Quioquitani",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "IV",
+    "municipio": "Santa Cruz Papalutla",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "IV",
+    "municipio": "Santa María Ecatepec",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "IV",
+    "municipio": "Santa María Guelace",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "IV",
+    "municipio": "Santa María Quiegolani",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "IV",
+    "municipio": "Santa María Zoquitlán",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "IV",
+    "municipio": "Santiago Matatlán",
+    "rep_casilla": 11,
+    "importe_casilla": 5500,
+    "rep_generales": 2.75,
+    "importe_generales": 8250
+  },
+  {
+    "distrito": "IV",
+    "municipio": "Santo Domingo Albarradas",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "IV",
+    "municipio": "Teotitlán del Valle",
+    "rep_casilla": 7,
+    "importe_casilla": 3500,
+    "rep_generales": 1.75,
+    "importe_generales": 5250
+  },
+  {
+    "distrito": "IV",
+    "municipio": "Tlacolula De Matamoros",
+    "rep_casilla": 25,
+    "importe_casilla": 12500,
+    "rep_generales": 6.25,
+    "importe_generales": 18750
+  },
+  {
+    "distrito": "IV",
+    "municipio": "Villa Díaz Ordaz",
+    "rep_casilla": 10,
+    "importe_casilla": 5000,
+    "rep_generales": 2.5,
+    "importe_generales": 7500
+  },
+  {
+    "distrito": "V",
+    "municipio": "Asunción Ixtaltepec",
+    "rep_casilla": 27,
+    "importe_casilla": 13500,
+    "rep_generales": 6.75,
+    "importe_generales": 20250
+  },
+  {
+    "distrito": "V",
+    "municipio": "Espinal",
+    "rep_casilla": 14,
+    "importe_casilla": 7000,
+    "rep_generales": 3.5,
+    "importe_generales": 10500
+  },
+  {
+    "distrito": "V",
+    "municipio": "Guevea de Humboldt",
+    "rep_casilla": 7,
+    "importe_casilla": 3500,
+    "rep_generales": 1.75,
+    "importe_generales": 5250
+  },
+  {
+    "distrito": "V",
+    "municipio": "Ciudad Ixtepec",
+    "rep_casilla": 37,
+    "importe_casilla": 18500,
+    "rep_generales": 9.25,
+    "importe_generales": 27750
+  },
+  {
+    "distrito": "V",
+    "municipio": "Magdalena Tequisistlán",
+    "rep_casilla": 11,
+    "importe_casilla": 5500,
+    "rep_generales": 2.75,
+    "importe_generales": 8250
+  },
+  {
+    "distrito": "V",
+    "municipio": "Magdalena Tlacotepec",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "V",
+    "municipio": "San Pedro Comitancillo",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "V",
+    "municipio": "Santa María Guienagati",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "V",
+    "municipio": "Santa María Jalapa del Marqués",
+    "rep_casilla": 16,
+    "importe_casilla": 8000,
+    "rep_generales": 4,
+    "importe_generales": 12000
+  },
+  {
+    "distrito": "V",
+    "municipio": "Santa María Mixtequilla",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "V",
+    "municipio": "Santa María Totolapilla",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "V",
+    "municipio": "Santiago Lachiguiri",
+    "rep_casilla": 8,
+    "importe_casilla": 4000,
+    "rep_generales": 2,
+    "importe_generales": 6000
+  },
+  {
+    "distrito": "V",
+    "municipio": "Santiago Laollaga",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "V",
+    "municipio": "Santo Domingo Chihuitán",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "VI",
+    "municipio": "Salina Cruz",
+    "rep_casilla": 98,
+    "importe_casilla": 49000,
+    "rep_generales": 24.5,
+    "importe_generales": 73500
+  },
+  {
+    "distrito": "VI",
+    "municipio": "San Blas Atempa",
+    "rep_casilla": 22,
+    "importe_casilla": 11000,
+    "rep_generales": 5.5,
+    "importe_generales": 16500
+  },
+  {
+    "distrito": "VI",
+    "municipio": "San Mateo del Mar",
+    "rep_casilla": 14,
+    "importe_casilla": 7000,
+    "rep_generales": 3.5,
+    "importe_generales": 10500
+  },
+  {
+    "distrito": "VI",
+    "municipio": "San Miguel Tenango",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "VI",
+    "municipio": "San Pedro Huamelula",
+    "rep_casilla": 15,
+    "importe_casilla": 7500,
+    "rep_generales": 3.75,
+    "importe_generales": 11250
+  },
+  {
+    "distrito": "VI",
+    "municipio": "San Pedro Huilotepec",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "VI",
+    "municipio": "Santiago Astata",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "VI",
+    "municipio": "Santo Domingo Tehuantepec",
+    "rep_casilla": 78,
+    "importe_casilla": 39000,
+    "rep_generales": 19.5,
+    "importe_generales": 58500
+  },
+  {
+    "distrito": "VII",
+    "municipio": "Miahuatlán de Porfirio Díaz",
+    "rep_casilla": 51,
+    "importe_casilla": 25500,
+    "rep_generales": 12.75,
+    "importe_generales": 38250
+  },
+  {
+    "distrito": "VII",
+    "municipio": "Monjas",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "VII",
+    "municipio": "San Andrés Paxtlán",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "VII",
+    "municipio": "San Cristóbal Amatlán",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "VII",
+    "municipio": "San Francisco Logueche",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "VII",
+    "municipio": "San Francisco Ozolotepec",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "VII",
+    "municipio": "San Ildefonso Amatlán",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "VII",
+    "municipio": "San Jerónimo Coatlán",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "VII",
+    "municipio": "San José del Peñasco",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "VII",
+    "municipio": "San José Lachiguiri",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "VII",
+    "municipio": "San Juan Mixtepec",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "VII",
+    "municipio": "San Juan Ozolotepec",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "VII",
+    "municipio": "San Luis Amatlán",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "VII",
+    "municipio": "San Marcial Ozolotepec",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "VII",
+    "municipio": "San Mateo Río Hondo",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "VII",
+    "municipio": "San Miguel Coatlán",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "VII",
+    "municipio": "San Miguel Suchixtepec",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "VII",
+    "municipio": "San Nicolás",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "VII",
+    "municipio": "San Pablo Coatlán",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "VII",
+    "municipio": "San Pedro Mixtepec",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "VII",
+    "municipio": "San Sebastián Coatlán",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "VII",
+    "municipio": "San Sebastián Río Hondo",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "VII",
+    "municipio": "San Simón Almolongas",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "VII",
+    "municipio": "Santa Ana",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "VII",
+    "municipio": "Santa Catarina Cuixtla",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "VII",
+    "municipio": "Santa Cruz Xitla",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "VII",
+    "municipio": "Santa Lucía Miahuatlán",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "VII",
+    "municipio": "Santa María Ozolotepec",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "VII",
+    "municipio": "Santiago Xanica",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "VII",
+    "municipio": "Santo Domingo Ozolotepec",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "VII",
+    "municipio": "Santo Tomás Tamazulapam",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "VII",
+    "municipio": "Sitio de Xitlapehua",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "VIII",
+    "municipio": "Candelaria Loxicha",
+    "rep_casilla": 12,
+    "importe_casilla": 6000,
+    "rep_generales": 3,
+    "importe_generales": 9000
+  },
+  {
+    "distrito": "VIII",
+    "municipio": "Pluma Hidalgo",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "VIII",
+    "municipio": "San Agustín Loxicha",
+    "rep_casilla": 27,
+    "importe_casilla": 13500,
+    "rep_generales": 6.75,
+    "importe_generales": 20250
+  },
+  {
+    "distrito": "VIII",
+    "municipio": "San Baltazar Loxicha",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "VIII",
+    "municipio": "San Bartolomé Loxicha",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "VIII",
+    "municipio": "San Mateo Piñas",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "VIII",
+    "municipio": "San Miguel del Puerto",
+    "rep_casilla": 11,
+    "importe_casilla": 5500,
+    "rep_generales": 2.75,
+    "importe_generales": 8250
+  },
+  {
+    "distrito": "VIII",
+    "municipio": "San Pedro El Alto",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "VIII",
+    "municipio": "San Pedro Pochutla",
+    "rep_casilla": 48,
+    "importe_casilla": 24000,
+    "rep_generales": 12,
+    "importe_generales": 36000
+  },
+  {
+    "distrito": "VIII",
+    "municipio": "Santa Catarina Loxicha",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "VIII",
+    "municipio": "Santa María Colotepec",
+    "rep_casilla": 25,
+    "importe_casilla": 12500,
+    "rep_generales": 6.25,
+    "importe_generales": 18750
+  },
+  {
+    "distrito": "VIII",
+    "municipio": "Santa María Huatulco",
+    "rep_casilla": 38,
+    "importe_casilla": 19000,
+    "rep_generales": 9.5,
+    "importe_generales": 28500
+  },
+  {
+    "distrito": "VIII",
+    "municipio": "Santa María Tonameca",
+    "rep_casilla": 23,
+    "importe_casilla": 11500,
+    "rep_generales": 5.75,
+    "importe_generales": 17250
+  },
+  {
+    "distrito": "VIII",
+    "municipio": "Santo Domingo de Morelos",
+    "rep_casilla": 10,
+    "importe_casilla": 5000,
+    "rep_generales": 2.5,
+    "importe_generales": 7500
+  },
+  {
+    "distrito": "IX",
+    "municipio": "San Gabriel Mixtepec",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "IX",
+    "municipio": "San Juan Lachao",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "IX",
+    "municipio": "San Juan Quiahije",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "IX",
+    "municipio": "San Miguel Panixtlahuaca",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "IX",
+    "municipio": "San Pedro Juchatengo",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "IX",
+    "municipio": "San Pedro Mixtepec",
+    "rep_casilla": 43,
+    "importe_casilla": 21500,
+    "rep_generales": 10.75,
+    "importe_generales": 32250
+  },
+  {
+    "distrito": "IX",
+    "municipio": "San Pedro Tututepec",
+    "rep_casilla": 55,
+    "importe_casilla": 27500,
+    "rep_generales": 13.75,
+    "importe_generales": 41250
+  },
+  {
+    "distrito": "IX",
+    "municipio": "Santa Catarina Juquila",
+    "rep_casilla": 22,
+    "importe_casilla": 11000,
+    "rep_generales": 5.5,
+    "importe_generales": 16500
+  },
+  {
+    "distrito": "IX",
+    "municipio": "Santa María Temaxcaltepec",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "IX",
+    "municipio": "Santiago Yaitepec",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "IX",
+    "municipio": "Santos Reyes Nopala",
+    "rep_casilla": 19,
+    "importe_casilla": 9500,
+    "rep_generales": 4.75,
+    "importe_generales": 14250
+  },
+  {
+    "distrito": "IX",
+    "municipio": "Tataltepec de Valdes",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "X",
+    "municipio": "Coatecas Altas",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "X",
+    "municipio": "La Compañía",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "X",
+    "municipio": "Ejutla de Crespo",
+    "rep_casilla": 31,
+    "importe_casilla": 15500,
+    "rep_generales": 7.75,
+    "importe_generales": 23250
+  },
+  {
+    "distrito": "X",
+    "municipio": "La Pe",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "X",
+    "municipio": "San Agustín Amatengo",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "X",
+    "municipio": "San Andrés Zabache",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "X",
+    "municipio": "San Francisco Cahuacua",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "X",
+    "municipio": "San Francisco Sola",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "X",
+    "municipio": "San Ildefonso Sola",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "X",
+    "municipio": "San Jacinto Tlacotepec",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "X",
+    "municipio": "San Juan Lachigalla",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "X",
+    "municipio": "San Lorenzo Texmelucan",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "X",
+    "municipio": "San Martín Los Canseco",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "X",
+    "municipio": "San Martín Lachila",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "X",
+    "municipio": "San Miguel Ejutla",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "X",
+    "municipio": "San Vicente Coatlán",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "X",
+    "municipio": "San Vicente Lachixio",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "X",
+    "municipio": "Santa Cruz Zenzontepec",
+    "rep_casilla": 16,
+    "importe_casilla": 8000,
+    "rep_generales": 4,
+    "importe_generales": 12000
+  },
+  {
+    "distrito": "X",
+    "municipio": "Santa María Lachixio",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "X",
+    "municipio": "Santa María Sola",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "X",
+    "municipio": "Santa María Zaniza",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "X",
+    "municipio": "Santiago Amoltepec",
+    "rep_casilla": 11,
+    "importe_casilla": 5500,
+    "rep_generales": 2.75,
+    "importe_generales": 8250
+  },
+  {
+    "distrito": "X",
+    "municipio": "Santiago Minas",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "X",
+    "municipio": "Santiago Textitlán",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "X",
+    "municipio": "Santo Domingo Teojomulco",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "X",
+    "municipio": "Sola de Vega",
+    "rep_casilla": 17,
+    "importe_casilla": 8500,
+    "rep_generales": 4.25,
+    "importe_generales": 12750
+  },
+  {
+    "distrito": "X",
+    "municipio": "Taniche",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "X",
+    "municipio": "Santiago Yogana",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "X",
+    "municipio": "Zapotitlan del Río",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XI",
+    "municipio": "Mártires de Tacubaya",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XI",
+    "municipio": "Pinotepa de Don Luis",
+    "rep_casilla": 9,
+    "importe_casilla": 4500,
+    "rep_generales": 2.25,
+    "importe_generales": 6750
+  },
+  {
+    "distrito": "XI",
+    "municipio": "San Agustín Chayuco",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "XI",
+    "municipio": "San Andrés Huaxpaltepec",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "XI",
+    "municipio": "San Antonio Tepetlapa",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "XI",
+    "municipio": "San José Estancia Grande",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XI",
+    "municipio": "San Juan Bautista Lo de Soto",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "XI",
+    "municipio": "San Juan Cacahuatepec",
+    "rep_casilla": 12,
+    "importe_casilla": 6000,
+    "rep_generales": 3,
+    "importe_generales": 9000
+  },
+  {
+    "distrito": "XI",
+    "municipio": "San Juan Colorado",
+    "rep_casilla": 11,
+    "importe_casilla": 5500,
+    "rep_generales": 2.75,
+    "importe_generales": 8250
+  },
+  {
+    "distrito": "XI",
+    "municipio": "San Lorenzo",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "XI",
+    "municipio": "San Miguel Tlacamama",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "XI",
+    "municipio": "San Pedro Atoyac",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "XI",
+    "municipio": "San Pedro Jicayán",
+    "rep_casilla": 13,
+    "importe_casilla": 6500,
+    "rep_generales": 3.25,
+    "importe_generales": 9750
+  },
+  {
+    "distrito": "XI",
+    "municipio": "San Sebastián Ixcapa",
+    "rep_casilla": 7,
+    "importe_casilla": 3500,
+    "rep_generales": 1.75,
+    "importe_generales": 5250
+  },
+  {
+    "distrito": "XI",
+    "municipio": "Santa Catarina Mechoacan",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "XI",
+    "municipio": "Santa María Cortijos",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XI",
+    "municipio": "Santa María Huazolotitlán",
+    "rep_casilla": 13,
+    "importe_casilla": 6500,
+    "rep_generales": 3.25,
+    "importe_generales": 9750
+  },
+  {
+    "distrito": "XI",
+    "municipio": "Santiago Ixtayutla",
+    "rep_casilla": 13,
+    "importe_casilla": 6500,
+    "rep_generales": 3.25,
+    "importe_generales": 9750
+  },
+  {
+    "distrito": "XI",
+    "municipio": "Santiago Jamiltepec",
+    "rep_casilla": 23,
+    "importe_casilla": 11500,
+    "rep_generales": 5.75,
+    "importe_generales": 17250
+  },
+  {
+    "distrito": "XI",
+    "municipio": "Santiago Llano Grande",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "XI",
+    "municipio": "Santiago Pinotepa Nacional",
+    "rep_casilla": 57,
+    "importe_casilla": 28500,
+    "rep_generales": 14.25,
+    "importe_generales": 42750
+  },
+  {
+    "distrito": "XI",
+    "municipio": "Santiago Tapextla",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "XI",
+    "municipio": "Santiago Tetepec",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "XI",
+    "municipio": "Santo Domingo Armenta",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "XII",
+    "municipio": "Constancia del Rosario",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "XII",
+    "municipio": "Mesones Hidalgo",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "XII",
+    "municipio": "Putla Villa de Guerrero",
+    "rep_casilla": 41,
+    "importe_casilla": 20500,
+    "rep_generales": 10.25,
+    "importe_generales": 30750
+  },
+  {
+    "distrito": "XII",
+    "municipio": "La Reforma",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "XII",
+    "municipio": "San Andrés Cabecera Nueva",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "XII",
+    "municipio": "San Pedro Amuzgos",
+    "rep_casilla": 7,
+    "importe_casilla": 3500,
+    "rep_generales": 1.75,
+    "importe_generales": 5250
+  },
+  {
+    "distrito": "XII",
+    "municipio": "Santa Cruz Itundujia",
+    "rep_casilla": 15,
+    "importe_casilla": 7500,
+    "rep_generales": 3.75,
+    "importe_generales": 11250
+  },
+  {
+    "distrito": "XII",
+    "municipio": "Santa Lucía Monteverde",
+    "rep_casilla": 8,
+    "importe_casilla": 4000,
+    "rep_generales": 2,
+    "importe_generales": 6000
+  },
+  {
+    "distrito": "XII",
+    "municipio": "Santa María Ipalapa",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "XII",
+    "municipio": "Santa María Zacatepec",
+    "rep_casilla": 19,
+    "importe_casilla": 9500,
+    "rep_generales": 4.75,
+    "importe_generales": 14250
+  },
+  {
+    "distrito": "XIII",
+    "municipio": "Chalcatongo de Hidalgo",
+    "rep_casilla": 13,
+    "importe_casilla": 6500,
+    "rep_generales": 3.25,
+    "importe_generales": 9750
+  },
+  {
+    "distrito": "XIII",
+    "municipio": "Magdalena Peñasco",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "XIII",
+    "municipio": "San Agustín Tlacotepec",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XIII",
+    "municipio": "San Antonio Sinicahua",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XIII",
+    "municipio": "San Bartolomé Yucuañe",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XIII",
+    "municipio": "San Cristóbal Amoltepec",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XIII",
+    "municipio": "San Esteban Atatlahuca",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "XIII",
+    "municipio": "San Juan Achiutla",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XIII",
+    "municipio": "San Juan Ñumi",
+    "rep_casilla": 9,
+    "importe_casilla": 4500,
+    "rep_generales": 2.25,
+    "importe_generales": 6750
+  },
+  {
+    "distrito": "XIII",
+    "municipio": "San Juan Teita",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XIII",
+    "municipio": "San Martín Huamelulpan",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XIII",
+    "municipio": "San Martín Itunyoso",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "XIII",
+    "municipio": "San Mateo Peñasco",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XIII",
+    "municipio": "San Miguel Achiutla",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XIII",
+    "municipio": "San Miguel El Grande",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "XIII",
+    "municipio": "San Pablo Tijaltepec",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XIII",
+    "municipio": "San Pedro Mártir Yucuxaco",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XIII",
+    "municipio": "San Pedro Molinos",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XIII",
+    "municipio": "Santa Catarina Tayata",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XIII",
+    "municipio": "Santa Catarina Ticua",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XIII",
+    "municipio": "Santa Catarina Yosonotu",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XIII",
+    "municipio": "Santa Cruz Nundaco",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "XIII",
+    "municipio": "Santa Cruz Tacahua",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XIII",
+    "municipio": "Santa Cruz Tayata",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XIII",
+    "municipio": "Santa María Del Rosario",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XIII",
+    "municipio": "Santa María Tataltepec",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XIII",
+    "municipio": "Santa María Yolotepec",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XIII",
+    "municipio": "Santa María Yosoyua",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XIII",
+    "municipio": "Santa María Yucuhiti",
+    "rep_casilla": 7,
+    "importe_casilla": 3500,
+    "rep_generales": 1.75,
+    "importe_generales": 5250
+  },
+  {
+    "distrito": "XIII",
+    "municipio": "Santiago Nundiche",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XIII",
+    "municipio": "Santiago Nuyoo",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XIII",
+    "municipio": "Santiago Yosundua",
+    "rep_casilla": 12,
+    "importe_casilla": 6000,
+    "rep_generales": 3,
+    "importe_generales": 9000
+  },
+  {
+    "distrito": "XIII",
+    "municipio": "Santo Domingo Ixcatlán",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XIII",
+    "municipio": "Santo Tomás Ocotepec",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "XIII",
+    "municipio": "H. Ciudad de Tlaxiaco",
+    "rep_casilla": 44,
+    "importe_casilla": 22000,
+    "rep_generales": 11,
+    "importe_generales": 33000
+  },
+  {
+    "distrito": "XIV",
+    "municipio": "Concepción Buenavista",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XIV",
+    "municipio": "San Andrés Lagunas",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XIV",
+    "municipio": "San Antonino Monteverde",
+    "rep_casilla": 9,
+    "importe_casilla": 4500,
+    "rep_generales": 2.25,
+    "importe_generales": 6750
+  },
+  {
+    "distrito": "XIV",
+    "municipio": "San Antonio Acutla",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XIV",
+    "municipio": "San Bartolomé Soyaltepec",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XIV",
+    "municipio": "San Cristóbal Suchixtlahuaca",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XIV",
+    "municipio": "San Francisco Teopan",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XIV",
+    "municipio": "San Juan Bautista Coixtlahuaca",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "XIV",
+    "municipio": "San Juan Teposcolula",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XIV",
+    "municipio": "San Mateo Tlapiltepec",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XIV",
+    "municipio": "San Miguel Tequixtepec",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XIV",
+    "municipio": "San Miguel Tulancingo",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XIV",
+    "municipio": "San Pedro Nopala",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XIV",
+    "municipio": "San Pedro Topiltepec",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XIV",
+    "municipio": "San Pedro y San Pablo Teposcolula",
+    "rep_casilla": 7,
+    "importe_casilla": 3500,
+    "rep_generales": 1.75,
+    "importe_generales": 5250
+  },
+  {
+    "distrito": "XIV",
+    "municipio": "San Pedro Yucunama",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XIV",
+    "municipio": "San Sebastián Nicananduta",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XIV",
+    "municipio": "San Vicente Nuñu",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XIV",
+    "municipio": "Santa Magdalena Jicotlán",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XIV",
+    "municipio": "Santa María Chilapa de Díaz",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "XIV",
+    "municipio": "Santa María Nativitas",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XIV",
+    "municipio": "Santa María Nduayaco",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XIV",
+    "municipio": "Santiago Ihuitlán Plumas",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XIV",
+    "municipio": "Santiago Nejapilla",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XIV",
+    "municipio": "Santiago Tepetlapa",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XIV",
+    "municipio": "Santiago Yolomecatl",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XIV",
+    "municipio": "Santo Domingo Tlatayapam",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XIV",
+    "municipio": "Santo Domingo Tonaltepec",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XIV",
+    "municipio": "Tamazulapam del Progreso",
+    "rep_casilla": 12,
+    "importe_casilla": 6000,
+    "rep_generales": 3,
+    "importe_generales": 9000
+  },
+  {
+    "distrito": "XIV",
+    "municipio": "Tejupam de La Unión",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XIV",
+    "municipio": "Teotongo",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XIV",
+    "municipio": "Tepelmeme Villa de Morelos",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XIV",
+    "municipio": "Tlacotepec Plumas",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XIV",
+    "municipio": "Trinidad Vista Hermosa",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XV",
+    "municipio": "Asunción Cuyotepeji",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XV",
+    "municipio": "Cosoltepec",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XV",
+    "municipio": "Fresnillo de Trujano",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XV",
+    "municipio": "Huajuapam de León",
+    "rep_casilla": 86,
+    "importe_casilla": 43000,
+    "rep_generales": 21.5,
+    "importe_generales": 64500
+  },
+  {
+    "distrito": "XV",
+    "municipio": "Mariscala de Juárez",
+    "rep_casilla": 8,
+    "importe_casilla": 4000,
+    "rep_generales": 2,
+    "importe_generales": 6000
+  },
+  {
+    "distrito": "XV",
+    "municipio": "San Andrés Dinicuiti",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "XV",
+    "municipio": "San Jerónimo Silacayoapilla",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XV",
+    "municipio": "San Jorge Nuchita",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "XV",
+    "municipio": "San José Ayuquila",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XV",
+    "municipio": "San Juan Bautista Suchitepec",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XV",
+    "municipio": "San Marcos Arteaga",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XV",
+    "municipio": "San Martín Zacatepec",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XV",
+    "municipio": "San Miguel Amatitlán",
+    "rep_casilla": 13,
+    "importe_casilla": 6500,
+    "rep_generales": 3.25,
+    "importe_generales": 9750
+  },
+  {
+    "distrito": "XV",
+    "municipio": "San Pedro y San Pablo Tequixtepec",
+    "rep_casilla": 7,
+    "importe_casilla": 3500,
+    "rep_generales": 1.75,
+    "importe_generales": 5250
+  },
+  {
+    "distrito": "XV",
+    "municipio": "San Simón Zahuatlán",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XV",
+    "municipio": "Santa Catarina Zapoquila",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XV",
+    "municipio": "Santa Cruz Tacache de Mina",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "XV",
+    "municipio": "Santa María Camotlán",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XV",
+    "municipio": "Santiago Ayuquililla",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XV",
+    "municipio": "Santiago Cacaloxtepec",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XV",
+    "municipio": "Santiago Chazumba",
+    "rep_casilla": 10,
+    "importe_casilla": 5000,
+    "rep_generales": 2.5,
+    "importe_generales": 7500
+  },
+  {
+    "distrito": "XV",
+    "municipio": "Santiago Huajolotitlán",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "XV",
+    "municipio": "Santiago Miltepec",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XV",
+    "municipio": "Santo Domingo Tonalá",
+    "rep_casilla": 12,
+    "importe_casilla": 6000,
+    "rep_generales": 3,
+    "importe_generales": 9000
+  },
+  {
+    "distrito": "XV",
+    "municipio": "Santo Domingo Yodohino",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XV",
+    "municipio": "Santos Reyes Yucuna",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XV",
+    "municipio": "Tezoatlán de Segura y Luna",
+    "rep_casilla": 19,
+    "importe_casilla": 9500,
+    "rep_generales": 4.75,
+    "importe_generales": 14250
+  },
+  {
+    "distrito": "XV",
+    "municipio": "Zapotitlán Palmas",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XVI",
+    "municipio": "Asunción Nochixtlán",
+    "rep_casilla": 22,
+    "importe_casilla": 11000,
+    "rep_generales": 5.5,
+    "importe_generales": 16500
+  },
+  {
+    "distrito": "XVI",
+    "municipio": "Magdalena Jaltepec",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "XVI",
+    "municipio": "Magdalena Yodocono de P. Díaz",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XVI",
+    "municipio": "Magdalena Zahuatlán",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XVI",
+    "municipio": "San Andrés Nuxiño",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XVI",
+    "municipio": "San Andrés Sinaxtla",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XVI",
+    "municipio": "San Francisco Chindua",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XVI",
+    "municipio": "San Francisco Jaltepetongo",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XVI",
+    "municipio": "San Francisco Nuxaño",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XVI",
+    "municipio": "San Juan Diuxi",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XVI",
+    "municipio": "San Juan Sayultepec",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XVI",
+    "municipio": "San Juan Tamazola",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "XVI",
+    "municipio": "San Juan Yucuita",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XVI",
+    "municipio": "San Mateo Etlatongo",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XVI",
+    "municipio": "San Mateo Sindihui",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XVI",
+    "municipio": "San Miguel Chicahua",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "XVI",
+    "municipio": "San Miguel Huautla",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XVI",
+    "municipio": "San Miguel Piedras",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XVI",
+    "municipio": "San Miguel Tecomatlán",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XVI",
+    "municipio": "San Pedro Cantaros Coxcaltepec",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XVI",
+    "municipio": "San Pedro Teozacoalco",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XVI",
+    "municipio": "San Pedro Tidaa",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XVI",
+    "municipio": "Santa Inés de Zaragoza",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XVI",
+    "municipio": "Santa María Apasco",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XVI",
+    "municipio": "Santa María Chachoapam",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XVI",
+    "municipio": "Santiago Apoala",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XVI",
+    "municipio": "Santiago Huauclilla",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XVI",
+    "municipio": "Santiago Tilantongo",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "XVI",
+    "municipio": "Santiago Tillo",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XVI",
+    "municipio": "Santo Domingo Nuxaa",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "XVI",
+    "municipio": "Santo Domingo Yanhuitlan",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XVI",
+    "municipio": "Yutanduchi de Guerrero",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "Concepción Papalo",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "Cuyamecalco Villa de Zaragoza",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "Eloxochitlan de Flores Magon",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "Huautepec",
+    "rep_casilla": 7,
+    "importe_casilla": 3500,
+    "rep_generales": 1.75,
+    "importe_generales": 5250
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "Huautla de Jiménez",
+    "rep_casilla": 38,
+    "importe_casilla": 19000,
+    "rep_generales": 9.5,
+    "importe_generales": 28500
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "Mazatlan Villa de Flores",
+    "rep_casilla": 19,
+    "importe_casilla": 9500,
+    "rep_generales": 4.75,
+    "importe_generales": 14250
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "San Andrés Teotilalpam",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "San Antonio Nanahuatipam",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "San Bartolomé Ayautla",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "San Francisco Chapulapa",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "San Francisco Huehuetlán",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "San Jerónimo Tecoalt",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "San José Tenango",
+    "rep_casilla": 25,
+    "importe_casilla": 12500,
+    "rep_generales": 6.25,
+    "importe_generales": 18750
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "San Juan Bautista Cuicatlán",
+    "rep_casilla": 18,
+    "importe_casilla": 9000,
+    "rep_generales": 4.5,
+    "importe_generales": 13500
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "San Juan Btta Tlacoatzintepec",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "San Juan Chiquihuitlán",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "San Juan Coatzospam",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "San Juan de Los Cues",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "San Juan Tepeuxila",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "San Lorenzo Cuaunecuiltitla",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "San Lucas Zoquiapam",
+    "rep_casilla": 7,
+    "importe_casilla": 3500,
+    "rep_generales": 1.75,
+    "importe_generales": 5250
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "San Martín Toxpalan",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "San Mateo Yoloxochitlán",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "San Miguel Santa Flor",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "San Pedro Jaltepetongo",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "San Pedro Jocotipac",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "San Pedro Ocopetatillo",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "San Pedro Sochiapam",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "San Pedro Teutila",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "Santa Ana Ateixtlahuaca",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "Santa Ana Cuauhtémoc",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "Santa Cruz Acatepec",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "Santa María La Asunción",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "Santa María Chilchotla",
+    "rep_casilla": 29,
+    "importe_casilla": 14500,
+    "rep_generales": 7.25,
+    "importe_generales": 21750
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "Santa María Ixcatlán",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "Santa María Papalo",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "Santa María Tecomavaca",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "Santa María Teopoxco",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "Santa María Texcatitlán",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "Santa María Tlalixtac",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "Santiago Nacaltepec",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "Santiago Texcalcingo",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "Santos Reyes Papalo",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "Teotitlán de Flores Magón",
+    "rep_casilla": 13,
+    "importe_casilla": 6500,
+    "rep_generales": 3.25,
+    "importe_generales": 9750
+  },
+  {
+    "distrito": "XVII",
+    "municipio": "Valerio Trujano",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XVIII",
+    "municipio": "Ayotzintepec",
+    "rep_casilla": 8,
+    "importe_casilla": 4000,
+    "rep_generales": 2,
+    "importe_generales": 6000
+  },
+  {
+    "distrito": "XVIII",
+    "municipio": "Loma Bonita",
+    "rep_casilla": 57,
+    "importe_casilla": 28500,
+    "rep_generales": 14.25,
+    "importe_generales": 42750
+  },
+  {
+    "distrito": "XVIII",
+    "municipio": "San José Chiltepec",
+    "rep_casilla": 13,
+    "importe_casilla": 6500,
+    "rep_generales": 3.25,
+    "importe_generales": 9750
+  },
+  {
+    "distrito": "XVIII",
+    "municipio": "San Juan Bautista Tuxtepec",
+    "rep_casilla": 181,
+    "importe_casilla": 90500,
+    "rep_generales": 45.25,
+    "importe_generales": 135750
+  },
+  {
+    "distrito": "XVIII",
+    "municipio": "San Juan Bautista Valle Nacional",
+    "rep_casilla": 27,
+    "importe_casilla": 13500,
+    "rep_generales": 6.75,
+    "importe_generales": 20250
+  },
+  {
+    "distrito": "XVIII",
+    "municipio": "Santa María Jacatepec",
+    "rep_casilla": 13,
+    "importe_casilla": 6500,
+    "rep_generales": 3.25,
+    "importe_generales": 9750
+  },
+  {
+    "distrito": "XIX",
+    "municipio": "Asunción Ocotlán",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "XIX",
+    "municipio": "Ayoquezco de Aldama",
+    "rep_casilla": 8,
+    "importe_casilla": 4000,
+    "rep_generales": 2,
+    "importe_generales": 6000
+  },
+  {
+    "distrito": "XIX",
+    "municipio": "Cienega de Zimatlán",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "XIX",
+    "municipio": "Magdalena Mixtepec",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XIX",
+    "municipio": "Magdalena Ocotlán",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XIX",
+    "municipio": "Ocotlán de Morelos",
+    "rep_casilla": 30,
+    "importe_casilla": 15000,
+    "rep_generales": 7.5,
+    "importe_generales": 22500
+  },
+  {
+    "distrito": "XIX",
+    "municipio": "San Antonino Castillo Velasco",
+    "rep_casilla": 8,
+    "importe_casilla": 4000,
+    "rep_generales": 2,
+    "importe_generales": 6000
+  },
+  {
+    "distrito": "XIX",
+    "municipio": "San Antonino El Alto",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XIX",
+    "municipio": "San Baltazar Chichicapam",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "XIX",
+    "municipio": "San Bernardo Mixtepec",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "XIX",
+    "municipio": "San Dionisio Ocotlán",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XIX",
+    "municipio": "San Jerónimo Taviche",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XIX",
+    "municipio": "San José del Progreso",
+    "rep_casilla": 8,
+    "importe_casilla": 4000,
+    "rep_generales": 2,
+    "importe_generales": 6000
+  },
+  {
+    "distrito": "XIX",
+    "municipio": "San Juan Chilateca",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XIX",
+    "municipio": "San Martín Tilcajete",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XIX",
+    "municipio": "San Miguel Mixtepec",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "XIX",
+    "municipio": "San Miguel Tilquiapam",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "XIX",
+    "municipio": "San Pablo Huixtepec",
+    "rep_casilla": 12,
+    "importe_casilla": 6000,
+    "rep_generales": 3,
+    "importe_generales": 9000
+  },
+  {
+    "distrito": "XIX",
+    "municipio": "San Pedro Apostol",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XIX",
+    "municipio": "San Pedro Mártir",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XIX",
+    "municipio": "San Pedro Taviche",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XIX",
+    "municipio": "Santa Ana Tlapacoyán",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "XIX",
+    "municipio": "Santa Ana Zegache",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "XIX",
+    "municipio": "Santa Catarina Minas",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XIX",
+    "municipio": "Santa Catarina Quiane",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XIX",
+    "municipio": "Santa Cruz Mixtepec",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "XIX",
+    "municipio": "Santa Gertrudis",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "XIX",
+    "municipio": "Santa Inés Yatzechi",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XIX",
+    "municipio": "Santa Lucía Ocotlán",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "XIX",
+    "municipio": "Santiago Apostol",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "XIX",
+    "municipio": "Santo Tomás Jalieza",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "XIX",
+    "municipio": "Yaxe",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XIX",
+    "municipio": "Zimatlán de Alvaréz",
+    "rep_casilla": 26,
+    "importe_casilla": 13000,
+    "rep_generales": 6.5,
+    "importe_generales": 19500
+  },
+  {
+    "distrito": "XX",
+    "municipio": "Asunción Cacalotepec",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XX",
+    "municipio": "Mixistlan de la Reforma",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XX",
+    "municipio": "San Juan Comaltepec",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XX",
+    "municipio": "San Juan Cotzocón",
+    "rep_casilla": 27,
+    "importe_casilla": 13500,
+    "rep_generales": 6.75,
+    "importe_generales": 20250
+  },
+  {
+    "distrito": "XX",
+    "municipio": "San Juan Lalana",
+    "rep_casilla": 17,
+    "importe_casilla": 8500,
+    "rep_generales": 4.25,
+    "importe_generales": 12750
+  },
+  {
+    "distrito": "XX",
+    "municipio": "San Juan Mazatlán",
+    "rep_casilla": 20,
+    "importe_casilla": 10000,
+    "rep_generales": 5,
+    "importe_generales": 15000
+  },
+  {
+    "distrito": "XX",
+    "municipio": "San Juan Petlapa",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "XX",
+    "municipio": "San Lucas Camotlán",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XX",
+    "municipio": "San Miguel Quetzaltepec",
+    "rep_casilla": 8,
+    "importe_casilla": 4000,
+    "rep_generales": 2,
+    "importe_generales": 6000
+  },
+  {
+    "distrito": "XX",
+    "municipio": "San Pedro Ocotepec",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XX",
+    "municipio": "San Pedro Y San Pablo Ayutla",
+    "rep_casilla": 8,
+    "importe_casilla": 4000,
+    "rep_generales": 2,
+    "importe_generales": 6000
+  },
+  {
+    "distrito": "XX",
+    "municipio": "Santa María Alotepec",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "XX",
+    "municipio": "Santa María Tepantlali",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XX",
+    "municipio": "Santa María Tlahuitoltepec",
+    "rep_casilla": 9,
+    "importe_casilla": 4500,
+    "rep_generales": 2.25,
+    "importe_generales": 6750
+  },
+  {
+    "distrito": "XX",
+    "municipio": "Santiago Atitlán",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "XX",
+    "municipio": "Santiago Choapam",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "XX",
+    "municipio": "Santiago Ixcuintepec",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XX",
+    "municipio": "Santiago Jocotepec",
+    "rep_casilla": 16,
+    "importe_casilla": 8000,
+    "rep_generales": 4,
+    "importe_generales": 12000
+  },
+  {
+    "distrito": "XX",
+    "municipio": "Santiago Yaveo",
+    "rep_casilla": 7,
+    "importe_casilla": 3500,
+    "rep_generales": 1.75,
+    "importe_generales": 5250
+  },
+  {
+    "distrito": "XX",
+    "municipio": "Santiago Zacatepec",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "XX",
+    "municipio": "Santo Domingo Tepuxtepec",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "XX",
+    "municipio": "Tamazulapam del Espíritu Santo",
+    "rep_casilla": 8,
+    "importe_casilla": 4000,
+    "rep_generales": 2,
+    "importe_generales": 6000
+  },
+  {
+    "distrito": "XX",
+    "municipio": "Totontepec Villa de Morelos",
+    "rep_casilla": 8,
+    "importe_casilla": 4000,
+    "rep_generales": 2,
+    "importe_generales": 6000
+  },
+  {
+    "distrito": "XXI",
+    "municipio": "Calihuala",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XXI",
+    "municipio": "Coicoyán de las Flores",
+    "rep_casilla": 10,
+    "importe_casilla": 5000,
+    "rep_generales": 2.5,
+    "importe_generales": 7500
+  },
+  {
+    "distrito": "XXI",
+    "municipio": "Guadalupe de Ramírez",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XXI",
+    "municipio": "Ixpantepec Nieves",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "XXI",
+    "municipio": "San Agustín Atenango",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XXI",
+    "municipio": "San Andrés Tepetlapa",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XXI",
+    "municipio": "San Francisco Tlapancingo",
+    "rep_casilla": 3,
+    "importe_casilla": 1500,
+    "rep_generales": 0.75,
+    "importe_generales": 2250
+  },
+  {
+    "distrito": "XXI",
+    "municipio": "San Juan Bautista Tlachichilco",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XXI",
+    "municipio": "San Juan Cieneguilla",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XXI",
+    "municipio": "San Juan Ihualtepec",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XXI",
+    "municipio": "San Juan Mixtepec",
+    "rep_casilla": 16,
+    "importe_casilla": 8000,
+    "rep_generales": 4,
+    "importe_generales": 12000
+  },
+  {
+    "distrito": "XXI",
+    "municipio": "San Lorenzo Victoria",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XXI",
+    "municipio": "San Martín Peras",
+    "rep_casilla": 14,
+    "importe_casilla": 7000,
+    "rep_generales": 3.5,
+    "importe_generales": 10500
+  },
+  {
+    "distrito": "XXI",
+    "municipio": "San Mateo Nejapam",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XXI",
+    "municipio": "San Miguel Ahuehuetitlán",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "XXI",
+    "municipio": "San Miguel Tlacotepec",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "XXI",
+    "municipio": "San Nicolás Hidalgo",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XXI",
+    "municipio": "San Sebastián Tecomaxtlahuaca",
+    "rep_casilla": 13,
+    "importe_casilla": 6500,
+    "rep_generales": 3.25,
+    "importe_generales": 9750
+  },
+  {
+    "distrito": "XXI",
+    "municipio": "Santa Cruz de Bravo",
+    "rep_casilla": 1,
+    "importe_casilla": 500,
+    "rep_generales": 0.25,
+    "importe_generales": 750
+  },
+  {
+    "distrito": "XXI",
+    "municipio": "Santiago del Río",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XXI",
+    "municipio": "Santiago Juxtlahuaca",
+    "rep_casilla": 43,
+    "importe_casilla": 21500,
+    "rep_generales": 10.75,
+    "importe_generales": 32250
+  },
+  {
+    "distrito": "XXI",
+    "municipio": "Santiago Tamazola",
+    "rep_casilla": 8,
+    "importe_casilla": 4000,
+    "rep_generales": 2,
+    "importe_generales": 6000
+  },
+  {
+    "distrito": "XXI",
+    "municipio": "Santiago Yucuyachi",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XXI",
+    "municipio": "Santos Reyes Tepejillo",
+    "rep_casilla": 2,
+    "importe_casilla": 1000,
+    "rep_generales": 0.5,
+    "importe_generales": 1500
+  },
+  {
+    "distrito": "XXI",
+    "municipio": "Silacayoapam",
+    "rep_casilla": 17,
+    "importe_casilla": 8500,
+    "rep_generales": 4.25,
+    "importe_generales": 12750
+  },
+  {
+    "distrito": "XXI",
+    "municipio": "Zapotitlán Lagunas",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "XXII",
+    "municipio": "Animas Trujano",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "XXII",
+    "municipio": "Oaxaca de Juárez",
+    "rep_casilla": 179,
+    "importe_casilla": 89500,
+    "rep_generales": 44.75,
+    "importe_generales": 134250
+  },
+  {
+    "distrito": "XXII",
+    "municipio": "San Agustín de las Juntas",
+    "rep_casilla": 7,
+    "importe_casilla": 3500,
+    "rep_generales": 1.75,
+    "importe_generales": 5250
+  },
+  {
+    "distrito": "XXII",
+    "municipio": "San Agustín Yatareni",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "XXII",
+    "municipio": "San Andrés Huayapam",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "XXII",
+    "municipio": "San Antonio de la Cal",
+    "rep_casilla": 18,
+    "importe_casilla": 9000,
+    "rep_generales": 4.5,
+    "importe_generales": 13500
+  },
+  {
+    "distrito": "XXII",
+    "municipio": "San Bartolo Coyotepec",
+    "rep_casilla": 8,
+    "importe_casilla": 4000,
+    "rep_generales": 2,
+    "importe_generales": 6000
+  },
+  {
+    "distrito": "XXII",
+    "municipio": "San Sebastián Tutla",
+    "rep_casilla": 19,
+    "importe_casilla": 9500,
+    "rep_generales": 4.75,
+    "importe_generales": 14250
+  },
+  {
+    "distrito": "XXII",
+    "municipio": "Santa Cruz Amilpas",
+    "rep_casilla": 11,
+    "importe_casilla": 5500,
+    "rep_generales": 2.75,
+    "importe_generales": 8250
+  },
+  {
+    "distrito": "XXII",
+    "municipio": "Santa Lucía del Camino",
+    "rep_casilla": 62,
+    "importe_casilla": 31000,
+    "rep_generales": 15.5,
+    "importe_generales": 46500
+  },
+  {
+    "distrito": "XXII",
+    "municipio": "Santa María Coyotepec",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "XXII",
+    "municipio": "Santa María del Tule",
+    "rep_casilla": 11,
+    "importe_casilla": 5500,
+    "rep_generales": 2.75,
+    "importe_generales": 8250
+  },
+  {
+    "distrito": "XXII",
+    "municipio": "Santo Domingo Tomaltepec",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "XXII",
+    "municipio": "Tlalixtac de Cabrera",
+    "rep_casilla": 10,
+    "importe_casilla": 5000,
+    "rep_generales": 2.5,
+    "importe_generales": 7500
+  },
+  {
+    "distrito": "XXIII",
+    "municipio": "Chahuites",
+    "rep_casilla": 14,
+    "importe_casilla": 7000,
+    "rep_generales": 3.5,
+    "importe_generales": 10500
+  },
+  {
+    "distrito": "XXIII",
+    "municipio": "Juchitán de Zaragoza",
+    "rep_casilla": 110,
+    "importe_casilla": 55000,
+    "rep_generales": 27.5,
+    "importe_generales": 82500
+  },
+  {
+    "distrito": "XXIII",
+    "municipio": "Reforma de Pineda",
+    "rep_casilla": 4,
+    "importe_casilla": 2000,
+    "rep_generales": 1,
+    "importe_generales": 3000
+  },
+  {
+    "distrito": "XXIII",
+    "municipio": "San Dionisio del Mar",
+    "rep_casilla": 6,
+    "importe_casilla": 3000,
+    "rep_generales": 1.5,
+    "importe_generales": 4500
+  },
+  {
+    "distrito": "XXIII",
+    "municipio": "San Francisco del Mar",
+    "rep_casilla": 8,
+    "importe_casilla": 4000,
+    "rep_generales": 2,
+    "importe_generales": 6000
+  },
+  {
+    "distrito": "XXIII",
+    "municipio": "San Francisco Ixhuatán",
+    "rep_casilla": 14,
+    "importe_casilla": 7000,
+    "rep_generales": 3.5,
+    "importe_generales": 10500
+  },
+  {
+    "distrito": "XXIII",
+    "municipio": "San Pedro Tapanatepec",
+    "rep_casilla": 18,
+    "importe_casilla": 9000,
+    "rep_generales": 4.5,
+    "importe_generales": 13500
+  },
+  {
+    "distrito": "XXIII",
+    "municipio": "Santa María Xadani",
+    "rep_casilla": 8,
+    "importe_casilla": 4000,
+    "rep_generales": 2,
+    "importe_generales": 6000
+  },
+  {
+    "distrito": "XXIII",
+    "municipio": "Santiago Niltepec",
+    "rep_casilla": 8,
+    "importe_casilla": 4000,
+    "rep_generales": 2,
+    "importe_generales": 6000
+  },
+  {
+    "distrito": "XXIII",
+    "municipio": "Santo Domingo Ingenio",
+    "rep_casilla": 11,
+    "importe_casilla": 5500,
+    "rep_generales": 2.75,
+    "importe_generales": 8250
+  },
+  {
+    "distrito": "XXIII",
+    "municipio": "Santo Domingo Zanatepec",
+    "rep_casilla": 15,
+    "importe_casilla": 7500,
+    "rep_generales": 3.75,
+    "importe_generales": 11250
+  },
+  {
+    "distrito": "XXIII",
+    "municipio": "Unión Hidalgo",
+    "rep_casilla": 20,
+    "importe_casilla": 10000,
+    "rep_generales": 5,
+    "importe_generales": 15000
+  },
+  {
+    "distrito": "XXIV",
+    "municipio": "Barrio de la Soledad, El",
+    "rep_casilla": 19,
+    "importe_casilla": 9500,
+    "rep_generales": 4.75,
+    "importe_generales": 14250
+  },
+  {
+    "distrito": "XXIV",
+    "municipio": "Matías Romero",
+    "rep_casilla": 56,
+    "importe_casilla": 28000,
+    "rep_generales": 14,
+    "importe_generales": 42000
+  },
+  {
+    "distrito": "XXIV",
+    "municipio": "San Juan Guichicovi",
+    "rep_casilla": 43,
+    "importe_casilla": 21500,
+    "rep_generales": 10.75,
+    "importe_generales": 32250
+  },
+  {
+    "distrito": "XXIV",
+    "municipio": "San Miguel Chimalapa",
+    "rep_casilla": 10,
+    "importe_casilla": 5000,
+    "rep_generales": 2.5,
+    "importe_generales": 7500
+  },
+  {
+    "distrito": "XXIV",
+    "municipio": "Santa María Chimalapa",
+    "rep_casilla": 10,
+    "importe_casilla": 5000,
+    "rep_generales": 2.5,
+    "importe_generales": 7500
+  },
+  {
+    "distrito": "XXIV",
+    "municipio": "Santa María Petapa",
+    "rep_casilla": 17,
+    "importe_casilla": 8500,
+    "rep_generales": 4.25,
+    "importe_generales": 12750
+  },
+  {
+    "distrito": "XXIV",
+    "municipio": "Santo Domingo Petapa",
+    "rep_casilla": 13,
+    "importe_casilla": 6500,
+    "rep_generales": 3.25,
+    "importe_generales": 9750
+  },
+  {
+    "distrito": "XXV",
+    "municipio": "Acatlan de Pérez Figueroa",
+    "rep_casilla": 53,
+    "importe_casilla": 26500,
+    "rep_generales": 13.25,
+    "importe_generales": 39750
+  },
+  {
+    "distrito": "XXV",
+    "municipio": "Cosolapa",
+    "rep_casilla": 17,
+    "importe_casilla": 8500,
+    "rep_generales": 4.25,
+    "importe_generales": 12750
+  },
+  {
+    "distrito": "XXV",
+    "municipio": "San Felipe Jalapa de Díaz",
+    "rep_casilla": 29,
+    "importe_casilla": 14500,
+    "rep_generales": 7.25,
+    "importe_generales": 21750
+  },
+  {
+    "distrito": "XXV",
+    "municipio": "San Felipe Usila",
+    "rep_casilla": 12,
+    "importe_casilla": 6000,
+    "rep_generales": 3,
+    "importe_generales": 9000
+  },
+  {
+    "distrito": "XXV",
+    "municipio": "San José Independencia",
+    "rep_casilla": 5,
+    "importe_casilla": 2500,
+    "rep_generales": 1.25,
+    "importe_generales": 3750
+  },
+  {
+    "distrito": "XXV",
+    "municipio": "San Lucas Ojitlán",
+    "rep_casilla": 23,
+    "importe_casilla": 11500,
+    "rep_generales": 5.75,
+    "importe_generales": 17250
+  },
+  {
+    "distrito": "XXV",
+    "municipio": "San Miguel Soyaltepec",
+    "rep_casilla": 45,
+    "importe_casilla": 22500,
+    "rep_generales": 11.25,
+    "importe_generales": 33750
+  },
+  {
+    "distrito": "XXV",
+    "municipio": "San Pedro Ixcatlán",
+    "rep_casilla": 13,
+    "importe_casilla": 6500,
+    "rep_generales": 3.25,
+    "importe_generales": 9750
+  }
+]
