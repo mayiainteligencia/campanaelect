@@ -5,6 +5,7 @@ import Header from './Header'
 import MobileNav from './MobileNav'
 
 import config from '@/config/config'
+import { sheetByKey } from '@/data/datasets'
 
 // Mapa de rutas a títulos. El primer crumb es el nombre del sistema (config).
 const routeMeta = {
@@ -14,9 +15,18 @@ const routeMeta = {
   '/configuracion':{ title: 'Configuración' },
 }
 
+function metaFor(pathname) {
+  if (routeMeta[pathname]) return routeMeta[pathname]
+  if (pathname.startsWith('/datos/')) {
+    const key = pathname.split('/')[2]
+    return { title: sheetByKey(key)?.hoja ?? 'Fuentes de Datos' }
+  }
+  return { title: config.brand.name }
+}
+
 export default function AppLayout() {
   const { pathname } = useLocation()
-  const meta = routeMeta[pathname] ?? { title: config.brand.name }
+  const meta = metaFor(pathname)
   const crumbs = [config.brand.shortName || config.brand.name]
 
   // Estado collapsed del sidebar — se comparte con Header y Sidebar
@@ -55,6 +65,7 @@ export default function AppLayout() {
           isMobile={isMobile}
           onToggle={toggleSidebar}
         />
+        {/* El header es absoluto (Notch flotante) — el content arranca desde arriba */}
         <main className="content">
           <Outlet />
         </main>

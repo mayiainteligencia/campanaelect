@@ -1,13 +1,13 @@
 /* ─── Reset & base ─────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { height: 100%; }
+html { height: 100%; background: #ffffff; }
 
 body {
   font-family: var(--font-family);
   font-size: var(--font-size-base);
   color: var(--color-text);
-  background: var(--color-bg);
+  background: #ffffff;   /* dashboard blanco; el login pinta su propio MeshGradient */
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -18,11 +18,11 @@ ul { list-style: none; }
 button { font-family: inherit; cursor: pointer; border: none; outline: none; background: none; }
 input, select, textarea { font-family: inherit; }
 
-/* ─── Scrollbar dark ────────────────────────────────────────── */
-::-webkit-scrollbar { width: 6px; height: 6px; }
-::-webkit-scrollbar-track { background: var(--color-bg); }
-::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: var(--color-text-muted); }
+/* ─── Scrollbar HUD ─────────────────────────────────────────── */
+::-webkit-scrollbar { width: 3px; height: 3px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(14,165,233,0.3); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(14,165,233,0.6); }
 
 /* ─── Layout shell ──────────────────────────────────────────── */
 .app-shell {
@@ -30,6 +30,7 @@ input, select, textarea { font-family: inherit; }
   min-height: 100vh;
   overflow: hidden;
   position: relative;
+  background-color: #ffffff;   /* dashboard blanco, sin cuadrícula */
 }
 
 /* ─── Sidebar ───────────────────────────────────────────────── */
@@ -48,6 +49,8 @@ input, select, textarea { font-family: inherit; }
   overflow: hidden;
   z-index: 100;
   border-right: 1px solid var(--color-border);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 .sidebar.collapsed {
@@ -63,43 +66,158 @@ input, select, textarea { font-family: inherit; }
   min-width: 0;
   height: 100vh;
   overflow: hidden;
+  position: relative;
 }
 
-/* ─── Header ────────────────────────────────────────────────── */
+/* ─── Header Notch (flotante, no ocupa espacio real) ─────────── */
 .header {
-  height: var(--header-height);
-  background: var(--color-header-bg);
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 200;
+  width: auto;
+  min-width: 520px;
+  max-width: calc(100vw - 80px);
+  height: 56px;
+  /* Glassmorphism claro — fondo blanco translúcido */
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 30px;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.8) inset,
+    0 4px 20px rgba(0,0,0,0.10),
+    0 1px 3px rgba(0,0,0,0.06);
   display: flex;
   align-items: center;
-  padding: 0 20px;
-  flex-shrink: 0;
-  gap: 12px;
-  /* Sin border-bottom: se fusiona con el fondo */
+  padding: 0 16px;
+  gap: 10px;
+  animation: notchDrop 0.5s cubic-bezier(0.34,1.56,0.64,1) both;
 }
 
-/* ─── Content ───────────────────────────────────────────────── */
+/* ─── Content (con espacio superior para el Notch) ─────────── */
 .content {
   flex: 1;
   overflow-y: auto;
   overflow-x: hidden;
-  padding: 0 20px 20px;
+  padding: 88px 16px 16px;  /* top: 88px = altura notch 56px + 12px gap + 20px margen */
 }
 
 /* ─── Glassmorphism utility ─────────────────────────────────── */
 .glass {
   background: var(--color-surface-glass);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border: 1px solid var(--color-border);
 }
+
+/* ─── Bento Grid Responsivo ─────────────────────────────────── */
+.bento-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.bento-col-full {
+  grid-column: 1 / -1 !important;
+}
+
+/* ─── HUD Panel ─────────────────────────────────────────────── */
+/* Panel con borde tecnológico animado */
+.hud-panel {
+  position: relative;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  overflow: hidden;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Línea de escáner que corre verticalmente en los paneles laterales */
+.hud-panel::after {
+  content: '';
+  position: absolute;
+  top: -10%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-hud-accent), transparent);
+  opacity: 0.6;
+  animation: hudScan 4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* Borde superior luminoso (acento de color) */
+.hud-panel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-hud-accent), transparent);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Variante Rojo PRI para panel de alertas */
+.hud-panel.hud-red::before {
+  background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+}
+.hud-panel.hud-red::after {
+  background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+}
+
+/* Variante Verde para panel de datos positivos */
+.hud-panel.hud-green::before {
+  background: linear-gradient(90deg, transparent, var(--color-green), transparent);
+}
+.hud-panel.hud-green::after {
+  background: linear-gradient(90deg, transparent, var(--color-green), transparent);
+}
+
+/* Esquinas HUD decorativas — corner marks */
+.hud-corner {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-color: var(--color-hud-accent);
+  border-style: solid;
+  opacity: 0.6;
+}
+.hud-corner.tl { top: 8px; left: 8px; border-width: 1.5px 0 0 1.5px; }
+.hud-corner.tr { top: 8px; right: 8px; border-width: 1.5px 1.5px 0 0; }
+.hud-corner.bl { bottom: 8px; left: 8px; border-width: 0 0 1.5px 1.5px; }
+.hud-corner.br { bottom: 8px; right: 8px; border-width: 0 1.5px 1.5px 0; }
 
 /* ─── Glow utilities ─────────────────────────────────────────── */
 .glow-primary { box-shadow: 0 0 20px var(--color-primary-glow); }
 .glow-green   { box-shadow: 0 0 16px var(--color-green-glow); }
 .glow-red     { box-shadow: 0 0 16px var(--color-red-glow); }
 .glow-blue    { box-shadow: 0 0 16px var(--color-blue-glow); }
+.glow-hud     { box-shadow: 0 0 16px var(--color-hud-accent-glow); }
 
 /* ─── Animations ─────────────────────────────────────────────── */
+@keyframes notchDrop {
+  from { opacity: 0; transform: translateX(-50%) translateY(-20px) scale(0.95); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0) scale(1); }
+}
+
+@keyframes hudScan {
+  0%   { top: -5%; opacity: 0; }
+  5%   { opacity: 0.8; }
+  95%  { opacity: 0.6; }
+  100% { top: 105%; opacity: 0; }
+}
+
+@keyframes globeSpin { to { transform: rotate(360deg); } }
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.62); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
 @keyframes slideInLeft {
   from { opacity: 0; transform: translateX(-20px); }
   to   { opacity: 1; transform: translateX(0); }
@@ -141,6 +259,14 @@ input, select, textarea { font-family: inherit; }
   0%   { background-position: -200% 0; }
   100% { background-position: 200% 0; }
 }
+@keyframes barGrow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes draw { to { stroke-dashoffset: 0; } }
+
+/* Latido de punto en el notch */
+@keyframes dotPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(0,200,87,0.4); }
+  50%       { box-shadow: 0 0 0 5px rgba(0,200,87,0); }
+}
 
 /* ─── Responsive breakpoints ─────────────────────────────────── */
 
@@ -154,9 +280,12 @@ input, select, textarea { font-family: inherit; }
     width: var(--sidebar-width-collapsed);
     min-width: var(--sidebar-width-collapsed);
   }
+  .header {
+    min-width: 400px;
+  }
 }
 
-/* Mobile (≤ 768px): sidebar se oculta (overlay) */
+/* Mobile (≤ 768px): sidebar se oculta */
 @media (max-width: 768px) {
   .app-shell { position: relative; }
 
@@ -183,50 +312,77 @@ input, select, textarea { font-family: inherit; }
     width: 100%;
   }
 
-  .header { padding: 0 12px; }
-  /* Espacio inferior extra para el floating bottom nav */
-  .content { padding: 0 12px 96px; }
+  .header {
+    min-width: calc(100vw - 20px);
+    top: 8px;
+    border-radius: 20px;
+    padding: 0 12px;
+  }
+  
+  .header-search, .header-status {
+    display: none !important; /* Ocultar en móvil para dar espacio al título */
+  }
+
+  .content { padding: 76px 10px 96px; }
+}
+
+/* ─── Tablets y Móviles: Bento Grid de 1 columna ─────────────── */
+@media (max-width: 900px) {
+  .bento-grid {
+    grid-template-columns: 1fr;
+  }
+  .bento-grid > div {
+    grid-column: 1 / -1 !important;
+  }
 }
 
 /* Small mobile (≤ 480px) */
 @media (max-width: 480px) {
-  .content { padding: 0 8px 96px; }
+  .content { padding: 76px 8px 96px; }
 }
 
-/* ─── Utilidades de interacción (módulos dinámicos) ──────────────── */
-/* Card interactiva: se eleva al hover (transform/opacity, sin reflow) */
+/* ─── Utilidades de interacción ─────────────────────────────── */
 .lift {
   transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
   will-change: transform;
 }
 .lift:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 28px rgba(14, 17, 22, 0.10);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.10), 0 2px 8px rgba(225,37,27,0.08);
+  border-color: rgba(225,37,27,0.30) !important;
 }
 .tap:active { transform: scale(0.98); }
 
-/* Entrada escalonada: pon --i:0,1,2… en cada hijo */
+/* Entrada escalonada */
 .stagger > * {
   opacity: 0;
   animation: slideInUp 0.45s ease forwards;
   animation-delay: calc(var(--i, 0) * 60ms);
 }
 
-/* Barra de progreso animada (charts) */
+/* Barra de progreso animada */
 .bar-grow { transform-origin: left center; animation: barGrow 0.9s cubic-bezier(0.4,0,0.2,1) both; }
-@keyframes barGrow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
 
-/* Trazo de línea que se dibuja */
+/* Trazo de línea SVG */
 .draw-line { stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: draw 1.1s ease forwards; }
-@keyframes draw { to { stroke-dashoffset: 0; } }
 
-/* Filas de tabla / barras con realce al hover */
+/* Filas hover */
 .trow { transition: background 0.15s ease; }
 .trow:hover { background: var(--color-surface-hover); }
 .barrow { transition: transform 0.15s ease; }
 .barrow:hover { transform: translateX(3px); }
 
-/* Respeto a usuarios con reduced-motion */
+/* Stack de toasts MAYIA */
+.mayia-stack { bottom: 24px; right: 16px; width: 380px; max-width: calc(100vw - 32px); }
+@media (max-width: 768px) {
+  .mayia-stack {
+    top: 16px; bottom: auto; right: 50%; transform: translateX(50%);
+    width: calc(100vw - 24px);
+    z-index: 9999;
+  }
+}
+
+/* ─── Reduced motion ─────────────────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.001ms !important;
@@ -234,4 +390,5 @@ input, select, textarea { font-family: inherit; }
     transition-duration: 0.001ms !important;
   }
   .lift:hover { transform: none; }
+  .hud-panel::after { display: none; }
 }

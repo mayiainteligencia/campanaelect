@@ -21,44 +21,50 @@ export const config = {
     baseSize: '15px',
   },
 
-  // Sistema de color: blanco · rojo · verde · gris · negro.
-  // Regla anti-fatiga: base neutra (blanco/gris), texto casi-negro, y el
-  // color (rojo PRI / verde) como ACENTO, más tints suaves para las cards.
-  // Se inyecta como variables CSS: --color-primary, etc.
+  // ─── Modo Institucional PRI — Blanco, Verde y Rojo ───────────────
+  // Fondo blanco/crema limpio. Verde y Rojo PRI son los acentos.
+  // Texto oscuro para máxima legibilidad. Decoraciones sutiles en gris.
   colors: {
-    // Rojo (marca / énfasis)
-    primary:       '#E1251B',   // rojo PRI
-    primaryDark:   '#B01A12',   // rojo oscuro (hover/gradientes)
-    primarySoft:   '#fdecea',   // tint rojo para fondos de card
+    // ── Rojo PRI (acento principal / alertas) ────────────────────
+    primary:       '#E1251B',
+    primaryDark:   '#B01A12',
+    primarySoft:   'rgba(225, 37, 27, 0.08)',
     primaryGlow:   'rgba(225, 37, 27, 0.20)',
-    // Verde (positivo / éxito)
-    accent:        '#0b8a43',   // verde institucional legible sobre blanco
-    accentSoft:    '#e7f4ec',   // tint verde para fondos de card
-    accentGlow:    'rgba(11, 138, 67, 0.18)',
-    // Neutros (blanco / gris / negro)
-    bg:            '#f5f6f8',   // fondo general
-    surface:       '#ffffff',   // superficie de cards
-    surfaceHover:  '#eef0f3',   // hover neutro
-    surfaceGlass:  'rgba(255, 255, 255, 0.72)',
-    ink:           '#0e1116',   // negro suave (títulos)
-    graphite:      '#242a32',   // gris oscuro (chips)
-    graySoft:      '#f0f2f5',   // tint gris para fondos
-    text:          '#15191f',   // texto principal (casi negro)
-    textMuted:     '#5b636e',   // texto secundario
-    textDim:       '#98a0ab',   // texto muy apagado
-    border:        '#e5e8ec',   // bordes
-    borderGlow:    'rgba(225, 37, 27, 0.32)',
-    sidebarBg:     '#ffffff',
-    headerBg:      '#ffffff',
-    // Semánticos de dato (charts / estados)
-    green:         '#0b8a43',
-    greenGlow:     'rgba(11, 138, 67, 0.18)',
+    // ── Verde PRI (positivo / estados activos) ───────────────────
+    accent:        '#007A33',   // verde PRI institucional
+    accentSoft:    'rgba(0, 122, 51, 0.08)',
+    accentGlow:    'rgba(0, 122, 51, 0.18)',
+    // ── Fondos (Blanco / Crema institucional) ────────────────────
+    bg:            '#F4F6F8',   // fondo general — gris muy claro
+    surface:       'rgba(255, 255, 255, 0.92)',  // superficie de paneles
+    surfaceHover:  'rgba(0, 0, 0, 0.04)',
+    surfaceGlass:  'rgba(255, 255, 255, 0.80)',  // glassmorphism claro
+    surfaceDeep:   '#EAECF0',   // fondo extra profundo para header, sidebar
+    // ── Texto ────────────────────────────────────────────────────
+    ink:           '#0D1117',   // negro puro (títulos)
+    graphite:      '#2D3748',   // gris oscuro
+    graySoft:      'rgba(0,0,0,0.03)',
+    text:          '#1A202C',   // texto principal — casi negro
+    textMuted:     '#4A5568',   // texto secundario — gris medio
+    textDim:       '#A0AEC0',   // texto muy apagado
+    // ── Bordes ───────────────────────────────────────────────────
+    border:        'rgba(0, 0, 0, 0.10)',
+    borderGlow:    'rgba(225, 37, 27, 0.30)',
+    sidebarBg:     'rgba(255, 255, 255, 0.95)',
+    headerBg:      'transparent',   // el header sigue siendo flotante
+    // ── Semánticos (PRI institucional) ───────────────────────────
+    green:         '#007A33',
+    greenGlow:     'rgba(0, 122, 51, 0.20)',
     red:           '#E1251B',
-    redGlow:       'rgba(225, 37, 27, 0.18)',
-    blue:          '#2563eb',
-    blueGlow:      'rgba(37, 99, 235, 0.16)',
-    yellow:        '#c98a00',
-    yellowGlow:    'rgba(201, 138, 0, 0.18)',
+    redGlow:       'rgba(225, 37, 27, 0.20)',
+    blue:          '#1D4ED8',
+    blueGlow:      'rgba(29, 78, 216, 0.18)',
+    yellow:        '#B45309',
+    yellowGlow:    'rgba(180, 83, 9, 0.18)',
+    // ── Grid y decoración HUD (versión clara) ────────────────────
+    gridLine:      'rgba(0, 0, 0, 0.04)',
+    hudAccent:     '#E1251B',   // el rojo PRI como acento HUD en tema claro
+    hudAccentGlow: 'rgba(225, 37, 27, 0.15)',
   },
 
   layout: {

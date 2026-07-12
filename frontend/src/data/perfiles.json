@@ -1,0 +1,753 @@
+[
+  {
+    "hoja": "computo dttal",
+    "veredicto": "FUENTE DE DATOS (revisar - 1 senal dudosa)",
+    "razones": [
+      "6 celdas combinadas (layout de reporte)"
+    ],
+    "filas": 56,
+    "columnas_n": 20,
+    "columnas": [
+      {
+        "nombre": "Unnamed: 0",
+        "tipo": "object",
+        "nulos": 10,
+        "pct_nulos": 17.9,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 1",
+        "tipo": "str",
+        "nulos": 8,
+        "pct_nulos": 14.3,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 2",
+        "tipo": "object",
+        "nulos": 8,
+        "pct_nulos": 14.3,
+        "notas": []
+      },
+      {
+        "nombre": "INSTITUTO ELECTORAL DEL ESTADO DE MÉXICO",
+        "tipo": "object",
+        "nulos": 6,
+        "pct_nulos": 10.7,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 4",
+        "tipo": "object",
+        "nulos": 9,
+        "pct_nulos": 16.1,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 5",
+        "tipo": "object",
+        "nulos": 8,
+        "pct_nulos": 14.3,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 6",
+        "tipo": "object",
+        "nulos": 9,
+        "pct_nulos": 16.1,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 7",
+        "tipo": "object",
+        "nulos": 8,
+        "pct_nulos": 14.3,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 8",
+        "tipo": "object",
+        "nulos": 9,
+        "pct_nulos": 16.1,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 9",
+        "tipo": "object",
+        "nulos": 8,
+        "pct_nulos": 14.3,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 10",
+        "tipo": "object",
+        "nulos": 9,
+        "pct_nulos": 16.1,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 11",
+        "tipo": "object",
+        "nulos": 8,
+        "pct_nulos": 14.3,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 12",
+        "tipo": "object",
+        "nulos": 9,
+        "pct_nulos": 16.1,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 13",
+        "tipo": "object",
+        "nulos": 8,
+        "pct_nulos": 14.3,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 14",
+        "tipo": "object",
+        "nulos": 9,
+        "pct_nulos": 16.1,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 15",
+        "tipo": "object",
+        "nulos": 8,
+        "pct_nulos": 14.3,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 16",
+        "tipo": "object",
+        "nulos": 8,
+        "pct_nulos": 14.3,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 17",
+        "tipo": "float64",
+        "nulos": 56,
+        "pct_nulos": 100.0,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 18",
+        "tipo": "object",
+        "nulos": 8,
+        "pct_nulos": 14.3,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 19",
+        "tipo": "object",
+        "nulos": 8,
+        "pct_nulos": 14.3,
+        "notas": []
+      }
+    ]
+  },
+  {
+    "hoja": "casillas anuladas TEEM",
+    "veredicto": "FUENTE DE DATOS (importable)",
+    "razones": [],
+    "filas": 19,
+    "columnas_n": 10,
+    "columnas": [
+      {
+        "nombre": "Unnamed: 0",
+        "tipo": "str",
+        "nulos": 11,
+        "pct_nulos": 57.9,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 1",
+        "tipo": "object",
+        "nulos": 11,
+        "pct_nulos": 57.9,
+        "notas": []
+      },
+      {
+        "nombre": "INSTITUTO ELECTORAL DEL ESTADO DE MÉXICO",
+        "tipo": "object",
+        "nulos": 11,
+        "pct_nulos": 57.9,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 3",
+        "tipo": "str",
+        "nulos": 11,
+        "pct_nulos": 57.9,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 4",
+        "tipo": "object",
+        "nulos": 10,
+        "pct_nulos": 52.6,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 5",
+        "tipo": "object",
+        "nulos": 10,
+        "pct_nulos": 52.6,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 6",
+        "tipo": "object",
+        "nulos": 10,
+        "pct_nulos": 52.6,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 7",
+        "tipo": "object",
+        "nulos": 10,
+        "pct_nulos": 52.6,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 8",
+        "tipo": "object",
+        "nulos": 10,
+        "pct_nulos": 52.6,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 9",
+        "tipo": "object",
+        "nulos": 10,
+        "pct_nulos": 52.6,
+        "notas": []
+      }
+    ]
+  },
+  {
+    "hoja": "CONCENTRADO",
+    "veredicto": "FUENTE DE DATOS (importable)",
+    "razones": [],
+    "filas": 9,
+    "columnas_n": 2,
+    "columnas": [
+      {
+        "nombre": "Unnamed: 0",
+        "tipo": "str",
+        "nulos": 0,
+        "pct_nulos": 0.0,
+        "notas": [
+          "llave"
+        ]
+      },
+      {
+        "nombre": "Unnamed: 1",
+        "tipo": "object",
+        "nulos": 6,
+        "pct_nulos": 66.7,
+        "notas": []
+      }
+    ]
+  },
+  {
+    "hoja": "MOVILIZACION",
+    "veredicto": "FUENTE DE DATOS (revisar - 1 senal dudosa)",
+    "razones": [
+      "4 celdas combinadas (layout de reporte)"
+    ],
+    "filas": 35,
+    "columnas_n": 9,
+    "columnas": [
+      {
+        "nombre": "Unnamed: 0",
+        "tipo": "str",
+        "nulos": 6,
+        "pct_nulos": 17.1,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 1",
+        "tipo": "str",
+        "nulos": 10,
+        "pct_nulos": 28.6,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 2",
+        "tipo": "object",
+        "nulos": 7,
+        "pct_nulos": 20.0,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 3",
+        "tipo": "object",
+        "nulos": 8,
+        "pct_nulos": 22.9,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 4",
+        "tipo": "float64",
+        "nulos": 35,
+        "pct_nulos": 100.0,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 5",
+        "tipo": "object",
+        "nulos": 8,
+        "pct_nulos": 22.9,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 6",
+        "tipo": "object",
+        "nulos": 7,
+        "pct_nulos": 20.0,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 7",
+        "tipo": "float64",
+        "nulos": 35,
+        "pct_nulos": 100.0,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 8",
+        "tipo": "float64",
+        "nulos": 33,
+        "pct_nulos": 94.3,
+        "notas": []
+      }
+    ]
+  },
+  {
+    "hoja": "REPRESENTANTES",
+    "veredicto": "FUENTE DE DATOS (revisar - 1 senal dudosa)",
+    "razones": [
+      "12 celdas combinadas (layout de reporte)"
+    ],
+    "filas": 71,
+    "columnas_n": 8,
+    "columnas": [
+      {
+        "nombre": "REPRESENTANTES GENERALES",
+        "tipo": "object",
+        "nulos": 33,
+        "pct_nulos": 46.5,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 1",
+        "tipo": "object",
+        "nulos": 38,
+        "pct_nulos": 53.5,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 2",
+        "tipo": "object",
+        "nulos": 48,
+        "pct_nulos": 67.6,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 3",
+        "tipo": "str",
+        "nulos": 55,
+        "pct_nulos": 77.5,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 4",
+        "tipo": "object",
+        "nulos": 49,
+        "pct_nulos": 69.0,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 5",
+        "tipo": "object",
+        "nulos": 49,
+        "pct_nulos": 69.0,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 6",
+        "tipo": "object",
+        "nulos": 65,
+        "pct_nulos": 91.5,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 7",
+        "tipo": "object",
+        "nulos": 62,
+        "pct_nulos": 87.3,
+        "notas": []
+      }
+    ]
+  },
+  {
+    "hoja": "COMITÉ",
+    "veredicto": "FUENTE DE DATOS (revisar - 1 senal dudosa)",
+    "razones": [
+      "13 encabezados sin nombre y vacios (fila 1 no es tabla)"
+    ],
+    "filas": 633,
+    "columnas_n": 19,
+    "columnas": [
+      {
+        "nombre": "COMITE DIRECTIVO ESTATAL",
+        "tipo": "object",
+        "nulos": 10,
+        "pct_nulos": 1.6,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 1",
+        "tipo": "str",
+        "nulos": 54,
+        "pct_nulos": 8.5,
+        "notas": [
+          "casing"
+        ]
+      },
+      {
+        "nombre": "Unnamed: 2",
+        "tipo": "object",
+        "nulos": 34,
+        "pct_nulos": 5.4,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 3",
+        "tipo": "float64",
+        "nulos": 32,
+        "pct_nulos": 5.1,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 4",
+        "tipo": "object",
+        "nulos": 34,
+        "pct_nulos": 5.4,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 5",
+        "tipo": "float64",
+        "nulos": 29,
+        "pct_nulos": 4.6,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 6",
+        "tipo": "str",
+        "nulos": 627,
+        "pct_nulos": 99.1,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 7",
+        "tipo": "str",
+        "nulos": 606,
+        "pct_nulos": 95.7,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 8",
+        "tipo": "object",
+        "nulos": 606,
+        "pct_nulos": 95.7,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 9",
+        "tipo": "object",
+        "nulos": 606,
+        "pct_nulos": 95.7,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 10",
+        "tipo": "object",
+        "nulos": 606,
+        "pct_nulos": 95.7,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 11",
+        "tipo": "object",
+        "nulos": 606,
+        "pct_nulos": 95.7,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 12",
+        "tipo": "object",
+        "nulos": 606,
+        "pct_nulos": 95.7,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 13",
+        "tipo": "object",
+        "nulos": 606,
+        "pct_nulos": 95.7,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 14",
+        "tipo": "object",
+        "nulos": 606,
+        "pct_nulos": 95.7,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 15",
+        "tipo": "object",
+        "nulos": 606,
+        "pct_nulos": 95.7,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 16",
+        "tipo": "object",
+        "nulos": 606,
+        "pct_nulos": 95.7,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 17",
+        "tipo": "object",
+        "nulos": 606,
+        "pct_nulos": 95.7,
+        "notas": []
+      },
+      {
+        "nombre": "Unnamed: 18",
+        "tipo": "object",
+        "nulos": 606,
+        "pct_nulos": 95.7,
+        "notas": []
+      }
+    ]
+  },
+  {
+    "hoja": "COMPILADO",
+    "veredicto": "FUENTE DE DATOS (revisar - 1 senal dudosa)",
+    "razones": [
+      "204 celdas combinadas (layout de reporte)"
+    ],
+    "filas": 2393,
+    "columnas_n": 28,
+    "columnas": [
+      {
+        "nombre": "# MPIO",
+        "tipo": "object",
+        "nulos": 8,
+        "pct_nulos": 0.3,
+        "notas": []
+      },
+      {
+        "nombre": "DTTO",
+        "tipo": "float64",
+        "nulos": 8,
+        "pct_nulos": 0.3,
+        "notas": []
+      },
+      {
+        "nombre": "M  u  n  i  c  i  p  i  o",
+        "tipo": "str",
+        "nulos": 8,
+        "pct_nulos": 0.3,
+        "notas": [
+          "casing"
+        ]
+      },
+      {
+        "nombre": "AÑO ELECCIÓN",
+        "tipo": "float64",
+        "nulos": 8,
+        "pct_nulos": 0.3,
+        "notas": []
+      },
+      {
+        "nombre": "TOTAL DE CASILLAS",
+        "tipo": "float64",
+        "nulos": 1097,
+        "pct_nulos": 45.8,
+        "notas": []
+      },
+      {
+        "nombre": "Lista\nNominal",
+        "tipo": "float64",
+        "nulos": 1179,
+        "pct_nulos": 49.3,
+        "notas": []
+      },
+      {
+        "nombre": "PAN",
+        "tipo": "float64",
+        "nulos": 1171,
+        "pct_nulos": 48.9,
+        "notas": []
+      },
+      {
+        "nombre": "PRD",
+        "tipo": "float64",
+        "nulos": 1189,
+        "pct_nulos": 49.7,
+        "notas": []
+      },
+      {
+        "nombre": "CONVER",
+        "tipo": "float64",
+        "nulos": 1189,
+        "pct_nulos": 49.7,
+        "notas": []
+      },
+      {
+        "nombre": "PT",
+        "tipo": "float64",
+        "nulos": 1179,
+        "pct_nulos": 49.3,
+        "notas": []
+      },
+      {
+        "nombre": "PRI",
+        "tipo": "float64",
+        "nulos": 1189,
+        "pct_nulos": 49.7,
+        "notas": []
+      },
+      {
+        "nombre": "PVEM",
+        "tipo": "float64",
+        "nulos": 1189,
+        "pct_nulos": 49.7,
+        "notas": []
+      },
+      {
+        "nombre": "PARMEO",
+        "tipo": "float64",
+        "nulos": 1179,
+        "pct_nulos": 49.3,
+        "notas": []
+      },
+      {
+        "nombre": "PUP",
+        "tipo": "float64",
+        "nulos": 1180,
+        "pct_nulos": 49.3,
+        "notas": []
+      },
+      {
+        "nombre": "PNA",
+        "tipo": "float64",
+        "nulos": 1182,
+        "pct_nulos": 49.4,
+        "notas": []
+      },
+      {
+        "nombre": "No \nReg.",
+        "tipo": "float64",
+        "nulos": 1181,
+        "pct_nulos": 49.4,
+        "notas": []
+      },
+      {
+        "nombre": "T.Votos\nVálidos",
+        "tipo": "float64",
+        "nulos": 60,
+        "pct_nulos": 2.5,
+        "notas": []
+      },
+      {
+        "nombre": "Nulos",
+        "tipo": "float64",
+        "nulos": 1175,
+        "pct_nulos": 49.1,
+        "notas": []
+      },
+      {
+        "nombre": "V. Total\nEmitida",
+        "tipo": "object",
+        "nulos": 58,
+        "pct_nulos": 2.4,
+        "notas": []
+      },
+      {
+        "nombre": "T. de\nAbst.",
+        "tipo": "float64",
+        "nulos": 59,
+        "pct_nulos": 2.5,
+        "notas": []
+      },
+      {
+        "nombre": "% \nVot.",
+        "tipo": "float64",
+        "nulos": 1181,
+        "pct_nulos": 49.4,
+        "notas": []
+      },
+      {
+        "nombre": "% \nAbst.",
+        "tipo": "float64",
+        "nulos": 1181,
+        "pct_nulos": 49.4,
+        "notas": []
+      },
+      {
+        "nombre": "GANADOR",
+        "tipo": "float64",
+        "nulos": 9,
+        "pct_nulos": 0.4,
+        "notas": []
+      },
+      {
+        "nombre": "PARTIDO",
+        "tipo": "str",
+        "nulos": 2391,
+        "pct_nulos": 99.9,
+        "notas": []
+      },
+      {
+        "nombre": "co pts",
+        "tipo": "float64",
+        "nulos": 2393,
+        "pct_nulos": 100.0,
+        "notas": []
+      },
+      {
+        "nombre": "partido",
+        "tipo": "float64",
+        "nulos": 2393,
+        "pct_nulos": 100.0,
+        "notas": []
+      },
+      {
+        "nombre": "prob part",
+        "tipo": "float64",
+        "nulos": 2393,
+        "pct_nulos": 100.0,
+        "notas": []
+      },
+      {
+        "nombre": "%",
+        "tipo": "float64",
+        "nulos": 2393,
+        "pct_nulos": 100.0,
+        "notas": []
+      }
+    ]
+  }
+]

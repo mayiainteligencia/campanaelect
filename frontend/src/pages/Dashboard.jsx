@@ -2,32 +2,32 @@ import { useEffect, useState } from 'react'
 import { getDashboardMetrics, getAlerts, getMapData, getRecentActivity } from '@/data/dataSource'
 import { MX_STATES, MX_VIEWBOX } from '@/data/mexicoStates'
 import { JarvisPanel } from '@/components/ui/Jarvis'
+import { MayiaPanel } from '@/components/ui/Mayia'
 
-/* ── Helpers de color ───────────────────────────────────────────── */
-// Rampa de intensidad sobre fondo claro: verde → amarillo → naranja → rojo PRI
+/* ── Helpers de color — Modo Claro Institucional PRI ─────────────── */
 const levelColor = {
-  low:      'rgba(0,150,57,0.22)',
-  medium:   'rgba(217,158,0,0.30)',
-  high:     'rgba(234,88,12,0.35)',
-  critical: 'rgba(225,37,27,0.45)',
+  low:      'rgba(0,122,51,0.45)',      /* verde PRI */
+  medium:   'rgba(217,119,6,0.55)',     /* ámbar */
+  high:     'rgba(234,88,12,0.68)',     /* naranja */
+  critical: 'rgba(225,37,27,0.78)',     /* rojo PRI */
 }
 const levelStroke = {
-  low:      '#009639',
-  medium:   '#d99e00',
-  high:     '#ea580c',
-  critical: '#E1251B',
+  low:      '#007A33',   /* verde PRI */
+  medium:   '#B45309',   /* ámbar */
+  high:     '#C2410C',   /* naranja oscuro */
+  critical: '#E1251B',   /* rojo PRI */
 }
 const severityConfig = {
-  high:    { color: 'var(--color-red)',    bg: 'rgba(225,37,27,0.10)',  dot: '#E1251B', label: 'Alta'   },
-  medium:  { color: 'var(--color-yellow)', bg: 'rgba(217,158,0,0.12)',  dot: '#d99e00', label: 'Media'  },
-  info:    { color: 'var(--color-blue)',   bg: 'rgba(37,99,235,0.10)',  dot: '#2563eb', label: 'Info'   },
-  success: { color: 'var(--color-green)',  bg: 'rgba(0,150,57,0.12)',   dot: '#009639', label: 'OK'     },
+  high:    { color: '#E1251B', bg: 'rgba(225,37,27,0.08)',  dot: '#E1251B', label: 'Alta'   },
+  medium:  { color: '#B45309', bg: 'rgba(180,83,9,0.08)',   dot: '#B45309', label: 'Media'  },
+  info:    { color: '#1D4ED8', bg: 'rgba(29,78,216,0.08)',  dot: '#1D4ED8', label: 'Info'   },
+  success: { color: '#007A33', bg: 'rgba(0,122,51,0.08)',   dot: '#007A33', label: 'OK'     },
 }
 const metricColor = {
-  blue:   { bg: 'rgba(37,99,235,0.08)',  accent: '#2563eb',  glow: 'rgba(37,99,235,0.16)'  },
-  green:  { bg: 'rgba(0,150,57,0.08)',   accent: '#009639',  glow: 'rgba(0,150,57,0.16)'   },
-  yellow: { bg: 'rgba(217,158,0,0.10)',  accent: '#d99e00',  glow: 'rgba(217,158,0,0.16)'  },
-  red:    { bg: 'rgba(225,37,27,0.08)',  accent: '#E1251B',  glow: 'rgba(225,37,27,0.16)'  },
+  blue:   { bg: 'rgba(29,78,216,0.06)',  accent: '#1D4ED8',  glow: 'rgba(29,78,216,0.15)'  },
+  green:  { bg: 'rgba(0,122,51,0.06)',   accent: '#007A33',  glow: 'rgba(0,122,51,0.15)'   },
+  yellow: { bg: 'rgba(180,83,9,0.06)',   accent: '#B45309',  glow: 'rgba(180,83,9,0.15)'   },
+  red:    { bg: 'rgba(225,37,27,0.06)',  accent: '#E1251B',  glow: 'rgba(225,37,27,0.15)'  },
 }
 
 /* ── Mapa SVG de México ────────────────────────────────────────────
@@ -105,7 +105,7 @@ function MexicoMap({ data, onStateHover, hoveredState }) {
             d={d}
             fill={isHovered ? levelStroke[level] : levelColor[level]}
             stroke={isHovered ? levelStroke[level] : 'var(--color-border)'}
-            strokeWidth={isHovered ? 2 : 0.8}
+            strokeWidth={isHovered ? 2.2 : 1}
             style={{
               cursor: 'pointer',
               transition: 'fill 0.2s, stroke 0.2s',
@@ -295,20 +295,28 @@ export default function Dashboard() {
   return (
     <div style={{ ...sd.root, height: isTablet ? 'auto' : '100%' }}>
 
-      {/* ── Fila superior: 3 columnas ─────────────────────────── */}
+      {/* ── Grid HUD: 3 columnas ─────────────────────────────── */}
       <div style={{
           ...sd.mainGrid,
-          gridTemplateColumns: isTablet ? '1fr' : '220px 1fr 290px',
-          gridTemplateRows: isTablet ? 'auto' : undefined,
+          gridTemplateColumns: isMobileView ? '1fr' : isTablet ? '1fr' : 'minmax(260px,1fr) 2.2fr minmax(260px,1fr)',
           flex: isTablet ? 'none' : 1,
         }}>
 
-        {/* Columna izquierda — Alertas */}
-        <aside style={{
-          ...sd.leftCol,
-          maxHeight: isTablet ? 'none' : 'calc(100vh - 80px)',
-          overflow: isTablet ? 'visible' : 'hidden',
-        }}>
+        {/* ══ Columna izquierda — Alertas HUD ══════════════════ */}
+        <aside
+          className="hud-panel hud-red"
+          style={{
+            ...sd.leftCol,
+            maxHeight: isTablet ? 'none' : 'calc(100vh - 88px)',
+            overflow: isTablet ? 'visible' : 'hidden',
+          }}
+        >
+          {/* Esquinas decorativas HUD */}
+          <span className="hud-corner tl" />
+          <span className="hud-corner tr" />
+          <span className="hud-corner bl" />
+          <span className="hud-corner br" style={{ borderColor: 'var(--color-primary)' }} />
+
           <div style={sd.colHeader}>
             <span style={sd.colTitle}>Alertas del Sistema</span>
             <span style={sd.colBadge}>{alerts.length}</span>
@@ -318,66 +326,93 @@ export default function Dashboard() {
           </div>
         </aside>
 
-        {/* Centro — Mapa */}
+        {/* ══ Columna central — Mapa México ════════════════════ */}
         <section style={sd.centerCol}>
           <div style={sd.mapHeader}>
             <div>
-              <h2 style={sd.mapTitle}>Mapa Nacional</h2>
-              <p style={sd.mapSub}>Distribución de registros por estado</p>
+              <h2 style={sd.mapTitle}>Centro de Operaciones Nacional</h2>
+              <p style={sd.mapSub}>Distribución de actividad por estado · Tiempo real</p>
             </div>
             <div style={sd.mapLegend}>
               {Object.entries(levelStroke).map(([lvl, clr]) => (
                 <span key={lvl} style={sd.legendItem}>
-                  <span style={{ ...sd.legendDot, background: clr }} />
+                  <span style={{ ...sd.legendDot, background: clr, boxShadow: `0 0 5px ${clr}` }} />
                   <span style={sd.legendLabel}>{lvl.charAt(0).toUpperCase() + lvl.slice(1)}</span>
                 </span>
               ))}
             </div>
           </div>
 
+          {/* Contenedor del mapa */}
           <div style={sd.mapWrap}>
+            <div style={sd.mapGrid} aria-hidden="true" />
             <MexicoMap data={mapData} onStateHover={setHovered} hoveredState={hovered} />
+
+            {/* Esquinas HUD del mapa */}
+            <span className="hud-corner tl" style={{ '--hc-color': '#0ea5e9' }} />
+            <span className="hud-corner tr" style={{ '--hc-color': '#0ea5e9' }} />
+            <span className="hud-corner bl" style={{ '--hc-color': '#E1251B' }} />
+            <span className="hud-corner br" style={{ '--hc-color': '#E1251B' }} />
           </div>
 
-          {/* Tooltip estado hover */}
+          {/* Tooltip estado */}
           {hoveredState && (
             <div style={sd.tooltip}>
-              <strong style={{ color: levelStroke[hoveredState.level] }}>{hoveredState.name}</strong>
-              <span style={{ marginLeft: 8, color: 'var(--color-text-muted)', fontSize: 12 }}>
-                {hoveredState.value} registros · Nivel: {hoveredState.level}
+              <span style={{ ...sd.tooltipDot, background: levelStroke[hoveredState.level], boxShadow: `0 0 8px ${levelStroke[hoveredState.level]}` }} />
+              <strong style={{ color: '#ffffff', fontWeight: 800, fontSize: 14, textShadow: '0 1px 3px rgba(0,0,0,0.5)' }}>{hoveredState.name}</strong>
+              <span style={sd.tooltipInfo}>
+                {hoveredState.value.toLocaleString()} registros · Nivel {hoveredState.level}
               </span>
             </div>
           )}
 
-          {/* Actividad reciente bajo el mapa */}
-          <div style={sd.activityBox}>
-            <span style={sd.colTitle}>Actividad Reciente</span>
+          {/* Actividad reciente */}
+          <div className="hud-panel" style={sd.activityBox}>
+            <span className="hud-corner tl" />
+            <span className="hud-corner br" />
+            <div style={sd.colHeader}>
+              <span style={sd.colTitle}>Actividad Reciente</span>
+              <span style={sd.liveTag}>● LIVE</span>
+            </div>
             {activity.map((a, i) => <ActivityItem key={a.id} item={a} index={i} />)}
           </div>
         </section>
 
-        {/* Columna derecha — Asistente IA + KPIs */}
-        <aside style={{
-          ...sd.rightCol,
-          maxHeight: isTablet ? 'none' : 'calc(100vh - 80px)',
-          overflowY: isTablet ? 'visible' : 'auto',
-        }}>
+        {/* ══ Columna derecha — IA + KPIs HUD ══════════════════ */}
+        <aside
+          className="hud-panel hud-green"
+          style={{
+            ...sd.rightCol,
+            maxHeight: isTablet ? 'none' : 'calc(100vh - 88px)',
+            overflowY: isTablet ? 'visible' : 'auto',
+          }}
+        >
+          <span className="hud-corner tl" style={{ borderColor: '#00c857' }} />
+          <span className="hud-corner tr" />
+          <span className="hud-corner bl" />
+          <span className="hud-corner br" />
+
           <JarvisPanel mapData={mapData} alerts={alerts} />
+
+          <MayiaPanel section="dashboard" title="MAYIA" />
 
           <div style={sd.colHeader}>
             <span style={sd.colTitle}>Indicadores Clave</span>
-            <span style={{ fontSize: 10, color: 'var(--color-text-dim)' }}>En tiempo real</span>
+            <span style={{ fontSize: 10, color: 'var(--color-text-dim)' }}>Tiempo real</span>
           </div>
           {metrics.map((m, i) => <KpiCard key={m.id} metric={m} index={i} />)}
 
-          {/* Mini stat bar */}
+          {/* Cobertura nacional */}
           <div style={sd.statBar}>
-            <span style={sd.colTitle}>Cobertura nacional</span>
+            <div style={sd.colHeader}>
+              <span style={sd.colTitle}>Cobertura nacional</span>
+              <span style={{ fontSize: 12, color: '#00c857', fontWeight: 700 }}>74%</span>
+            </div>
             <div style={sd.barTrack}>
-              <div style={{ ...sd.barFill, width: '74%', background: 'var(--color-primary)' }} />
+              <div style={{ ...sd.barFill, width: '74%', background: 'linear-gradient(90deg, #00c857, #0ea5e9)' }} />
             </div>
             <div style={sd.barLabels}>
-              <span>74% activos</span><span>26% pendientes</span>
+              <span>Activos</span><span>Pendientes: 26%</span>
             </div>
           </div>
 
@@ -385,17 +420,17 @@ export default function Dashboard() {
           <div style={sd.distBox}>
             <span style={sd.colTitle}>Por nivel de actividad</span>
             {[
-              { label: 'Crítico', pct: 12, color: '#E1251B' },
-              { label: 'Alto',    pct: 38, color: '#ea580c' },
-              { label: 'Medio',   pct: 32, color: '#d99e00' },
-              { label: 'Bajo',    pct: 18, color: '#009639' },
+              { label: 'Crítico', pct: 12, color: '#ff3b35' },
+              { label: 'Alto',    pct: 38, color: '#fb923c' },
+              { label: 'Medio',   pct: 32, color: '#f59e0b' },
+              { label: 'Bajo',    pct: 18, color: '#00c857' },
             ].map(({ label, pct, color }) => (
               <div key={label} style={sd.distRow}>
                 <span style={{ ...sd.distLabel }}>{label}</span>
                 <div style={sd.distTrack}>
-                  <div style={{ ...sd.distFill, width: `${pct}%`, background: color }} />
+                  <div style={{ ...sd.distFill, width: `${pct}%`, background: color, boxShadow: `0 0 6px ${color}55` }} />
                 </div>
-                <span style={sd.distPct}>{pct}%</span>
+                <span style={{ ...sd.distPct, color }}>{pct}%</span>
               </div>
             ))}
           </div>
@@ -405,7 +440,7 @@ export default function Dashboard() {
   )
 }
 
-/* ── Estilos del Dashboard ──────────────────────────────────────── */
+/* ── Estilos del Dashboard HUD ──────────────────────────────────── */
 const sd = {
   root: {
     height: '100%',
@@ -416,8 +451,7 @@ const sd = {
   },
   mainGrid: {
     display: 'grid',
-    gridTemplateColumns: '220px 1fr 290px',
-    gap: 12,
+    gap: 10,
     flex: 1,
     minHeight: 0,
     alignItems: 'start',
@@ -425,102 +459,137 @@ const sd = {
   leftCol: {
     display: 'flex',
     flexDirection: 'column',
-    background: 'var(--color-surface)',
-    border: '1px solid var(--color-border)',
-    borderRadius: 12,
-    padding: 12,
-    animation: 'slideInLeft 0.4s ease both',
-    maxHeight: 'calc(100vh - 80px)',
+    padding: 14,
+    animation: 'slideInLeft 0.5s ease both',
+    maxHeight: 'calc(100vh - 88px)',
     overflow: 'hidden',
+    position: 'relative',
   },
   rightCol: {
     display: 'flex',
     flexDirection: 'column',
-    background: 'var(--color-surface)',
-    border: '1px solid var(--color-border)',
-    borderRadius: 12,
-    padding: 12,
-    animation: 'slideInRight 0.4s ease both',
-    maxHeight: 'calc(100vh - 80px)',
+    padding: 14,
+    animation: 'slideInRight 0.5s ease both',
+    maxHeight: 'calc(100vh - 88px)',
     overflowY: 'auto',
+    position: 'relative',
   },
   centerCol: {
     display: 'flex',
     flexDirection: 'column',
     gap: 10,
     minWidth: 0,
-    animation: 'fadeIn 0.5s ease both',
+    animation: 'fadeIn 0.6s ease both',
   },
   colHeader: {
     display: 'flex', alignItems: 'center', justifyContent: 'space-between',
     marginBottom: 10,
   },
   colTitle: {
-    fontSize: 11, fontWeight: 700, color: 'var(--color-text-muted)',
-    textTransform: 'uppercase', letterSpacing: '0.07em',
+    fontSize: 10, fontWeight: 700, color: 'var(--color-text-muted)',
+    textTransform: 'uppercase', letterSpacing: '0.10em',
   },
   colBadge: {
     fontSize: 10, fontWeight: 700, color: '#fff',
-    background: 'var(--color-primary)',
-    borderRadius: 20, padding: '1px 7px',
-    minWidth: 20, textAlign: 'center',
+    background: '#E1251B',
+    borderRadius: 20, padding: '2px 8px',
+    minWidth: 22, textAlign: 'center',
+    boxShadow: '0 0 8px rgba(225,37,27,0.5)',
+  },
+  liveTag: {
+    fontSize: 9, fontWeight: 700, color: '#00c857',
+    letterSpacing: '0.1em', animation: 'blink 2s ease-in-out infinite',
   },
   scrollArea: { flex: 1, overflowY: 'auto', overflowX: 'hidden' },
   mapHeader: {
     display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between',
     gap: 8, flexWrap: 'wrap',
   },
-  mapTitle: { fontSize: 15, fontWeight: 700, color: 'var(--color-text)', letterSpacing: '-0.02em' },
-  mapSub:   { fontSize: 11, color: 'var(--color-text-muted)', marginTop: 2 },
-  mapLegend: { display: 'flex', gap: 10, flexWrap: 'wrap', alignItems: 'center' },
-  legendItem: { display: 'flex', alignItems: 'center', gap: 4 },
-  legendDot:  { width: 8, height: 8, borderRadius: '50%', flexShrink: 0 },
-  legendLabel: { fontSize: 10, color: 'var(--color-text-muted)' },
+  mapTitle: {
+    fontSize: 13, fontWeight: 800, color: 'var(--color-text)',
+    letterSpacing: '-0.01em',
+    textShadow: '0 0 20px rgba(14,165,233,0.2)',
+  },
+  mapSub:   { fontSize: 10, color: 'var(--color-text-muted)', marginTop: 3, letterSpacing: '0.03em' },
+  mapLegend: { display: 'flex', gap: 12, flexWrap: 'wrap', alignItems: 'center' },
+  legendItem: { display: 'flex', alignItems: 'center', gap: 5 },
+  legendDot:  { width: 7, height: 7, borderRadius: '50%', flexShrink: 0 },
+  legendLabel: { fontSize: 10, color: 'var(--color-text-muted)', fontWeight: 500 },
   mapWrap: {
-    background: 'var(--color-surface)',
+    background: 'radial-gradient(ellipse at 50% 38%, #ffffff 0%, #eef1f5 100%)',
     border: '1px solid var(--color-border)',
     borderRadius: 12,
-    padding: 8,
+    padding: '6px',
     aspectRatio: '16/9',
     display: 'flex', alignItems: 'center', justifyContent: 'center',
     position: 'relative',
     overflow: 'hidden',
+    boxShadow: '0 10px 30px rgba(0,0,0,0.05) inset',
+  },
+  mapGrid: {
+    position: 'absolute',
+    inset: 0,
+    backgroundImage: 'linear-gradient(rgba(0,0,0,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.035) 1px, transparent 1px)',
+    backgroundSize: '30px 30px',
+    pointerEvents: 'none',
+    borderRadius: 12,
+  },
+  backBtn: {
+    position: 'absolute', top: 10, left: 10, zIndex: 3,
+    fontSize: 12, fontWeight: 700, color: 'var(--color-text)',
+    background: 'var(--color-surface)', border: '1px solid var(--color-border)',
+    borderRadius: 8, padding: '6px 12px', cursor: 'pointer',
+    boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
   },
   tooltip: {
-    background: 'var(--color-surface)',
-    border: '1px solid var(--color-border)',
+    display: 'flex',
+    alignItems: 'center',
+    gap: 8,
+    background: 'rgba(13,17,22,0.95)',
+    border: '1px solid rgba(255,255,255,0.14)',
     borderRadius: 8,
-    padding: '8px 12px',
+    padding: '7px 14px',
     fontSize: 12,
-    color: 'var(--color-text)',
+    color: '#ffffff',
     animation: 'fadeIn 0.15s ease',
+    backdropFilter: 'blur(12px)',
+  },
+  tooltipDot: {
+    width: 9, height: 9, borderRadius: '50%', flexShrink: 0,
+  },
+  tooltipInfo: {
+    color: 'rgba(255,255,255,0.85)', fontSize: 11.5, fontWeight: 600,
   },
   activityBox: {
-    background: 'var(--color-surface)',
-    border: '1px solid var(--color-border)',
-    borderRadius: 12,
-    padding: 12,
+    borderRadius: 10,
+    padding: '10px 12px',
+    position: 'relative',
   },
   statBar: {
     marginTop: 8,
-    background: 'rgba(225,37,27,0.05)',
-    border: '1px solid var(--color-primary-glow)',
+    background: 'rgba(0,200,87,0.06)',
+    border: '1px solid rgba(0,200,87,0.15)',
     borderRadius: 8,
     padding: '10px 12px',
     marginBottom: 8,
   },
-  barTrack: { height: 6, background: 'var(--color-surface-hover)', borderRadius: 3, margin: '8px 0 4px', overflow: 'hidden' },
-  barFill:  { height: '100%', borderRadius: 3, transition: 'width 1s ease' },
-  barLabels: { display: 'flex', justifyContent: 'space-between', fontSize: 10, color: 'var(--color-text-muted)' },
+  barTrack: {
+    height: 4,
+    background: 'rgba(255,255,255,0.05)',
+    borderRadius: 3, margin: '8px 0 4px', overflow: 'hidden',
+  },
+  barFill:  { height: '100%', borderRadius: 3, transition: 'width 1.2s ease' },
+  barLabels: { display: 'flex', justifyContent: 'space-between', fontSize: 10, color: 'var(--color-text-dim)' },
   distBox: {
-    background: 'var(--color-surface)',
+    background: 'rgba(255,255,255,0.02)',
     border: '1px solid var(--color-border)',
     borderRadius: 8,
     padding: '10px 12px',
+    marginTop: 4,
   },
   distRow: { display: 'flex', alignItems: 'center', gap: 8, marginTop: 8 },
-  distLabel: { fontSize: 11, color: 'var(--color-text-muted)', width: 46, flexShrink: 0 },
-  distTrack: { flex: 1, height: 5, background: 'var(--color-surface-hover)', borderRadius: 3, overflow: 'hidden' },
-  distFill:  { height: '100%', borderRadius: 3, transition: 'width 1.2s ease' },
-  distPct:   { fontSize: 11, color: 'var(--color-text-muted)', width: 28, textAlign: 'right', flexShrink: 0 },
+  distLabel: { fontSize: 10, color: 'var(--color-text-muted)', width: 44, flexShrink: 0 },
+  distTrack: { flex: 1, height: 4, background: 'rgba(255,255,255,0.05)', borderRadius: 3, overflow: 'hidden' },
+  distFill:  { height: '100%', borderRadius: 3, transition: 'width 1.4s ease' },
+  distPct:   { fontSize: 10, width: 28, textAlign: 'right', flexShrink: 0, fontWeight: 600 },
 }

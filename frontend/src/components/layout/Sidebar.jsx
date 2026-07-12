@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import config from '@/config/config'
+import { SHEETS } from '@/data/datasets'
 
 /* ── Íconos SVG inline ────────────────────────────────────────── */
 const IconDashboard = () => (
@@ -18,6 +19,11 @@ const IconAlertas = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
     <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
     <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+  </svg>
+)
+const IconDatos = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+    <ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/>
   </svg>
 )
 const IconConfig = () => (
@@ -45,6 +51,36 @@ const nav = [
   { to: '/configuracion', label: 'Configuración',Icon: IconConfig },
 ]
 
+// Una entrada por cada hoja del Excel, en minúscula (van bajo el menú principal).
+const datosNav = SHEETS.map(sh => ({ to: `/datos/${sh.key}`, label: sh.hoja.toLowerCase(), Icon: IconDatos }))
+
+/* Un link de navegación (reutilizado por ambos grupos). */
+function renderLink({ to, label, Icon, end }, isCollapsed) {
+  return (
+    <NavLink
+      key={to}
+      to={to}
+      end={end}
+      style={({ isActive }) => ({
+        ...s.link,
+        ...(isActive ? s.linkActive : {}),
+        justifyContent: isCollapsed ? 'center' : 'flex-start',
+      })}
+      title={isCollapsed ? label : undefined}
+    >
+      {({ isActive }) => (
+        <>
+          <span style={{ ...s.iconWrap, color: isActive ? 'var(--color-primary)' : 'var(--color-text-muted)' }}>
+            <Icon />
+          </span>
+          <span style={{ ...s.linkLabel, ...(isCollapsed ? s.hidden : {}) }}>{label}</span>
+          {isActive && !isCollapsed && <span style={s.activeDot} />}
+        </>
+      )}
+    </NavLink>
+  )
+}
+
 /* ── Component ─────────────────────────────────────────────────── */
 export default function Sidebar({ collapsed, mobileOpen, isMobile }) {
   const isCollapsed = !isMobile && collapsed
@@ -66,38 +102,12 @@ export default function Sidebar({ collapsed, mobileOpen, isMobile }) {
       {/* Divider */}
       <div style={s.divider} />
 
-      {/* Section label */}
-      {!isCollapsed && (
-        <span style={s.sectionLabel}>MENÚ PRINCIPAL</span>
-      )}
-
-      {/* Nav links */}
+      {/* Menú principal (incluye las fuentes de datos, abajo) */}
+      {!isCollapsed && <span style={s.sectionLabel}>MENÚ PRINCIPAL</span>}
       <nav style={s.nav}>
-        {nav.map(({ to, label, Icon, end }) => (
-          <NavLink
-            key={to}
-            to={to}
-            end={end}
-            style={({ isActive }) => ({
-              ...s.link,
-              ...(isActive ? s.linkActive : {}),
-              justifyContent: isCollapsed ? 'center' : 'flex-start',
-            })}
-            title={isCollapsed ? label : undefined}
-          >
-            {({ isActive }) => (
-              <>
-                <span style={{ ...s.iconWrap, color: isActive ? 'var(--color-primary)' : 'var(--color-text-muted)' }}>
-                  <Icon />
-                </span>
-                <span style={{ ...s.linkLabel, ...( isCollapsed ? s.hidden : {}) }}>
-                  {label}
-                </span>
-                {isActive && !isCollapsed && <span style={s.activeDot} />}
-              </>
-            )}
-          </NavLink>
-        ))}
+        {nav.map(item => renderLink(item, isCollapsed))}
+        {!isCollapsed && <span style={s.subLabel}>fuentes de datos</span>}
+        {datosNav.map(item => renderLink(item, isCollapsed))}
       </nav>
 
       {/* Footer */}
@@ -148,6 +158,14 @@ const s = {
     letterSpacing: '0.08em',
     padding: '10px 16px 6px',
     textTransform: 'uppercase',
+  },
+  subLabel: {
+    display: 'block',
+    fontSize: 10,
+    fontWeight: 600,
+    color: 'var(--color-text-dim)',
+    letterSpacing: '0.04em',
+    padding: '12px 16px 4px',
   },
   nav: {
     display: 'flex',
