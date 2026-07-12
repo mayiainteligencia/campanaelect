@@ -167,3 +167,25 @@ un **dark dashboard premium** inspirado en dashboards analíticos modernos.
 | ≤ 1024px | Sidebar auto-colapsado (solo iconos) |
 | ≤ 768px | Sidebar overlay, header simplificado |
 | ≤ 480px | Padding reducido, layout apilado |
+
+---
+
+## Changelog — Experiencia Inmersiva MAYIA y Refinamientos v1.2 (2026-07-12)
+
+### Modo Inmersivo de MAYIA (Jarvis)
+- **Experiencia a Pantalla Completa:** Al hacer clic en el átomo del Header, se invoca un overlay inmersivo usando `createPortal`, el cual oscurece y difumina el fondo del sistema (`backdrop-filter: blur(12px)`).
+- **Conciencia de Contexto:** El asistente inteligente de voz detecta en qué sección del dashboard se encuentra el usuario (vía `useLocation`) para responder correctamente preguntas de ubicación ("¿dónde estoy?").
+- **UI Tipográfica:** Las transcripciones de voz se muestran en tamaño gigante heroico en el centro de la pantalla.
+- **Navegación Fluida:** El modo inmersivo se cierra automáticamente (con ligero retraso para feedback auditivo y visual) al ejecutar con éxito comandos de navegación hacia otras vistas.
+
+### Rediseño Premium de Login
+- Implementación de un diseño de pantalla dividida corporativo y elegante.
+- Integración de componente `MeshGradient` animado en fondo oscuro para dar una primera impresión altamente tecnológica.
+
+### Sistema Global de Bento Grid y Responsive
+- **`.bento-grid` global:** Centralización de la lógica del layout a `global.css`. Ahora las páginas (`Datos`, `Reportes`, `Alertas`, `Configuracion`) comparten esta estructura, asegurando un apilamiento perfecto a 1 sola columna en dispositivos móviles.
+- **Notch a prueba de desbordes:** Ajustes con `text-overflow: ellipsis`, `flex` y anclaje al centro para asegurar que el componente dinámico del "Notch" nunca desborde ni rompa el diseño del header en pantallas pequeñas.
+
+### Notificaciones UI y Seguridad
+- **Pila Móvil Estilo Instagram:** Las notificaciones push o insights de MAYIA (`ToastStack`) fueron reprogramadas; en la versión móvil se anclan a la parte superior-central de la pantalla descendiendo en cascada hacia abajo, mejorando mucho el alcance visual.
+- **Provider de Confirmación Global:** Implementación de `ConfirmModal.jsx` y su Context Provider para interceptar llamadas destructivas o vitales, obligando al usuario a confirmar en una ventana modal uniforme.
