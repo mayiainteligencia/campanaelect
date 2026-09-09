@@ -12,8 +12,8 @@ export const ESTADO = 'Oaxaca'
 
 // Partidos presentes en los datos, en orden y con color de marca.
 export const PARTIES = [
+  { key: 'PAN',    name: 'PAN',    color: '#0055A5' },
   { key: 'PRI',    name: 'PRI',    color: '#E1251B' },
-  { key: 'PAN',    name: 'PAN',    color: '#0a4a9e' },
   { key: 'PRD',    name: 'PRD',    color: '#f2c200' },
   { key: 'PT',     name: 'PT',     color: '#c0161c' },
   { key: 'CONVER', name: 'CONVER', color: '#f58220' },
@@ -90,22 +90,22 @@ export function yearSummary(year) {
     abstencion: abstProm,
     votes,
     won,
-    priVotos: votes.PRI,
-    priShare: totalVotos ? (votes.PRI / totalVotos) * 100 : 0,
-    priMunicipios: won.PRI,
+    panVotos: votes.PAN,
+    panShare: totalVotos ? (votes.PAN / totalVotos) * 100 : 0,
+    panMunicipios: won.PAN,
   }
 }
 
-// Tendencia del PRI por año (share de voto y municipios ganados).
-export function priTrend() {
+// Tendencia del PAN por año (share de voto y municipios ganados).
+export function panTrend() {
   return YEARS_WITH_DATA.map(y => {
     const s = yearSummary(y)
-    return { year: y, share: s.priShare, municipios: s.priMunicipios, votos: s.priVotos }
+    return { year: y, share: s.panShare, municipios: s.panMunicipios, votos: s.panVotos }
   })
 }
 
 // Top municipios por votos de un partido en un año.
-export function topMunicipios(year, party = 'PRI', n = 8) {
+export function topMunicipios(year, party = 'PAN', n = 8) {
   return rowsOf(year)
     .map(r => ({ municipio: r.Municipio, votos: num(r[party]), ganador: winnerOf(r) }))
     .filter(m => m.municipio)
@@ -113,13 +113,13 @@ export function topMunicipios(year, party = 'PRI', n = 8) {
     .slice(0, n)
 }
 
-// Municipios de OPORTUNIDAD: donde el PRI NO ganó pero tiene votación fuerte.
+// Municipios de OPORTUNIDAD: donde el PAN NO ganó pero tiene votación fuerte.
 export function oportunidades(year, n = 6) {
   return rowsOf(year)
-    .filter(r => r.Municipio && winnerOf(r) && winnerOf(r) !== 'PRI')
-    .map(r => ({ municipio: r.Municipio, ganador: winnerOf(r), pri: num(r.PRI), ganadorVotos: num(r[winnerOf(r)]) }))
-    .filter(m => m.pri > 0)
-    .map(m => ({ ...m, margen: m.ganadorVotos - m.pri }))
+    .filter(r => r.Municipio && winnerOf(r) && winnerOf(r) !== 'PAN')
+    .map(r => ({ municipio: r.Municipio, ganador: winnerOf(r), pan: num(r.PAN), ganadorVotos: num(r[winnerOf(r)]) }))
+    .filter(m => m.pan > 0)
+    .map(m => ({ ...m, margen: m.ganadorVotos - m.pan }))
     .sort((a, b) => a.margen - b.margen)   // más cerca de ganar primero
     .slice(0, n)
 }

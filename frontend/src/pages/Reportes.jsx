@@ -3,7 +3,7 @@ import StatCard from '@/components/ui/StatCard'
 import Donut from '@/components/ui/Donut'
 import { MayiaPanel } from '@/components/ui/Mayia'
 import {
-  getPartyResults, yearSummary, topMunicipios, priTrend,
+  getPartyResults, yearSummary, topMunicipios, panTrend,
   YEARS_WITH_DATA, DEFAULT_YEAR, ESTADO, partyColor, fmt, fmtPct,
 } from '@/data/dataSource'
 
@@ -53,9 +53,9 @@ function AreaChart({ trend }) {
   return (
     <svg viewBox={`0 0 ${w} ${h}`} style={{ width: '100%', height: 'auto' }}>
       <defs>
-        <linearGradient id="priAreaGrad" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="#E1251B" stopOpacity="0.20" />
-          <stop offset="100%" stopColor="#E1251B" stopOpacity="0.02" />
+        <linearGradient id="panAreaGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor="#0055A5" stopOpacity="0.20" />
+          <stop offset="100%" stopColor="#0055A5" stopOpacity="0.02" />
         </linearGradient>
       </defs>
       {/* Grid lines */}
@@ -67,18 +67,18 @@ function AreaChart({ trend }) {
         </g>
       ))}
       {/* Área rellena */}
-      <polygon points={area} fill="url(#priAreaGrad)" />
+      <polygon points={area} fill="url(#panAreaGrad)" />
       {/* Línea principal */}
       <polyline className="draw-line" points={pts} fill="none"
-        stroke="#E1251B" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round" />
+        stroke="#0055A5" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round" />
       {/* Nodos y etiquetas */}
       {trend.map((t, i) => (
         <g key={t.year}>
           <circle cx={xs[i]} cy={yv(t.share)} r={4.5}
-            fill="#fff" stroke="#E1251B" strokeWidth={2.5} />
+            fill="#fff" stroke="#0055A5" strokeWidth={2.5} />
           <text x={xs[i]} y={h - 5} fontSize="9" fill="#718096" textAnchor="middle">{t.year}</text>
           <text x={xs[i]} y={yv(t.share) - 9} fontSize="10" fontWeight="800"
-            fill="#E1251B" textAnchor="middle">{fmtPct(t.share)}</text>
+            fill="#0055A5" textAnchor="middle">{fmtPct(t.share)}</text>
         </g>
       ))}
     </svg>
@@ -116,7 +116,7 @@ function BarsPartidos({ data }) {
 function TopMunRow({ m, rank, year }) {
   return (
     <div style={sRow.row}>
-      <div style={{ ...sRow.rank, background: rank <= 3 ? 'rgba(225,37,27,0.08)' : 'rgba(0,0,0,0.04)', color: rank <= 3 ? '#E1251B' : '#718096' }}>
+      <div style={{ ...sRow.rank, background: rank <= 3 ? 'rgba(0,85,165,0.08)' : 'rgba(0,0,0,0.04)', color: rank <= 3 ? '#0055A5' : '#718096' }}>
         {rank}
       </div>
       <div style={{ flex: 1, minWidth: 0 }}>
@@ -124,7 +124,7 @@ function TopMunRow({ m, rank, year }) {
           {m.municipio}
         </div>
         <div style={{ fontSize: 11, color: '#718096', marginTop: 1 }}>
-          {fmt(m.votos)} votos PRI
+          {fmt(m.votos)} votos PAN
         </div>
       </div>
       <span style={{ ...sRow.chip, background: partyColor(m.ganador) }}>
@@ -144,12 +144,12 @@ export default function Reportes() {
   const [year, setYear] = useState(DEFAULT_YEAR)
   const s = yearSummary(year)
   const partidos = getPartyResults(year)
-  const top = topMunicipios(year, 'PRI', 8)
-  const trend = priTrend()
+  const top = topMunicipios(year, 'PAN', 8)
+  const trend = panTrend()
   const donutData = partidos.filter(p => p.municipios > 0)
     .map(p => ({ label: p.name, value: p.municipios, color: p.color }))
 
-  const priPct = ((s.priMunicipios / s.municipios) * 100) || 0
+  const panPct = ((s.panMunicipios / s.municipios) * 100) || 0
   const partPct = 100 - (s.abstencion || 0)
 
   return (
@@ -183,28 +183,28 @@ export default function Reportes() {
           <p style={sr.cellTitle}>Indicadores Clave · {year}</p>
           <div style={{ display: 'flex', gap: 16, justifyContent: 'space-around', alignItems: 'center', flex: 1 }}>
             <CircularRing
-              pct={priPct}
+              pct={panPct}
               size={96}
-              color="#E1251B"
-              value={`${priPct.toFixed(0)}%`}
+              color="#0055A5"
+              value={`${panPct.toFixed(0)}%`}
               sub="municipios"
-              label="Alcance PRI"
+              label="Alcance PAN"
             />
             <CircularRing
               pct={partPct}
               size={96}
-              color="#007A33"
+              color="#0E7C3A"
               value={`${partPct.toFixed(0)}%`}
               sub="participación"
               label="Movilización"
             />
             <CircularRing
-              pct={Math.min((s.priMunicipios / 570) * 100, 100)}
+              pct={Math.min((s.panMunicipios / 570) * 100, 100)}
               size={96}
-              color="#1D4ED8"
-              value={fmt(s.priMunicipios)}
+              color="#1B3A6B"
+              value={fmt(s.panMunicipios)}
               sub="mun."
-              label="Ganados PRI"
+              label="Ganados PAN"
             />
           </div>
           {/* Mini stats debajo */}
@@ -220,8 +220,8 @@ export default function Reportes() {
             </div>
             <div style={sr.miniDivider} />
             <div style={sr.miniStat}>
-              <span style={sr.miniVal}>{fmtPct(s.priShare)}</span>
-              <span style={sr.miniLab}>Share PRI</span>
+              <span style={sr.miniVal}>{fmtPct(s.panShare)}</span>
+              <span style={sr.miniLab}>Share PAN</span>
             </div>
           </div>
         </div>
@@ -234,14 +234,14 @@ export default function Reportes() {
           </div>
         </div>
 
-        {/* ── Celda C: Tendencia PRI histórica (span 2 cols) ──────── */}
+        {/* ── Celda C: Tendencia PAN histórica (span 2 cols) ──────── */}
         <div className="lift" style={{ ...sr.cell, ...sr.cellTrend }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-            <p style={sr.cellTitle}>Tendencia histórica PRI</p>
+            <p style={sr.cellTitle}>Tendencia histórica PAN</p>
             <div style={{ display: 'flex', gap: 12 }}>
               {trend.map(t => (
                 <div key={t.year} style={{ textAlign: 'center' }}>
-                  <div style={{ fontSize: 13, fontWeight: 800, color: '#E1251B' }}>{fmt(t.municipios)}</div>
+                  <div style={{ fontSize: 13, fontWeight: 800, color: '#0055A5' }}>{fmt(t.municipios)}</div>
                   <div style={{ fontSize: 9, color: '#A0AEC0', textTransform: 'uppercase', letterSpacing: '0.06em' }}>{t.year}</div>
                 </div>
               ))}
@@ -256,10 +256,10 @@ export default function Reportes() {
           <BarsPartidos data={partidos} />
         </div>
 
-        {/* ── Celda E: Top municipios PRI ─────────────────────────── */}
+        {/* ── Celda E: Top municipios PAN ─────────────────────────── */}
         <div className="lift" style={{ ...sr.cell, ...sr.cellTop }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <p style={sr.cellTitle}>Top municipios PRI · {year}</p>
+            <p style={sr.cellTitle}>Top municipios PAN · {year}</p>
             <span style={sr.badge}>{top.length} registros</span>
           </div>
           <div style={{ flex: 1, overflowY: 'auto' }}>
@@ -281,7 +281,7 @@ const sr = {
     justifyContent: 'space-between', gap: 12, flexWrap: 'wrap',
   },
   kicker: {
-    fontSize: 10, fontWeight: 700, color: '#E1251B',
+    fontSize: 10, fontWeight: 700, color: '#0055A5',
     textTransform: 'uppercase', letterSpacing: '0.10em', marginBottom: 2,
   },
   title: { fontSize: 22, fontWeight: 800, color: '#1A202C', letterSpacing: '-0.02em' },
@@ -293,8 +293,8 @@ const sr = {
     color: '#4A5568', cursor: 'pointer', transition: 'all 0.15s ease',
   },
   yearBtnActive: {
-    background: '#E1251B', color: '#fff',
-    borderColor: '#E1251B', boxShadow: '0 4px 12px rgba(225,37,27,0.25)',
+    background: '#0055A5', color: '#fff',
+    borderColor: '#0055A5', boxShadow: '0 4px 12px rgba(0,85,165,0.25)',
   },
 
   /* ── Bento Grid ── */
@@ -353,6 +353,6 @@ const sr = {
 
   badge: {
     fontSize: 10, fontWeight: 700, padding: '3px 10px',
-    background: 'rgba(225,37,27,0.08)', color: '#E1251B', borderRadius: 20,
+    background: 'rgba(0,85,165,0.08)', color: '#0055A5', borderRadius: 20,
   },
 }

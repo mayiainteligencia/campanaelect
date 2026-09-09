@@ -4,30 +4,30 @@ import { MX_STATES, MX_VIEWBOX } from '@/data/mexicoStates'
 import { JarvisPanel } from '@/components/ui/Jarvis'
 import { MayiaPanel } from '@/components/ui/Mayia'
 
-/* ── Helpers de color — Modo Claro Institucional PRI ─────────────── */
+/* ── Helpers de color — Modo Claro Institucional PAN ─────────────── */
 const levelColor = {
-  low:      'rgba(0,122,51,0.45)',      /* verde PRI */
+  low:      'rgba(14,124,58,0.45)',      /* verde */
   medium:   'rgba(217,119,6,0.55)',     /* ámbar */
   high:     'rgba(234,88,12,0.68)',     /* naranja */
-  critical: 'rgba(225,37,27,0.78)',     /* rojo PRI */
+  critical: 'rgba(0,85,165,0.78)',      /* azul PAN */
 }
 const levelStroke = {
-  low:      '#007A33',   /* verde PRI */
+  low:      '#0E7C3A',   /* verde */
   medium:   '#B45309',   /* ámbar */
   high:     '#C2410C',   /* naranja oscuro */
-  critical: '#E1251B',   /* rojo PRI */
+  critical: '#0055A5',   /* azul PAN */
 }
 const severityConfig = {
-  high:    { color: '#E1251B', bg: 'rgba(225,37,27,0.08)',  dot: '#E1251B', label: 'Alta'   },
+  high:    { color: '#DC2626', bg: 'rgba(220,38,38,0.08)',  dot: '#DC2626', label: 'Alta'   },
   medium:  { color: '#B45309', bg: 'rgba(180,83,9,0.08)',   dot: '#B45309', label: 'Media'  },
-  info:    { color: '#1D4ED8', bg: 'rgba(29,78,216,0.08)',  dot: '#1D4ED8', label: 'Info'   },
-  success: { color: '#007A33', bg: 'rgba(0,122,51,0.08)',   dot: '#007A33', label: 'OK'     },
+  info:    { color: '#0055A5', bg: 'rgba(0,85,165,0.08)',   dot: '#0055A5', label: 'Info'   },
+  success: { color: '#0E7C3A', bg: 'rgba(14,124,58,0.08)',  dot: '#0E7C3A', label: 'OK'     },
 }
 const metricColor = {
-  blue:   { bg: 'rgba(29,78,216,0.06)',  accent: '#1D4ED8',  glow: 'rgba(29,78,216,0.15)'  },
-  green:  { bg: 'rgba(0,122,51,0.06)',   accent: '#007A33',  glow: 'rgba(0,122,51,0.15)'   },
+  blue:   { bg: 'rgba(0,85,165,0.06)',   accent: '#0055A5',  glow: 'rgba(0,85,165,0.15)'   },
+  green:  { bg: 'rgba(14,124,58,0.06)',  accent: '#0E7C3A',  glow: 'rgba(14,124,58,0.15)'  },
   yellow: { bg: 'rgba(180,83,9,0.06)',   accent: '#B45309',  glow: 'rgba(180,83,9,0.15)'   },
-  red:    { bg: 'rgba(225,37,27,0.06)',  accent: '#E1251B',  glow: 'rgba(225,37,27,0.15)'  },
+  red:    { bg: 'rgba(220,38,38,0.06)',  accent: '#DC2626',  glow: 'rgba(220,38,38,0.15)'  },
 }
 
 /* ── Mapa SVG de México ────────────────────────────────────────────
@@ -68,7 +68,7 @@ function MexicoMap({ data, onStateHover, hoveredState }) {
       {/* Fondo del mapa */}
       <defs>
         <radialGradient id="mapGlow" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stopColor="rgba(225,37,27,0.07)" />
+          <stop offset="0%" stopColor="rgba(0,85,165,0.07)" />
           <stop offset="100%" stopColor="transparent" />
         </radialGradient>
         <filter id="glow">
@@ -126,8 +126,8 @@ function MexicoMap({ data, onStateHover, hoveredState }) {
         const [cx, cy] = pathCentroid(state.d)
         return (
           <g key={d.id}>
-            <circle cx={cx} cy={cy} r={10} fill="rgba(225,37,27,0.18)" style={{ animation: 'pulse 2s ease-in-out infinite' }} />
-            <circle cx={cx} cy={cy} r={4}  fill="#E1251B" filter="url(#glow)" />
+            <circle cx={cx} cy={cy} r={10} fill="rgba(0,85,165,0.18)" style={{ animation: 'pulse 2s ease-in-out infinite' }} />
+            <circle cx={cx} cy={cy} r={4}  fill="#0055A5" filter="url(#glow)" />
           </g>
         )
       })}
@@ -349,10 +349,10 @@ export default function Dashboard() {
             <MexicoMap data={mapData} onStateHover={setHovered} hoveredState={hovered} />
 
             {/* Esquinas HUD del mapa */}
-            <span className="hud-corner tl" style={{ '--hc-color': '#0ea5e9' }} />
-            <span className="hud-corner tr" style={{ '--hc-color': '#0ea5e9' }} />
-            <span className="hud-corner bl" style={{ '--hc-color': '#E1251B' }} />
-            <span className="hud-corner br" style={{ '--hc-color': '#E1251B' }} />
+            <span className="hud-corner tl" style={{ '--hc-color': '#0055A5' }} />
+            <span className="hud-corner tr" style={{ '--hc-color': '#0055A5' }} />
+            <span className="hud-corner bl" style={{ '--hc-color': '#1B3A6B' }} />
+            <span className="hud-corner br" style={{ '--hc-color': '#1B3A6B' }} />
           </div>
 
           {/* Tooltip estado */}
@@ -387,7 +387,7 @@ export default function Dashboard() {
             overflowY: isTablet ? 'visible' : 'auto',
           }}
         >
-          <span className="hud-corner tl" style={{ borderColor: '#00c857' }} />
+          <span className="hud-corner tl" style={{ borderColor: '#0055A5' }} />
           <span className="hud-corner tr" />
           <span className="hud-corner bl" />
           <span className="hud-corner br" />
@@ -406,10 +406,10 @@ export default function Dashboard() {
           <div style={sd.statBar}>
             <div style={sd.colHeader}>
               <span style={sd.colTitle}>Cobertura nacional</span>
-              <span style={{ fontSize: 12, color: '#00c857', fontWeight: 700 }}>74%</span>
+              <span style={{ fontSize: 12, color: '#0055A5', fontWeight: 700 }}>74%</span>
             </div>
             <div style={sd.barTrack}>
-              <div style={{ ...sd.barFill, width: '74%', background: 'linear-gradient(90deg, #00c857, #0ea5e9)' }} />
+              <div style={{ ...sd.barFill, width: '74%', background: 'linear-gradient(90deg, #0055A5, #1B3A6B)' }} />
             </div>
             <div style={sd.barLabels}>
               <span>Activos</span><span>Pendientes: 26%</span>
@@ -420,10 +420,10 @@ export default function Dashboard() {
           <div style={sd.distBox}>
             <span style={sd.colTitle}>Por nivel de actividad</span>
             {[
-              { label: 'Crítico', pct: 12, color: '#ff3b35' },
+              { label: 'Crítico', pct: 12, color: '#DC2626' },
               { label: 'Alto',    pct: 38, color: '#fb923c' },
               { label: 'Medio',   pct: 32, color: '#f59e0b' },
-              { label: 'Bajo',    pct: 18, color: '#00c857' },
+              { label: 'Bajo',    pct: 18, color: '#0E7C3A' },
             ].map(({ label, pct, color }) => (
               <div key={label} style={sd.distRow}>
                 <span style={{ ...sd.distLabel }}>{label}</span>
@@ -491,13 +491,13 @@ const sd = {
   },
   colBadge: {
     fontSize: 10, fontWeight: 700, color: '#fff',
-    background: '#E1251B',
+    background: '#0055A5',
     borderRadius: 20, padding: '2px 8px',
     minWidth: 22, textAlign: 'center',
-    boxShadow: '0 0 8px rgba(225,37,27,0.5)',
+    boxShadow: '0 0 8px rgba(0,85,165,0.5)',
   },
   liveTag: {
-    fontSize: 9, fontWeight: 700, color: '#00c857',
+    fontSize: 9, fontWeight: 700, color: '#0055A5',
     letterSpacing: '0.1em', animation: 'blink 2s ease-in-out infinite',
   },
   scrollArea: { flex: 1, overflowY: 'auto', overflowX: 'hidden' },
@@ -508,7 +508,7 @@ const sd = {
   mapTitle: {
     fontSize: 13, fontWeight: 800, color: 'var(--color-text)',
     letterSpacing: '-0.01em',
-    textShadow: '0 0 20px rgba(14,165,233,0.2)',
+    textShadow: '0 0 20px rgba(0,85,165,0.2)',
   },
   mapSub:   { fontSize: 10, color: 'var(--color-text-muted)', marginTop: 3, letterSpacing: '0.03em' },
   mapLegend: { display: 'flex', gap: 12, flexWrap: 'wrap', alignItems: 'center' },
@@ -567,8 +567,8 @@ const sd = {
   },
   statBar: {
     marginTop: 8,
-    background: 'rgba(0,200,87,0.06)',
-    border: '1px solid rgba(0,200,87,0.15)',
+    background: 'rgba(0,85,165,0.06)',
+    border: '1px solid rgba(0,85,165,0.15)',
     borderRadius: 8,
     padding: '10px 12px',
     marginBottom: 8,

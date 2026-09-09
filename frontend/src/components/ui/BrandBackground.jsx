@@ -2,7 +2,7 @@ import { MeshGradient } from '@paper-design/shaders-react'
 import config from '@/config/config'
 
 // Fondo animado (MeshGradient shader) para toda la app. Los colores salen del
-// branding: base blanca/crema + tintes suaves de rojo y verde PRI. Al cambiar
+// branding: base blanca/crema + tintes suaves de azul PAN. Al cambiar
 // la marca en config.js, el fondo se reajusta solo.
 
 // Mezcla un hex hacia blanco (t=0 original, t=1 blanco).
@@ -25,10 +25,10 @@ export default function BrandBackground({ speed = 0.25 }) {
   const colors = [
     '#FFFFFF',
     bg.startsWith('#') ? bg : '#F4F6F8',
-    toward(primary, 0.78),   // rojo muy claro
-    toward(accent, 0.80),    // verde muy claro
-    toward(primary, 0.55),   // rojo claro
-    toward(accent, 0.58),    // verde claro
+    toward(primary, 0.78),   // azul muy claro
+    toward(accent, 0.80),    // azul oscuro muy claro
+    toward(primary, 0.55),   // azul claro
+    toward(accent, 0.58),    // azul oscuro claro
   ]
   return (
     <div style={wrap} aria-hidden="true">

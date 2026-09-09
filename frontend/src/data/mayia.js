@@ -5,7 +5,7 @@
 
 import {
   DEFAULT_YEAR, ESTADO, yearSummary, municipiosWon, oportunidades,
-  priTrend, representantesResumen, topMunicipios, fmt, fmtPct, fmtMoney,
+  panTrend, representantesResumen, topMunicipios, fmt, fmtPct, fmtMoney,
 } from './electoral'
 
 // kind → etiqueta y tono de color (sin emojis; el color/etiqueta comunica).
@@ -16,9 +16,9 @@ export const KIND = {
   analisis:   { label: 'Análisis',   tone: 'gray' },
 }
 
-// Proyección simple del PRI a partir de la tendencia histórica (1998→último).
-function proyeccionPRI() {
-  const t = priTrend()
+// Proyección simple del PAN a partir de la tendencia histórica (1998→último).
+function proyeccionPAN() {
+  const t = panTrend()
   if (t.length < 2) return null
   const a = t[0], b = t[t.length - 1]
   const años = b.year - a.year || 1
@@ -31,27 +31,27 @@ function proyeccionPRI() {
 export function mayiaInsights() {
   const s = yearSummary(DEFAULT_YEAR)
   const won = municipiosWon(DEFAULT_YEAR)
-  const seg = Object.entries(won).filter(([k]) => k !== 'PRI').sort((a, b) => b[1] - a[1])[0]
+  const seg = Object.entries(won).filter(([k]) => k !== 'PAN').sort((a, b) => b[1] - a[1])[0]
   const cerrados = oportunidades(DEFAULT_YEAR, 60).filter(m => m.margen <= 5)
-  const topPri = topMunicipios(DEFAULT_YEAR, 'PRI', 1)[0]
+  const topPan = topMunicipios(DEFAULT_YEAR, 'PAN', 1)[0]
   const reps = representantesResumen()
-  const proj = proyeccionPRI()
+  const proj = proyeccionPAN()
 
   const list = [
     {
       id: 'ana-dominio', section: 'dashboard', kind: 'analisis',
-      title: `PRI gobierna ${fmt(won.PRI)} de ${fmt(s.municipios)} municipios`,
-      detail: `En ${DEFAULT_YEAR} el PRI ganó el ${((won.PRI / s.municipios) * 100).toFixed(0)}% de los municipios de ${ESTADO} con ${fmtPct(s.priShare)} de la votación.`,
+      title: `PAN obtuvo ${fmt(won.PAN)} de ${fmt(s.municipios)} municipios`,
+      detail: `En ${DEFAULT_YEAR} el PAN ganó el ${((won.PAN / s.municipios) * 100).toFixed(0)}% de los municipios de ${ESTADO} con ${fmtPct(s.panShare)} de la votación.`,
     },
     proj && {
       id: 'pred-tendencia', section: 'resultados', kind: 'prediccion',
-      title: `Proyección PRI: ~${fmtPct(proj.proj)} próxima elección`,
-      detail: `La votación PRI pasó de ${fmtPct(yearSummary(proj.desde).priShare)} (${proj.desde}) a ${fmtPct(proj.actual)} (${proj.hasta}). MAYIA proyecta ~${fmtPct(proj.proj)} si la tendencia se mantiene.`,
+      title: `Proyección PAN: ~${fmtPct(proj.proj)} próxima elección`,
+      detail: `La votación PAN pasó de ${fmtPct(yearSummary(proj.desde).panShare)} (${proj.desde}) a ${fmtPct(proj.actual)} (${proj.hasta}). MAYIA proyecta ~${fmtPct(proj.proj)} si la tendencia se mantiene.`,
     },
     cerrados.length && {
       id: 'sug-movilizacion', section: 'focos', kind: 'sugerencia',
       title: `${cerrados.length} municipios perdidos por 5 votos o menos`,
-      detail: `MAYIA detectó ${cerrados.length} municipios donde el PRI quedó a ≤5 votos de ganar. Un plan de movilización focalizada podría voltearlos.`,
+      detail: `MAYIA detectó ${cerrados.length} municipios donde el PAN quedó a ≤5 votos de ganar. Un plan de movilización focalizada podría voltearlos.`,
       plan: { label: `Activar movilización en ${cerrados.length} municipios`, ok: 'Aceptar plan' },
     },
     {
@@ -63,12 +63,12 @@ export function mayiaInsights() {
     seg && {
       id: 'ana-competencia', section: 'resultados', kind: 'analisis',
       title: `${seg[0]} es la 2ª fuerza (${fmt(seg[1])} municipios)`,
-      detail: `Tras el PRI, ${seg[0]} concentra ${fmt(seg[1])} municipios. Vigilar su avance en la próxima elección.`,
+      detail: `Tras el PAN, ${seg[0]} concentra ${fmt(seg[1])} municipios. Vigilar su avance en la próxima elección.`,
     },
-    topPri && {
+    topPan && {
       id: 'ana-plaza', section: 'dashboard', kind: 'analisis',
-      title: `Plaza fuerte: ${topPri.municipio}`,
-      detail: `${topPri.municipio} aporta la mayor votación PRI (${fmt(topPri.votos)} votos). Núcleo a proteger.`,
+      title: `Plaza fuerte: ${topPan.municipio}`,
+      detail: `${topPan.municipio} aporta la mayor votación PAN (${fmt(topPan.votos)} votos). Núcleo a proteger.`,
     },
     {
       id: 'sug-representantes', section: 'dashboard', kind: 'sugerencia',

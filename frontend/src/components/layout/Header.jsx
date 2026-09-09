@@ -41,10 +41,10 @@ export default function Header({ title, crumbs = [], collapsed, isMobile, onTogg
 
   return (
     <header className="header">
-      {/* ── Decoración: líneas de circuito laterales (Rojo + Verde PRI) ── */}
+      {/* ── Decoración: líneas de circuito laterales (Azul PAN) ── */}
       <div style={s.circuitLeft} aria-hidden="true">
-        <div style={{ ...s.circuitLine, background: 'linear-gradient(90deg, rgba(225,37,27,0.5), transparent)' }} />
-        <div style={{ ...s.circuitLine, background: 'linear-gradient(90deg, rgba(0,122,51,0.35), transparent)', marginTop: 4, opacity: 0.7 }} />
+        <div style={{ ...s.circuitLine, background: 'linear-gradient(90deg, rgba(0,85,165,0.5), transparent)' }} />
+        <div style={{ ...s.circuitLine, background: 'linear-gradient(90deg, rgba(27,58,107,0.35), transparent)', marginTop: 4, opacity: 0.7 }} />
       </div>
 
       {/* Toggle sidebar (visible en desktop) */}
@@ -79,8 +79,8 @@ export default function Header({ title, crumbs = [], collapsed, isMobile, onTogg
       <div
         style={{
           ...s.searchPill,
-          borderColor: searchFocus ? 'rgba(225,37,27,0.4)' : 'rgba(0,0,0,0.10)',
-          boxShadow: searchFocus ? '0 0 0 2px rgba(225,37,27,0.08)' : 'none',
+          borderColor: searchFocus ? 'rgba(0,85,165,0.4)' : 'rgba(0,0,0,0.10)',
+          boxShadow: searchFocus ? '0 0 0 2px rgba(0,85,165,0.08)' : 'none',
         }}
         className="header-search"
       >
@@ -100,7 +100,7 @@ export default function Header({ title, crumbs = [], collapsed, isMobile, onTogg
       {/* ── Divisor ─────────────────────────────────── */}
       <div style={s.divider} />
 
-      {/* ── Status dot verde PRI ────────────────────── */}
+      {/* ── Status dot azul PAN ────────────────────── */}
       <div style={s.statusChip} className="header-status" title="Sistema activo">
         <span style={s.statusDot} />
         <span style={s.statusText}>En vivo</span>
@@ -146,21 +146,21 @@ export default function Header({ title, crumbs = [], collapsed, isMobile, onTogg
         )}
       </div>
 
-      {/* ── Avatar con rojo PRI ─────────────────────── */}
+      {/* ── Avatar con azul PAN ─────────────────────── */}}
       <div style={s.avatar} title="Usuario">
         <IconUser />
       </div>
 
       {/* ── Decoración: circuito derecho ────────────── */}
       <div style={s.circuitRight} aria-hidden="true">
-        <div style={{ ...s.circuitLine, background: 'linear-gradient(270deg, rgba(225,37,27,0.5), transparent)' }} />
-        <div style={{ ...s.circuitLine, background: 'linear-gradient(270deg, rgba(0,122,51,0.35), transparent)', marginTop: 4, opacity: 0.7 }} />
+        <div style={{ ...s.circuitLine, background: 'linear-gradient(270deg, rgba(0,85,165,0.5), transparent)' }} />
+        <div style={{ ...s.circuitLine, background: 'linear-gradient(270deg, rgba(27,58,107,0.35), transparent)', marginTop: 4, opacity: 0.7 }} />
       </div>
     </header>
   )
 }
 
-/* ── Styles (Tema Claro Institucional PRI) ─────────────────────── */
+/* ── Styles (Tema Claro Institucional PAN) ─────────────────────── */
 const s = {
   circuitLeft: {
     display: 'flex',
@@ -286,14 +286,14 @@ const s = {
   statusDot: {
     width: 6, height: 6,
     borderRadius: '50%',
-    background: '#007A33',   /* Verde PRI */
+    background: '#0055A5',   /* Azul PAN */
     display: 'inline-block',
-    boxShadow: '0 0 6px rgba(0,122,51,0.5)',
+    boxShadow: '0 0 6px rgba(0,85,165,0.5)',
     animation: 'dotPulse 2s ease-in-out infinite',
   },
   statusText: {
     fontSize: 11,
-    color: '#007A33',
+    color: '#0055A5',
     fontWeight: 600,
     letterSpacing: '0.04em',
   },
@@ -312,14 +312,14 @@ const s = {
   badge: {
     position: 'absolute', top: -4, right: -4,
     width: 15, height: 15,
-    background: '#E1251B',    /* Rojo PRI */
+    background: '#0055A5',    /* Azul PAN */
     borderRadius: '50%',
     fontSize: 8,
     fontWeight: 700,
     color: '#fff',
     display: 'flex', alignItems: 'center', justifyContent: 'center',
     border: '1.5px solid rgba(255,255,255,0.95)',
-    boxShadow: '0 0 6px rgba(225,37,27,0.35)',
+    boxShadow: '0 0 6px rgba(0,85,165,0.35)',
   },
   notifPanel: {
     position: 'absolute', top: 40, right: 0, width: 300, maxWidth: 'calc(100vw - 24px)',
@@ -343,7 +343,7 @@ const s = {
   },
   notifClear: {
     background: 'none', border: 'none',
-    color: '#E1251B', fontSize: 11, fontWeight: 700, cursor: 'pointer',
+    color: '#0055A5', fontSize: 11, fontWeight: 700, cursor: 'pointer',
   },
   notifList: { maxHeight: 340, overflowY: 'auto' },
   notifEmpty: {
@@ -356,11 +356,11 @@ const s = {
   avatar: {
     width: 30, height: 30,
     borderRadius: '50%',
-    background: 'linear-gradient(135deg, #E1251B, #B01A12)',   /* Rojo PRI */
+    background: 'linear-gradient(135deg, #0055A5, #003D7A)',   /* Azul PAN */
     display: 'flex', alignItems: 'center', justifyContent: 'center',
     color: '#fff',
     flexShrink: 0,
     cursor: 'pointer',
-    boxShadow: '0 2px 8px rgba(225,37,27,0.25)',
+    boxShadow: '0 2px 8px rgba(0,85,165,0.25)',
   },
 }

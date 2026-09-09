@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom'
 import config from '@/config/config'
 import { useVoiceAssistant } from '@/components/ui/Jarvis'
 
-/* Floating bottom nav para móvil. Centro = logo PRI → Comando Central.
+/* Floating bottom nav para móvil. Centro = logo PAN → Comando Central.
    A los lados, las secciones. Último ícono: asistente de voz. */
 
 const IconReportes = () => (
@@ -47,7 +47,7 @@ export default function MobileNav() {
         </NavLink>
       ))}
 
-      {/* Centro: logo PRI → Comando Central */}
+      {/* Centro: logo PAN → Comando Central */}
       <NavLink to="/" end title="Comando Central" style={s.logoLink}>
         {({ isActive }) => (
           <span style={{ ...s.logoBtn, boxShadow: isActive ? '0 6px 18px var(--color-primary-glow)' : '0 4px 14px rgba(0,0,0,0.18)' }}>

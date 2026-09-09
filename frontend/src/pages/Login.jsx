@@ -57,7 +57,7 @@ export default function Login() {
         <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
           <MeshGradient
             style={{ width: '100%', height: '100%' }}
-            colors={['#000000', '#0a0a0a', '#2d0a0a', '#540d0d', '#092417', '#0f3b25']}
+            colors={['#000000', '#0a0a0a', '#0a1628', '#0d2d54', '#091a30', '#0c2a4f']}
             speed={0.2}
             distortion={0.8}
             swirl={0.5}
@@ -69,7 +69,7 @@ export default function Login() {
         <div className="login-left-overlay" />
 
         <div className="login-left-content">
-          <img src={config.brand.logo} alt="Logo PRI" className="login-logo" />
+          <img src={config.brand.logo} alt="Logo PAN" className="login-logo" />
           <h1 className="login-headline">
             Comando Central<br />Inteligente
           </h1>
@@ -95,7 +95,7 @@ export default function Login() {
               <input
                 id="email" type="email" value={email}
                 onChange={e => setEmail(e.target.value)}
-                placeholder="usuario@pri.org.mx"
+                placeholder="usuario@pan.org.mx"
                 autoComplete="email" autoFocus
               />
             </div>

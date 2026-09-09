@@ -6,7 +6,7 @@
 
 import {
   ESTADO, DEFAULT_YEAR, PARTIES, partyColor,
-  yearSummary, municipiosWon, topMunicipios, priTrend,
+  yearSummary, municipiosWon, topMunicipios, panTrend,
   representantesResumen, fmt, fmtPct, fmtMoney,
 } from './electoral'
 
@@ -14,13 +14,13 @@ import {
 export async function getDashboardMetrics() {
   const s = yearSummary(DEFAULT_YEAR)
   const reps = representantesResumen()
-  const t = priTrend()
+  const t = panTrend()
   const prev = t.length > 1 ? t[t.length - 2] : null
-  const deltaMun = prev ? s.priMunicipios - prev.municipios : 0
+  const deltaMun = prev ? s.panMunicipios - prev.municipios : 0
   return [
     { id: 'municipios', label: `Municipios ${DEFAULT_YEAR}`, value: fmt(s.municipios),  change: ESTADO,               trend: 'up',   color: 'blue'  },
-    { id: 'priMun',     label: 'Municipios ganados PRI',      value: fmt(s.priMunicipios), change: (deltaMun >= 0 ? '+' : '') + deltaMun, trend: deltaMun >= 0 ? 'up' : 'down', color: 'green' },
-    { id: 'priShare',   label: 'Votación PRI',                value: fmtPct(s.priShare),  change: fmt(s.priVotos) + ' votos', trend: 'up', color: 'red' },
+    { id: 'panMun',     label: 'Municipios ganados PAN',      value: fmt(s.panMunicipios), change: (deltaMun >= 0 ? '+' : '') + deltaMun, trend: deltaMun >= 0 ? 'up' : 'down', color: 'green' },
+    { id: 'panShare',   label: 'Votación PAN',                value: fmtPct(s.panShare),  change: fmt(s.panVotos) + ' votos', trend: 'up', color: 'blue' },
     { id: 'reps',       label: 'Representantes',              value: fmt(reps.totalCasilla + reps.totalGenerales), change: fmtMoney(reps.presupuesto), trend: 'up', color: 'yellow' },
   ]
 }
@@ -29,15 +29,15 @@ export async function getDashboardMetrics() {
 export async function getAlerts() {
   const s = yearSummary(DEFAULT_YEAR)
   const won = municipiosWon(DEFAULT_YEAR)
-  const topPri = topMunicipios(DEFAULT_YEAR, 'PRI', 1)[0]
-  const contendiente = Object.entries(won).filter(([k]) => k !== 'PRI').sort((a, b) => b[1] - a[1])[0]
+  const topPan = topMunicipios(DEFAULT_YEAR, 'PAN', 1)[0]
+  const contendiente = Object.entries(won).filter(([k]) => k !== 'PAN').sort((a, b) => b[1] - a[1])[0]
   const alerts = [
     { id: 1, severity: 'success', category: 'Resultados', region: ESTADO,
-      title: `PRI ganó ${fmt(won.PRI)} de ${fmt(s.municipios)} municipios en ${DEFAULT_YEAR}`, time: DEFAULT_YEAR },
+      title: `PAN ganó ${fmt(won.PAN)} de ${fmt(s.municipios)} municipios en ${DEFAULT_YEAR}`, time: DEFAULT_YEAR },
     { id: 2, severity: 'high', category: 'Competencia', region: ESTADO,
       title: `${contendiente[0]} es 2ª fuerza con ${fmt(contendiente[1])} municipios`, time: 'análisis' },
-    { id: 3, severity: 'info', category: 'Plaza fuerte', region: topPri?.municipio ?? '—',
-      title: `Mayor votación PRI: ${topPri?.municipio} (${fmt(topPri?.votos ?? 0)})`, time: DEFAULT_YEAR },
+    { id: 3, severity: 'info', category: 'Plaza fuerte', region: topPan?.municipio ?? '—',
+      title: `Mayor votación PAN: ${topPan?.municipio} (${fmt(topPan?.votos ?? 0)})`, time: DEFAULT_YEAR },
     { id: 4, severity: s.abstencion > 45 ? 'high' : 'medium', category: 'Participación', region: ESTADO,
       title: `Abstención promedio ${fmtPct(s.abstencion)}`, time: DEFAULT_YEAR },
     { id: 5, severity: 'info', category: 'Padrón', region: ESTADO,
@@ -56,7 +56,7 @@ export async function getMapData() {
   ]
   const nombres = { OAX: 'Oaxaca' }
   return base.map(code => code === 'OAX'
-    ? { id: 'MX-OAX', name: 'Oaxaca', value: s.priMunicipios, level: 'critical', activo: true }
+    ? { id: 'MX-OAX', name: 'Oaxaca', value: s.panMunicipios, level: 'critical', activo: true }
     : { id: `MX-${code}`, name: nombres[code] ?? code, value: 0, level: 'low', activo: false },
   )
 }
@@ -80,5 +80,5 @@ export function getPartyResults(year = DEFAULT_YEAR) {
     .filter(p => p.votos > 0)
     .sort((a, b) => b.votos - a.votos)
 }
-export { yearSummary, topMunicipios, priTrend, representantesResumen, PARTIES, partyColor, DEFAULT_YEAR, ESTADO, fmt, fmtPct, fmtMoney }
+export { yearSummary, topMunicipios, panTrend, representantesResumen, PARTIES, partyColor, DEFAULT_YEAR, ESTADO, fmt, fmtPct, fmtMoney }
 export { YEARS_WITH_DATA } from './electoral'

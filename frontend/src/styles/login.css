@@ -168,9 +168,9 @@
   gap: 10px;
   font-size: 13px;
   font-weight: 700;
-  color: #E1251B;
-  background: rgba(225,37,27,0.06);
-  border: 1px solid rgba(225,37,27,0.15);
+  color: #0055A5;
+  background: rgba(0,85,165,0.06);
+  border: 1px solid rgba(0,85,165,0.15);
   padding: 12px 16px;
   border-radius: 10px;
 }
@@ -178,7 +178,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #E1251B;
+  background: #0055A5;
   flex-shrink: 0;
 }
 

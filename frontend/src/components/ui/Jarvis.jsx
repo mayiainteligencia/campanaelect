@@ -22,21 +22,21 @@ function responderDato(said, pathname) {
   const s = yearSummary(DEFAULT_YEAR)
   const has = (...ws) => ws.some(w => said.includes(w))
   if (has('cuánto', 'cuanto', 'cuántos', 'cuantos', 'ganó', 'gano', 'ganad')) {
-    return `El PRI ganó ${fmt(s.priMunicipios)} de ${fmt(s.municipios)} municipios en ${DEFAULT_YEAR}.`
+    return `El PAN ganó ${fmt(s.panMunicipios)} de ${fmt(s.municipios)} municipios en ${DEFAULT_YEAR}.`
   }
   if (has('votación', 'votacion', 'porcentaje', 'voto')) {
-    return `El PRI obtuvo ${fmtPct(s.priShare)} de la votación en ${DEFAULT_YEAR}, ${fmt(s.priVotos)} votos.`
+    return `El PAN obtuvo ${fmtPct(s.panShare)} de la votación en ${DEFAULT_YEAR}, ${fmt(s.panVotos)} votos.`
   }
   if (has('abstenc')) {
     return `La abstención promedio en ${DEFAULT_YEAR} fue ${fmtPct(s.abstencion)}.`
   }
   if (has('plaza', 'mayor', 'más votos', 'mas votos', 'fuerte')) {
-    const t = topMunicipios(DEFAULT_YEAR, 'PRI', 1)[0]
-    return `La mayor plaza del PRI es ${t.municipio} con ${fmt(t.votos)} votos.`
+    const t = topMunicipios(DEFAULT_YEAR, 'PAN', 1)[0]
+    return `La mayor plaza del PAN es ${t.municipio} con ${fmt(t.votos)} votos.`
   }
   if (has('segunda', '2da', 'oposición', 'oposicion', 'contendiente')) {
     const won = municipiosWon(DEFAULT_YEAR)
-    const seg = Object.entries(won).filter(([k]) => k !== 'PRI').sort((a, b) => b[1] - a[1])[0]
+    const seg = Object.entries(won).filter(([k]) => k !== 'PAN').sort((a, b) => b[1] - a[1])[0]
     return `La segunda fuerza es ${seg[0]} con ${fmt(seg[1])} municipios.`
   }
   if (has('municipio', 'padrón', 'padron', 'lista nominal', 'casilla')) {
@@ -105,7 +105,7 @@ export function useVoiceAssistant({ onNavigate } = {}) {
       } else if (dato) {
         setReply(dato); speak(dato)
       } else {
-        setReply('Prueba: "¿cuántos municipios ganó el PRI?", "¿dónde estoy?" o "abre resultados".')
+        setReply('Prueba: "¿cuántos municipios ganó el PAN?", "¿dónde estoy?" o "abre resultados".')
         speak('No entendí, intenta preguntar por municipios o tu ubicación en el sistema.')
       }
     }
@@ -226,14 +226,14 @@ export function JarvisPanel() {
   // Sugerencias derivadas de los datos REALES (Oaxaca).
   const s = yearSummary(DEFAULT_YEAR)
   const won = municipiosWon(DEFAULT_YEAR)
-  const seg = Object.entries(won).filter(([k]) => k !== 'PRI').sort((a, b) => b[1] - a[1])[0]
-  const topPri = topMunicipios(DEFAULT_YEAR, 'PRI', 1)[0]
+  const seg = Object.entries(won).filter(([k]) => k !== 'PAN').sort((a, b) => b[1] - a[1])[0]
+  const topPan = topMunicipios(DEFAULT_YEAR, 'PAN', 1)[0]
   const suggestions = [
-    { tone: 'info', text: `PRI ganó ${fmt(s.priMunicipios)} de ${fmt(s.municipios)} municipios en ${DEFAULT_YEAR} (${fmtPct(s.priShare)} de votación).` },
+    { tone: 'info', text: `PAN ganó ${fmt(s.panMunicipios)} de ${fmt(s.municipios)} municipios en ${DEFAULT_YEAR} (${fmtPct(s.panShare)} de votación).` },
     { tone: 'high', text: `Vigila a ${seg[0]}: 2ª fuerza con ${fmt(seg[1])} municipios.` },
     { tone: 'critical', text: s.abstencion > 45
         ? `Abstención alta (${fmtPct(s.abstencion)}). Reforzar movilización.`
-        : `Plaza fuerte: ${topPri.municipio} (${fmt(topPri.votos)} votos PRI).` },
+        : `Plaza fuerte: ${topPan.municipio} (${fmt(topPan.votos)} votos PAN).` },
   ]
 
   const toneColor = { critical: 'var(--color-red)', high: '#ea580c', info: 'var(--color-blue)' }
@@ -256,7 +256,7 @@ export function JarvisPanel() {
 
       {(transcript || reply) && (
         <div style={panel.voiceLine}>
-          {transcript && <span style={{ color: 'var(--color-text)' }}>“{transcript}” </span>}
+          {transcript && <span style={{ color: 'var(--color-text)' }}>"{transcript}" </span>}
           {reply && <span style={{ color: 'var(--color-text-muted)' }}>· {reply}</span>}
         </div>
       )}
@@ -341,7 +341,7 @@ const s = {
   immersiveTalkBtn: {
     background: 'var(--color-primary)', color: '#fff', border: 'none',
     padding: '12px 28px', fontSize: 16, fontWeight: 700, borderRadius: 30,
-    cursor: 'pointer', boxShadow: '0 8px 24px rgba(225,37,27,0.4)',
+    cursor: 'pointer', boxShadow: '0 8px 24px rgba(0,85,165,0.4)',
     transition: 'transform 0.2s, box-shadow 0.2s',
   },
 }

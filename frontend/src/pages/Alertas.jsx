@@ -37,7 +37,7 @@ function Termometro({ pct, color, label, value }) {
 
 /* ─── Fila de oportunidad ────────────────────────────────────── */
 function OportunidadRow({ m, onAccion }) {
-  const margenPct = Math.min((m.margen / m.pri) * 100, 100)
+  const margenPct = Math.min((m.margen / m.pan) * 100, 100)
   return (
     <div style={sa.oRow}>
       <div style={{ flex: 1, minWidth: 0 }}>
@@ -46,14 +46,14 @@ function OportunidadRow({ m, onAccion }) {
           <span style={{ ...sa.chip, background: partyColor(m.ganador) }}>{m.ganador}</span>
         </div>
         <div style={sa.oMeta}>
-          PRI: <b style={{ color: '#E1251B' }}>{fmt(m.pri)}</b>
+          PAN: <b style={{ color: '#0055A5' }}>{fmt(m.pan)}</b>
           &nbsp;· Ganó por <b style={{ color: '#B45309' }}>{fmt(m.margen)}</b> votos
         </div>
         {/* Barra de margen — qué tan cerca estuvo */}
         <div style={{ marginTop: 5, height: 4, background: 'rgba(0,0,0,0.05)', borderRadius: 4, overflow: 'hidden' }}>
           <div style={{
             width: `${margenPct}%`, height: '100%',
-            background: 'linear-gradient(90deg, #007A33, #E1251B)',
+            background: 'linear-gradient(90deg, #0055A5, #1B3A6B)',
             borderRadius: 4,
           }} />
         </div>
@@ -73,14 +73,14 @@ export default function Alertas() {
   const abst  = mayorAbstencion(year, 8)
   const won   = municipiosWon(year)
   const s     = yearSummary(year)
-  const seg   = Object.entries(won).filter(([k]) => k !== 'PRI')
+  const seg   = Object.entries(won).filter(([k]) => k !== 'PAN')
     .sort((a, b) => b[1] - a[1])[0]
 
   /* ─── Manejadores con confirmación ─── */
   async function handleActivar(m) {
     const ok = await confirm({
       title: `¿Activar operativo en ${m.municipio}?`,
-      description: `El PRI perdió por ${fmt(m.margen)} votos. Se notificará al coordinador zonal y se asignarán recursos de movilización.`,
+      description: `El PAN perdió por ${fmt(m.margen)} votos. Se notificará al coordinador zonal y se asignarán recursos de movilización.`,
       acceptLabel: 'Activar plan',
       discardLabel: 'Descartar',
       tone: 'danger',
@@ -100,7 +100,7 @@ export default function Alertas() {
   }
 
   /* ─── Paleta de niveles de abstención ─── */
-  const absTone = (v) => v > 60 ? '#E1251B' : v > 45 ? '#B45309' : '#007A33'
+  const absTone = (v) => v > 60 ? '#DC2626' : v > 45 ? '#B45309' : '#0E7C3A'
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
@@ -121,10 +121,10 @@ export default function Alertas() {
 
       {/* ── KPIs ────────────────────────────────────────────────── */}
       <div className="stagger" style={sa.kpiRow}>
-        <StatCard i={0} tone="green" label="Municipios PRI"  value={fmt(won.PRI)}    sub="ganados" />
+        <StatCard i={0} tone="blue" label="Municipios PAN"  value={fmt(won.PAN)}    sub="ganados" />
         <StatCard i={1} tone="red"   label="2ª fuerza"       value={seg[0]}           sub={`${fmt(seg[1])} municipios`} />
         <StatCard i={2} tone="gray"  label="Abstención"      value={fmtPct(s.abstencion)} sub="promedio estado" />
-        <StatCard i={3} tone="red"   label="Oportunidades"   value={fmt(oport.length)} sub="municipios recuperables" />
+        <StatCard i={3} tone="blue"  label="Oportunidades"   value={fmt(oport.length)} sub="municipios recuperables" />
       </div>
 
       {/* ══ BENTO GRID ══════════════════════════════════════════ */}
@@ -134,13 +134,13 @@ export default function Alertas() {
         <div className="lift" style={{ ...sa.cell, ...sa.cellLeft }}>
           <div style={sa.cellHead}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 7 }}>
-              <Dot color="#E1251B" pulse />
+              <Dot color="#0055A5" pulse />
               <p style={sa.cellTitle}>Municipios recuperables</p>
             </div>
             <span style={sa.countBadge}>{oport.length}</span>
           </div>
           <p style={sa.cellSub}>
-            Municipios donde el PRI quedó a menos del <b style={{ color: '#E1251B' }}>10%</b> de diferencia.
+            Municipios donde el PAN quedó a menos del <b style={{ color: '#0055A5' }}>10%</b> de diferencia.
             Activa un plan de movilización para cada uno.
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 0, overflowY: 'auto', flex: 1 }}>
@@ -178,15 +178,15 @@ export default function Alertas() {
         <div className="lift" style={{ ...sa.cell, ...sa.cellBottom }}>
           <div style={sa.cellHead}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 7 }}>
-              <Dot color="#1D4ED8" />
+              <Dot color="#0055A5" />
               <p style={sa.cellTitle}>Análisis de competencia · {year}</p>
             </div>
           </div>
           <div style={sa.compGrid}>
             {/* Distribución visual */}
             <div style={sa.compBar}>
-              <div style={{ ...sa.compFill, width: `${(won.PRI / s.municipios) * 100}%`, background: '#E1251B' }}>
-                <span style={sa.compLabel}>PRI · {won.PRI}</span>
+              <div style={{ ...sa.compFill, width: `${(won.PAN / s.municipios) * 100}%`, background: '#0055A5' }}>
+                <span style={sa.compLabel}>PAN · {won.PAN}</span>
               </div>
               <div style={{ ...sa.compFill, width: `${(seg[1] / s.municipios) * 100}%`, background: partyColor(seg[0]), opacity: 0.8 }}>
                 <span style={sa.compLabel}>{seg[0]} · {seg[1]}</span>
@@ -194,19 +194,19 @@ export default function Alertas() {
             </div>
             {/* Descripción */}
             <p style={{ fontSize: 13, color: '#4A5568', lineHeight: 1.7, margin: 0 }}>
-              En {year}, el <b style={{ color: '#E1251B' }}>PRI</b> ganó{' '}
-              <b>{fmt(won.PRI)}</b> municipios de {fmt(s.municipios)} totales.
+              En {year}, el <b style={{ color: '#0055A5' }}>PAN</b> ganó{' '}
+              <b>{fmt(won.PAN)}</b> municipios de {fmt(s.municipios)} totales.
               La segunda fuerza es <b style={{ color: partyColor(seg[0]) }}>{seg[0]}</b>{' '}
               con <b>{fmt(seg[1])}</b> municipios. Diferencia:{' '}
-              <b style={{ color: '#E1251B' }}>{fmt(won.PRI - seg[1])}</b> plazas.
+              <b style={{ color: '#0055A5' }}>{fmt(won.PAN - seg[1])}</b> plazas.
             </p>
             {/* Mini KPIs de la fila */}
             <div style={sa.compKpis}>
               {[
                 { label: 'Municipios en disputa', val: fmt(s.municipios), color: '#4A5568' },
-                { label: 'Ganados PRI',           val: fmt(won.PRI),      color: '#E1251B' },
+                { label: 'Ganados PAN',           val: fmt(won.PAN),      color: '#0055A5' },
                 { label: `Ganados ${seg[0]}`,     val: fmt(seg[1]),       color: partyColor(seg[0]) },
-                { label: 'Diferencia',            val: fmt(won.PRI - seg[1]), color: '#007A33' },
+                { label: 'Diferencia',            val: fmt(won.PAN - seg[1]), color: '#0E7C3A' },
               ].map(k => (
                 <div key={k.label} style={sa.compKpi}>
                   <span style={{ fontSize: 18, fontWeight: 800, color: k.color }}>{k.val}</span>
@@ -225,7 +225,7 @@ export default function Alertas() {
 /* ─── Estilos ─────────────────────────────────────────────────── */
 const sa = {
   head:  { display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 12, flexWrap: 'wrap' },
-  kicker: { fontSize: 10, fontWeight: 700, color: '#E1251B', textTransform: 'uppercase', letterSpacing: '0.10em', marginBottom: 2 },
+  kicker: { fontSize: 10, fontWeight: 700, color: '#0055A5', textTransform: 'uppercase', letterSpacing: '0.10em', marginBottom: 2 },
   title: { fontSize: 22, fontWeight: 800, color: '#1A202C', letterSpacing: '-0.02em' },
   sub:   { fontSize: 13, color: '#718096', marginTop: 2 },
   exportBtn: {
@@ -263,7 +263,7 @@ const sa = {
   cellSub:   { fontSize: 12, color: '#718096', lineHeight: 1.6, margin: 0 },
   countBadge: {
     fontSize: 10, fontWeight: 700, padding: '3px 9px',
-    background: 'rgba(225,37,27,0.08)', color: '#E1251B', borderRadius: 20,
+    background: 'rgba(0,85,165,0.08)', color: '#0055A5', borderRadius: 20,
   },
 
   /* Fila oportunidad */
@@ -275,8 +275,8 @@ const sa = {
   chip:  { fontSize: 10, fontWeight: 700, color: '#fff', padding: '2px 8px', borderRadius: 20 },
   accionBtn: {
     flexShrink: 0, fontSize: 11, fontWeight: 700, padding: '7px 14px', borderRadius: 10,
-    background: 'rgba(225,37,27,0.08)', color: '#E1251B',
-    border: '1px solid rgba(225,37,27,0.20)', cursor: 'pointer', transition: 'all 0.15s',
+    background: 'rgba(0,85,165,0.08)', color: '#0055A5',
+    border: '1px solid rgba(0,85,165,0.20)', cursor: 'pointer', transition: 'all 0.15s',
   },
 
   /* Competencia */
