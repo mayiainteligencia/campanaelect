@@ -21,10 +21,10 @@ function Termometro({ pct, color, label, value }) {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
-        <span style={{ fontSize: 12, fontWeight: 600, color: '#1A202C' }}>{label}</span>
+        <span style={{ fontSize: 12, fontWeight: 600, color: 'var(--color-text)' }}>{label}</span>
         <span style={{ fontSize: 13, fontWeight: 800, color }}>{value}</span>
       </div>
-      <div style={{ height: 7, background: 'rgba(0,0,0,0.06)', borderRadius: 8, overflow: 'hidden' }}>
+      <div style={{ height: 7, background: 'rgba(255,255,255,0.06)', borderRadius: 8, overflow: 'hidden' }}>
         <div className="bar-grow" style={{
           width: `${pctSafe}%`, height: '100%',
           background: `linear-gradient(90deg, ${color}99, ${color})`,
@@ -42,18 +42,18 @@ function OportunidadRow({ m, onAccion }) {
     <div style={sa.oRow}>
       <div style={{ flex: 1, minWidth: 0 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-          <span style={{ fontSize: 13, fontWeight: 700, color: '#1A202C' }}>{m.municipio}</span>
+          <span style={{ fontSize: 13, fontWeight: 700, color: 'var(--color-text)' }}>{m.municipio}</span>
           <span style={{ ...sa.chip, background: partyColor(m.ganador) }}>{m.ganador}</span>
         </div>
         <div style={sa.oMeta}>
-          PAN: <b style={{ color: '#0055A5' }}>{fmt(m.pan)}</b>
+          PAN: <b style={{ color: '#58A6FF' }}>{fmt(m.pan)}</b>
           &nbsp;· Ganó por <b style={{ color: '#B45309' }}>{fmt(m.margen)}</b> votos
         </div>
         {/* Barra de margen — qué tan cerca estuvo */}
-        <div style={{ marginTop: 5, height: 4, background: 'rgba(0,0,0,0.05)', borderRadius: 4, overflow: 'hidden' }}>
+        <div style={{ marginTop: 5, height: 4, background: 'rgba(255,255,255,0.05)', borderRadius: 4, overflow: 'hidden' }}>
           <div style={{
             width: `${margenPct}%`, height: '100%',
-            background: 'linear-gradient(90deg, #0055A5, #1B3A6B)',
+            background: 'linear-gradient(90deg, #58A6FF, #1B3A6B)',
             borderRadius: 4,
           }} />
         </div>
@@ -134,13 +134,13 @@ export default function Alertas() {
         <div className="lift" style={{ ...sa.cell, ...sa.cellLeft }}>
           <div style={sa.cellHead}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 7 }}>
-              <Dot color="#0055A5" pulse />
+              <Dot color="#58A6FF" pulse />
               <p style={sa.cellTitle}>Municipios recuperables</p>
             </div>
             <span style={sa.countBadge}>{oport.length}</span>
           </div>
           <p style={sa.cellSub}>
-            Municipios donde el PAN quedó a menos del <b style={{ color: '#0055A5' }}>10%</b> de diferencia.
+            Municipios donde el PAN quedó a menos del <b style={{ color: '#58A6FF' }}>10%</b> de diferencia.
             Activa un plan de movilización para cada uno.
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 0, overflowY: 'auto', flex: 1 }}>
@@ -178,14 +178,14 @@ export default function Alertas() {
         <div className="lift" style={{ ...sa.cell, ...sa.cellBottom }}>
           <div style={sa.cellHead}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 7 }}>
-              <Dot color="#0055A5" />
+              <Dot color="#58A6FF" />
               <p style={sa.cellTitle}>Análisis de competencia · {year}</p>
             </div>
           </div>
           <div style={sa.compGrid}>
             {/* Distribución visual */}
             <div style={sa.compBar}>
-              <div style={{ ...sa.compFill, width: `${(won.PAN / s.municipios) * 100}%`, background: '#0055A5' }}>
+              <div style={{ ...sa.compFill, width: `${(won.PAN / s.municipios) * 100}%`, background: '#58A6FF' }}>
                 <span style={sa.compLabel}>PAN · {won.PAN}</span>
               </div>
               <div style={{ ...sa.compFill, width: `${(seg[1] / s.municipios) * 100}%`, background: partyColor(seg[0]), opacity: 0.8 }}>
@@ -193,24 +193,24 @@ export default function Alertas() {
               </div>
             </div>
             {/* Descripción */}
-            <p style={{ fontSize: 13, color: '#4A5568', lineHeight: 1.7, margin: 0 }}>
-              En {year}, el <b style={{ color: '#0055A5' }}>PAN</b> ganó{' '}
+            <p style={{ fontSize: 13, color: 'var(--color-text-muted)', lineHeight: 1.7, margin: 0 }}>
+              En {year}, el <b style={{ color: '#58A6FF' }}>PAN</b> ganó{' '}
               <b>{fmt(won.PAN)}</b> municipios de {fmt(s.municipios)} totales.
               La segunda fuerza es <b style={{ color: partyColor(seg[0]) }}>{seg[0]}</b>{' '}
               con <b>{fmt(seg[1])}</b> municipios. Diferencia:{' '}
-              <b style={{ color: '#0055A5' }}>{fmt(won.PAN - seg[1])}</b> plazas.
+              <b style={{ color: '#58A6FF' }}>{fmt(won.PAN - seg[1])}</b> plazas.
             </p>
             {/* Mini KPIs de la fila */}
             <div style={sa.compKpis}>
               {[
-                { label: 'Municipios en disputa', val: fmt(s.municipios), color: '#4A5568' },
-                { label: 'Ganados PAN',           val: fmt(won.PAN),      color: '#0055A5' },
+                { label: 'Municipios en disputa', val: fmt(s.municipios), color: 'var(--color-text-muted)' },
+                { label: 'Ganados PAN',           val: fmt(won.PAN),      color: '#58A6FF' },
                 { label: `Ganados ${seg[0]}`,     val: fmt(seg[1]),       color: partyColor(seg[0]) },
                 { label: 'Diferencia',            val: fmt(won.PAN - seg[1]), color: '#0E7C3A' },
               ].map(k => (
                 <div key={k.label} style={sa.compKpi}>
                   <span style={{ fontSize: 18, fontWeight: 800, color: k.color }}>{k.val}</span>
-                  <span style={{ fontSize: 10, color: '#718096', textTransform: 'uppercase', letterSpacing: '0.06em', textAlign: 'center' }}>{k.label}</span>
+                  <span style={{ fontSize: 10, color: 'var(--color-text-muted)', textTransform: 'uppercase', letterSpacing: '0.06em', textAlign: 'center' }}>{k.label}</span>
                 </div>
               ))}
             </div>
@@ -225,13 +225,13 @@ export default function Alertas() {
 /* ─── Estilos ─────────────────────────────────────────────────── */
 const sa = {
   head:  { display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 12, flexWrap: 'wrap' },
-  kicker: { fontSize: 10, fontWeight: 700, color: '#0055A5', textTransform: 'uppercase', letterSpacing: '0.10em', marginBottom: 2 },
-  title: { fontSize: 22, fontWeight: 800, color: '#1A202C', letterSpacing: '-0.02em' },
-  sub:   { fontSize: 13, color: '#718096', marginTop: 2 },
+  kicker: { fontSize: 10, fontWeight: 700, color: '#58A6FF', textTransform: 'uppercase', letterSpacing: '0.10em', marginBottom: 2 },
+  title: { fontSize: 22, fontWeight: 800, color: 'var(--color-text)', letterSpacing: '-0.02em' },
+  sub:   { fontSize: 13, color: 'var(--color-text-muted)', marginTop: 2 },
   exportBtn: {
     fontSize: 12, fontWeight: 700, padding: '9px 18px', borderRadius: 20,
-    background: '#fff', border: '1px solid rgba(0,0,0,0.10)',
-    color: '#4A5568', cursor: 'pointer', transition: 'all 0.15s',
+    background: 'var(--color-surface)', border: '1px solid rgba(255,255,255,0.10)',
+    color: 'var(--color-text-muted)', cursor: 'pointer', transition: 'all 0.15s',
     whiteSpace: 'nowrap',
   },
   kpiRow: { display: 'grid', gap: 12, gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))' },
@@ -244,14 +244,14 @@ const sa = {
     gap: 12,
   },
   cell: {
-    background: '#fff',
-    border: '1px solid rgba(0,0,0,0.08)',
+    background: 'var(--color-surface)',
+    border: '1px solid rgba(255,255,255,0.08)',
     borderRadius: 14,
     padding: 18,
     display: 'flex',
     flexDirection: 'column',
     gap: 12,
-    boxShadow: '0 1px 4px rgba(0,0,0,0.04)',
+    boxShadow: '0 1px 4px rgba(255,255,255,0.04)',
     overflow: 'hidden',
   },
   cellLeft:   { gridColumn: '1 / 2', minHeight: 360 },
@@ -259,23 +259,23 @@ const sa = {
   cellBottom: { gridColumn: '1 / 3' },      /* Ancho completo */
 
   cellHead: { display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 8 },
-  cellTitle: { fontSize: 11, fontWeight: 700, color: '#4A5568', textTransform: 'uppercase', letterSpacing: '0.08em', margin: 0 },
-  cellSub:   { fontSize: 12, color: '#718096', lineHeight: 1.6, margin: 0 },
+  cellTitle: { fontSize: 11, fontWeight: 700, color: 'var(--color-text-muted)', textTransform: 'uppercase', letterSpacing: '0.08em', margin: 0 },
+  cellSub:   { fontSize: 12, color: 'var(--color-text-muted)', lineHeight: 1.6, margin: 0 },
   countBadge: {
     fontSize: 10, fontWeight: 700, padding: '3px 9px',
-    background: 'rgba(0,85,165,0.08)', color: '#0055A5', borderRadius: 20,
+    background: 'rgba(0,85,165,0.08)', color: '#58A6FF', borderRadius: 20,
   },
 
   /* Fila oportunidad */
   oRow: {
     display: 'flex', alignItems: 'center', gap: 12,
-    padding: '10px 0', borderBottom: '1px solid rgba(0,0,0,0.05)',
+    padding: '10px 0', borderBottom: '1px solid rgba(255,255,255,0.05)',
   },
-  oMeta: { fontSize: 11, color: '#718096', marginTop: 3 },
+  oMeta: { fontSize: 11, color: 'var(--color-text-muted)', marginTop: 3 },
   chip:  { fontSize: 10, fontWeight: 700, color: '#fff', padding: '2px 8px', borderRadius: 20 },
   accionBtn: {
     flexShrink: 0, fontSize: 11, fontWeight: 700, padding: '7px 14px', borderRadius: 10,
-    background: 'rgba(0,85,165,0.08)', color: '#0055A5',
+    background: 'rgba(0,85,165,0.08)', color: '#58A6FF',
     border: '1px solid rgba(0,85,165,0.20)', cursor: 'pointer', transition: 'all 0.15s',
   },
 
@@ -289,10 +289,10 @@ const sa = {
   compLabel: { fontSize: 10, fontWeight: 800, color: '#fff' },
   compKpis: {
     display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 1,
-    background: 'rgba(0,0,0,0.04)', borderRadius: 10, overflow: 'hidden',
+    background: 'rgba(255,255,255,0.04)', borderRadius: 10, overflow: 'hidden',
   },
   compKpi: {
     display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4,
-    padding: '12px 8px', background: '#fff',
+    padding: '12px 8px', background: 'var(--color-surface)',
   },
 }

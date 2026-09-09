@@ -4,30 +4,30 @@ import { MX_STATES, MX_VIEWBOX } from '@/data/mexicoStates'
 import { JarvisPanel } from '@/components/ui/Jarvis'
 import { MayiaPanel } from '@/components/ui/Mayia'
 
-/* ── Helpers de color — Modo Claro Institucional PAN ─────────────── */
+/* ── Helpers de color — Modo Oscuro Institucional PAN ─────────────── */
 const levelColor = {
-  low:      'rgba(14,124,58,0.45)',      /* verde */
-  medium:   'rgba(217,119,6,0.55)',     /* ámbar */
-  high:     'rgba(234,88,12,0.68)',     /* naranja */
-  critical: 'rgba(0,85,165,0.78)',      /* azul PAN */
+  low:      'rgba(63,185,80,0.30)',       /* verde */
+  medium:   'rgba(210,153,34,0.35)',      /* ámbar */
+  high:     'rgba(234,88,12,0.40)',       /* naranja */
+  critical: 'rgba(47,129,208,0.50)',      /* azul PAN */
 }
 const levelStroke = {
-  low:      '#0E7C3A',   /* verde */
-  medium:   '#B45309',   /* ámbar */
-  high:     '#C2410C',   /* naranja oscuro */
-  critical: '#0055A5',   /* azul PAN */
+  low:      '#3FB950',   /* verde */
+  medium:   '#D29922',   /* ámbar */
+  high:     '#F0883E',   /* naranja */
+  critical: '#58A6FF',   /* azul PAN */
 }
 const severityConfig = {
-  high:    { color: '#DC2626', bg: 'rgba(220,38,38,0.08)',  dot: '#DC2626', label: 'Alta'   },
-  medium:  { color: '#B45309', bg: 'rgba(180,83,9,0.08)',   dot: '#B45309', label: 'Media'  },
-  info:    { color: '#0055A5', bg: 'rgba(0,85,165,0.08)',   dot: '#0055A5', label: 'Info'   },
-  success: { color: '#0E7C3A', bg: 'rgba(14,124,58,0.08)',  dot: '#0E7C3A', label: 'OK'     },
+  high:    { color: '#F85149', bg: 'rgba(248,81,73,0.12)',  dot: '#F85149', label: 'Alta'   },
+  medium:  { color: '#D29922', bg: 'rgba(210,153,34,0.12)', dot: '#D29922', label: 'Media'  },
+  info:    { color: '#58A6FF', bg: 'rgba(88,166,255,0.12)', dot: '#58A6FF', label: 'Info'   },
+  success: { color: '#3FB950', bg: 'rgba(63,185,80,0.12)',  dot: '#3FB950', label: 'OK'     },
 }
 const metricColor = {
-  blue:   { bg: 'rgba(0,85,165,0.06)',   accent: '#0055A5',  glow: 'rgba(0,85,165,0.15)'   },
-  green:  { bg: 'rgba(14,124,58,0.06)',  accent: '#0E7C3A',  glow: 'rgba(14,124,58,0.15)'  },
-  yellow: { bg: 'rgba(180,83,9,0.06)',   accent: '#B45309',  glow: 'rgba(180,83,9,0.15)'   },
-  red:    { bg: 'rgba(220,38,38,0.06)',  accent: '#DC2626',  glow: 'rgba(220,38,38,0.15)'  },
+  blue:   { bg: 'rgba(47,129,208,0.10)',  accent: '#58A6FF',  glow: 'rgba(88,166,255,0.20)' },
+  green:  { bg: 'rgba(63,185,80,0.10)',   accent: '#3FB950',  glow: 'rgba(63,185,80,0.20)'  },
+  yellow: { bg: 'rgba(210,153,34,0.10)',  accent: '#D29922',  glow: 'rgba(210,153,34,0.20)' },
+  red:    { bg: 'rgba(248,81,73,0.10)',   accent: '#F85149',  glow: 'rgba(248,81,73,0.20)'  },
 }
 
 /* ── Mapa SVG de México ────────────────────────────────────────────
@@ -387,7 +387,7 @@ export default function Dashboard() {
             overflowY: isTablet ? 'visible' : 'auto',
           }}
         >
-          <span className="hud-corner tl" style={{ borderColor: '#0055A5' }} />
+          <span className="hud-corner tl" style={{ borderColor: 'var(--color-primary)' }} />
           <span className="hud-corner tr" />
           <span className="hud-corner bl" />
           <span className="hud-corner br" />
@@ -406,10 +406,10 @@ export default function Dashboard() {
           <div style={sd.statBar}>
             <div style={sd.colHeader}>
               <span style={sd.colTitle}>Cobertura nacional</span>
-              <span style={{ fontSize: 12, color: '#0055A5', fontWeight: 700 }}>74%</span>
+              <span style={{ fontSize: 12, color: 'var(--color-primary)', fontWeight: 700 }}>74%</span>
             </div>
             <div style={sd.barTrack}>
-              <div style={{ ...sd.barFill, width: '74%', background: 'linear-gradient(90deg, #0055A5, #1B3A6B)' }} />
+              <div style={{ ...sd.barFill, width: '74%', background: 'linear-gradient(90deg, #2F81D0, #58A6FF)' }} />
             </div>
             <div style={sd.barLabels}>
               <span>Activos</span><span>Pendientes: 26%</span>
@@ -420,10 +420,10 @@ export default function Dashboard() {
           <div style={sd.distBox}>
             <span style={sd.colTitle}>Por nivel de actividad</span>
             {[
-              { label: 'Crítico', pct: 12, color: '#DC2626' },
-              { label: 'Alto',    pct: 38, color: '#fb923c' },
-              { label: 'Medio',   pct: 32, color: '#f59e0b' },
-              { label: 'Bajo',    pct: 18, color: '#0E7C3A' },
+              { label: 'Crítico', pct: 12, color: '#F85149' },
+              { label: 'Alto',    pct: 38, color: '#F0883E' },
+              { label: 'Medio',   pct: 32, color: '#D29922' },
+              { label: 'Bajo',    pct: 18, color: '#3FB950' },
             ].map(({ label, pct, color }) => (
               <div key={label} style={sd.distRow}>
                 <span style={{ ...sd.distLabel }}>{label}</span>
@@ -491,13 +491,13 @@ const sd = {
   },
   colBadge: {
     fontSize: 10, fontWeight: 700, color: '#fff',
-    background: '#0055A5',
+    background: 'var(--color-primary)',
     borderRadius: 20, padding: '2px 8px',
     minWidth: 22, textAlign: 'center',
-    boxShadow: '0 0 8px rgba(0,85,165,0.5)',
+    boxShadow: '0 0 8px var(--color-primary-glow)',
   },
   liveTag: {
-    fontSize: 9, fontWeight: 700, color: '#0055A5',
+    fontSize: 9, fontWeight: 700, color: 'var(--color-primary)',
     letterSpacing: '0.1em', animation: 'blink 2s ease-in-out infinite',
   },
   scrollArea: { flex: 1, overflowY: 'auto', overflowX: 'hidden' },
@@ -516,7 +516,7 @@ const sd = {
   legendDot:  { width: 7, height: 7, borderRadius: '50%', flexShrink: 0 },
   legendLabel: { fontSize: 10, color: 'var(--color-text-muted)', fontWeight: 500 },
   mapWrap: {
-    background: 'radial-gradient(ellipse at 50% 38%, #ffffff 0%, #eef1f5 100%)',
+    background: 'radial-gradient(ellipse at 50% 38%, #161B22 0%, #0D1117 100%)',
     border: '1px solid var(--color-border)',
     borderRadius: 12,
     padding: '6px',
@@ -524,12 +524,12 @@ const sd = {
     display: 'flex', alignItems: 'center', justifyContent: 'center',
     position: 'relative',
     overflow: 'hidden',
-    boxShadow: '0 10px 30px rgba(0,0,0,0.05) inset',
+    boxShadow: '0 10px 30px rgba(0,0,0,0.20) inset',
   },
   mapGrid: {
     position: 'absolute',
     inset: 0,
-    backgroundImage: 'linear-gradient(rgba(0,0,0,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.035) 1px, transparent 1px)',
+    backgroundImage: 'linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)',
     backgroundSize: '30px 30px',
     pointerEvents: 'none',
     borderRadius: 12,
@@ -567,8 +567,8 @@ const sd = {
   },
   statBar: {
     marginTop: 8,
-    background: 'rgba(0,85,165,0.06)',
-    border: '1px solid rgba(0,85,165,0.15)',
+    background: 'rgba(47,129,208,0.10)',
+    border: '1px solid rgba(47,129,208,0.20)',
     borderRadius: 8,
     padding: '10px 12px',
     marginBottom: 8,

@@ -19,7 +19,7 @@ function Toggle({ on, onChange, id }) {
       }}>
       <span style={{
         position: 'absolute', top: 3, left: on ? 23 : 3,
-        width: 20, height: 20, borderRadius: '50%', background: '#fff',
+        width: 20, height: 20, borderRadius: '50%', background: 'var(--color-surface)',
         boxShadow: '0 1px 4px rgba(0,0,0,0.20)',
         transition: 'left 0.2s cubic-bezier(0.34,1.56,0.64,1)',
       }} />
@@ -69,10 +69,10 @@ export default function Configuracion() {
           <div style={sc.userCard}>
             <div style={sc.avatar}>{(user?.email?.[0] ?? 'U').toUpperCase()}</div>
             <div style={{ flex: 1, minWidth: 0 }}>
-              <div style={{ fontSize: 14, fontWeight: 800, color: '#1A202C', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+              <div style={{ fontSize: 14, fontWeight: 800, color: 'var(--color-text)', overflow: 'hidden', textOverflow: 'ellipsis' }}>
                 {user?.email ?? '—'}
               </div>
-              <div style={{ fontSize: 11, color: '#718096', marginTop: 2 }}>Administrador del sistema</div>
+              <div style={{ fontSize: 11, color: 'var(--color-text-muted)', marginTop: 2 }}>Administrador del sistema</div>
             </div>
             <span style={sc.roleBadge}><IconShield /> Admin</span>
           </div>
@@ -94,8 +94,8 @@ export default function Configuracion() {
 
           <div style={sc.sRow}>
             <div style={{ flex: 1 }}>
-              <div style={{ fontSize: 13, fontWeight: 700, color: '#1A202C' }}>Notificaciones de MAYIA</div>
-              <div style={{ fontSize: 11, color: '#718096', marginTop: 2 }}>
+              <div style={{ fontSize: 13, fontWeight: 700, color: 'var(--color-text)' }}>Notificaciones de MAYIA</div>
+              <div style={{ fontSize: 11, color: 'var(--color-text-muted)', marginTop: 2 }}>
                 Recibir alertas, sugerencias y predicciones en tiempo real
               </div>
             </div>
@@ -103,8 +103,8 @@ export default function Configuracion() {
           </div>
 
           <div style={sc.statusPill}>
-            <span style={{ width: 7, height: 7, borderRadius: '50%', background: notifOn ? '#007A33' : '#A0AEC0', flexShrink: 0 }} />
-            <span style={{ fontSize: 12, fontWeight: 700, color: notifOn ? '#007A33' : '#718096' }}>
+            <span style={{ width: 7, height: 7, borderRadius: '50%', background: notifOn ? '#3FB950' : 'var(--color-text-dim)', flexShrink: 0 }} />
+            <span style={{ fontSize: 12, fontWeight: 700, color: notifOn ? '#3FB950' : 'var(--color-text-muted)' }}>
               {notifOn ? 'Notificaciones activadas' : 'Notificaciones desactivadas'}
             </span>
           </div>
@@ -116,21 +116,21 @@ export default function Configuracion() {
 
 /* ─── Estilos ─────────────────────────────────────────────────── */
 const sc = {
-  kicker:  { fontSize: 10, fontWeight: 700, color: '#E1251B', textTransform: 'uppercase', letterSpacing: '0.10em', marginBottom: 2 },
-  title:   { fontSize: 22, fontWeight: 800, color: '#1A202C', letterSpacing: '-0.02em' },
-  sub:     { fontSize: 13, color: '#718096', marginTop: 2 },
+  kicker:  { fontSize: 10, fontWeight: 700, color: '#58A6FF', textTransform: 'uppercase', letterSpacing: '0.10em', marginBottom: 2 },
+  title:   { fontSize: 22, fontWeight: 800, color: 'var(--color-text)', letterSpacing: '-0.02em' },
+  sub:     { fontSize: 13, color: 'var(--color-text-muted)', marginTop: 2 },
   grid:    { display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 12 },
   cell: {
-    background: '#fff', border: '1px solid rgba(0,0,0,0.08)', borderRadius: 14,
+    background: 'var(--color-surface)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 14,
     padding: 20, display: 'flex', flexDirection: 'column', gap: 16,
     boxShadow: '0 1px 4px rgba(0,0,0,0.04)',
   },
   cellHead:  { display: 'flex', alignItems: 'center', gap: 12 },
-  cellTitle: { fontSize: 13, fontWeight: 800, color: '#1A202C' },
-  cellSub:   { fontSize: 11, color: '#718096', marginTop: 1 },
+  cellTitle: { fontSize: 13, fontWeight: 800, color: 'var(--color-text)' },
+  cellSub:   { fontSize: 11, color: 'var(--color-text-muted)', marginTop: 1 },
   iconWrap:  { width: 38, height: 38, borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 },
-  onlineDot: { width: 9, height: 9, borderRadius: '50%', background: '#007A33', boxShadow: '0 0 6px rgba(0,122,51,0.5)', animation: 'pulse 2s ease-in-out infinite' },
-  userCard:  { display: 'flex', alignItems: 'center', gap: 12, background: 'rgba(0,0,0,0.025)', borderRadius: 12, padding: '12px 14px' },
+  onlineDot: { width: 9, height: 9, borderRadius: '50%', background: '#3FB950', boxShadow: '0 0 6px rgba(63,185,80,0.5)', animation: 'pulse 2s ease-in-out infinite' },
+  userCard:  { display: 'flex', alignItems: 'center', gap: 12, background: 'rgba(255,255,255,0.04)', borderRadius: 12, padding: '12px 14px' },
   avatar: {
     width: 40, height: 40, borderRadius: '50%', flexShrink: 0,
     background: 'linear-gradient(135deg, #E1251B, #B01A12)',

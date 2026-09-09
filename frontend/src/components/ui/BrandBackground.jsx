@@ -23,12 +23,12 @@ export default function BrandBackground({ speed = 0.25 }) {
     window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
   const spd = reduce ? 0 : speed
   const colors = [
-    '#FFFFFF',
-    bg.startsWith('#') ? bg : '#F4F6F8',
-    toward(primary, 0.78),   // azul muy claro
-    toward(accent, 0.80),    // azul oscuro muy claro
-    toward(primary, 0.55),   // azul claro
-    toward(accent, 0.58),    // azul oscuro claro
+    '#0D1117',
+    bg.startsWith('#') ? bg : '#0D1117',
+    toward(primary, 0.10),   // azul oscuro profundo
+    toward(accent, 0.12),    // azul brillante muy oscuro
+    toward(primary, 0.20),   // azul oscuro
+    toward(accent, 0.22),    // azul brillante oscuro
   ]
   return (
     <div style={wrap} aria-hidden="true">

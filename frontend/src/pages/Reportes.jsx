@@ -18,7 +18,7 @@ function CircularRing({ pct, size = 80, stroke = 7, color, label, value, sub }) 
         <svg width={size} height={size} style={{ transform: 'rotate(-90deg)' }}>
           {/* Pista */}
           <circle cx={size/2} cy={size/2} r={r}
-            fill="none" stroke="rgba(0,0,0,0.06)" strokeWidth={stroke} />
+            fill="none" stroke="rgba(255,255,255,0.06)" strokeWidth={stroke} />
           {/* Progreso */}
           <circle cx={size/2} cy={size/2} r={r}
             fill="none" stroke={color} strokeWidth={stroke}
@@ -33,10 +33,10 @@ function CircularRing({ pct, size = 80, stroke = 7, color, label, value, sub }) 
           display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
         }}>
           <span style={{ fontSize: size * 0.18, fontWeight: 800, color, lineHeight: 1 }}>{value}</span>
-          {sub && <span style={{ fontSize: size * 0.11, color: '#718096', marginTop: 1 }}>{sub}</span>}
+          {sub && <span style={{ fontSize: size * 0.11, color: 'var(--color-text-muted)', marginTop: 1 }}>{sub}</span>}
         </div>
       </div>
-      {label && <span style={{ fontSize: 11, fontWeight: 700, color: '#4A5568', textTransform: 'uppercase', letterSpacing: '0.08em', textAlign: 'center' }}>{label}</span>}
+      {label && <span style={{ fontSize: 11, fontWeight: 700, color: 'var(--color-text-muted)', textTransform: 'uppercase', letterSpacing: '0.08em', textAlign: 'center' }}>{label}</span>}
     </div>
   )
 }
@@ -54,31 +54,31 @@ function AreaChart({ trend }) {
     <svg viewBox={`0 0 ${w} ${h}`} style={{ width: '100%', height: 'auto' }}>
       <defs>
         <linearGradient id="panAreaGrad" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="#0055A5" stopOpacity="0.20" />
-          <stop offset="100%" stopColor="#0055A5" stopOpacity="0.02" />
+          <stop offset="0%" stopColor="#58A6FF" stopOpacity="0.20" />
+          <stop offset="100%" stopColor="#58A6FF" stopOpacity="0.02" />
         </linearGradient>
       </defs>
       {/* Grid lines */}
       {[0, 25, 50].map(g => (
         <g key={g}>
           <line x1={px} x2={w - px} y1={yv(g)} y2={yv(g)}
-            stroke="rgba(0,0,0,0.06)" strokeWidth={0.8} strokeDasharray="3,4" />
-          <text x={4} y={yv(g) + 4} fontSize="8" fill="#A0AEC0">{g}%</text>
+            stroke="rgba(255,255,255,0.06)" strokeWidth={0.8} strokeDasharray="3,4" />
+          <text x={4} y={yv(g) + 4} fontSize="8" fill="var(--color-text-dim)">{g}%</text>
         </g>
       ))}
       {/* Área rellena */}
       <polygon points={area} fill="url(#panAreaGrad)" />
       {/* Línea principal */}
       <polyline className="draw-line" points={pts} fill="none"
-        stroke="#0055A5" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round" />
+        stroke="#58A6FF" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round" />
       {/* Nodos y etiquetas */}
       {trend.map((t, i) => (
         <g key={t.year}>
           <circle cx={xs[i]} cy={yv(t.share)} r={4.5}
-            fill="#fff" stroke="#0055A5" strokeWidth={2.5} />
-          <text x={xs[i]} y={h - 5} fontSize="9" fill="#718096" textAnchor="middle">{t.year}</text>
+            fill="#fff" stroke="#58A6FF" strokeWidth={2.5} />
+          <text x={xs[i]} y={h - 5} fontSize="9" fill="var(--color-text-muted)" textAnchor="middle">{t.year}</text>
           <text x={xs[i]} y={yv(t.share) - 9} fontSize="10" fontWeight="800"
-            fill="#0055A5" textAnchor="middle">{fmtPct(t.share)}</text>
+            fill="#58A6FF" textAnchor="middle">{fmtPct(t.share)}</text>
         </g>
       ))}
     </svg>
@@ -93,12 +93,12 @@ function BarsPartidos({ data }) {
       {data.map((p, i) => (
         <div key={p.key} style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
-            <span style={{ fontSize: 12, fontWeight: 700, color: '#1A202C' }}>{p.name}</span>
+            <span style={{ fontSize: 12, fontWeight: 700, color: 'var(--color-text)' }}>{p.name}</span>
             <span style={{ fontSize: 12, fontWeight: 800, color: p.color, fontVariantNumeric: 'tabular-nums' }}>
-              {fmt(p.votos)} · <span style={{ fontWeight: 600, color: '#718096' }}>{fmtPct(p.share)}</span>
+              {fmt(p.votos)} · <span style={{ fontWeight: 600, color: 'var(--color-text-muted)' }}>{fmtPct(p.share)}</span>
             </span>
           </div>
-          <div style={{ height: 8, background: 'rgba(0,0,0,0.06)', borderRadius: 6, overflow: 'hidden' }}>
+          <div style={{ height: 8, background: 'rgba(255,255,255,0.06)', borderRadius: 6, overflow: 'hidden' }}>
             <div className="bar-grow" style={{
               width: `${(p.votos / max) * 100}%`, height: '100%',
               background: p.color, borderRadius: 6,
@@ -116,14 +116,14 @@ function BarsPartidos({ data }) {
 function TopMunRow({ m, rank, year }) {
   return (
     <div style={sRow.row}>
-      <div style={{ ...sRow.rank, background: rank <= 3 ? 'rgba(0,85,165,0.08)' : 'rgba(0,0,0,0.04)', color: rank <= 3 ? '#0055A5' : '#718096' }}>
+      <div style={{ ...sRow.rank, background: rank <= 3 ? 'rgba(0,85,165,0.08)' : 'rgba(0,0,0,0.04)', color: rank <= 3 ? '#58A6FF' : 'var(--color-text-muted)' }}>
         {rank}
       </div>
       <div style={{ flex: 1, minWidth: 0 }}>
-        <div style={{ fontSize: 13, fontWeight: 700, color: '#1A202C', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+        <div style={{ fontSize: 13, fontWeight: 700, color: 'var(--color-text)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
           {m.municipio}
         </div>
-        <div style={{ fontSize: 11, color: '#718096', marginTop: 1 }}>
+        <div style={{ fontSize: 11, color: 'var(--color-text-muted)', marginTop: 1 }}>
           {fmt(m.votos)} votos PAN
         </div>
       </div>
@@ -134,7 +134,7 @@ function TopMunRow({ m, rank, year }) {
   )
 }
 const sRow = {
-  row: { display: 'flex', alignItems: 'center', gap: 10, padding: '8px 0', borderBottom: '1px solid rgba(0,0,0,0.05)' },
+  row: { display: 'flex', alignItems: 'center', gap: 10, padding: '8px 0', borderBottom: '1px solid rgba(255,255,255,0.05)' },
   rank: { width: 26, height: 26, borderRadius: 8, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 11, fontWeight: 800, flexShrink: 0 },
   chip: { fontSize: 10, fontWeight: 700, color: '#fff', padding: '3px 9px', borderRadius: 20, flexShrink: 0 },
 }
@@ -185,7 +185,7 @@ export default function Reportes() {
             <CircularRing
               pct={panPct}
               size={96}
-              color="#0055A5"
+              color="#58A6FF"
               value={`${panPct.toFixed(0)}%`}
               sub="municipios"
               label="Alcance PAN"
@@ -241,8 +241,8 @@ export default function Reportes() {
             <div style={{ display: 'flex', gap: 12 }}>
               {trend.map(t => (
                 <div key={t.year} style={{ textAlign: 'center' }}>
-                  <div style={{ fontSize: 13, fontWeight: 800, color: '#0055A5' }}>{fmt(t.municipios)}</div>
-                  <div style={{ fontSize: 9, color: '#A0AEC0', textTransform: 'uppercase', letterSpacing: '0.06em' }}>{t.year}</div>
+                  <div style={{ fontSize: 13, fontWeight: 800, color: '#58A6FF' }}>{fmt(t.municipios)}</div>
+                  <div style={{ fontSize: 9, color: 'var(--color-text-dim)', textTransform: 'uppercase', letterSpacing: '0.06em' }}>{t.year}</div>
                 </div>
               ))}
             </div>
@@ -281,20 +281,20 @@ const sr = {
     justifyContent: 'space-between', gap: 12, flexWrap: 'wrap',
   },
   kicker: {
-    fontSize: 10, fontWeight: 700, color: '#0055A5',
+    fontSize: 10, fontWeight: 700, color: '#58A6FF',
     textTransform: 'uppercase', letterSpacing: '0.10em', marginBottom: 2,
   },
-  title: { fontSize: 22, fontWeight: 800, color: '#1A202C', letterSpacing: '-0.02em' },
-  sub: { fontSize: 13, color: '#718096', marginTop: 2 },
+  title: { fontSize: 22, fontWeight: 800, color: 'var(--color-text)', letterSpacing: '-0.02em' },
+  sub: { fontSize: 13, color: 'var(--color-text-muted)', marginTop: 2 },
   yearRow: { display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' },
   yearBtn: {
     fontSize: 12, fontWeight: 700, padding: '7px 16px', borderRadius: 20,
-    border: '1px solid rgba(0,0,0,0.10)', background: '#fff',
-    color: '#4A5568', cursor: 'pointer', transition: 'all 0.15s ease',
+    border: '1px solid rgba(255,255,255,0.10)', background: 'var(--color-surface)',
+    color: 'var(--color-text-muted)', cursor: 'pointer', transition: 'all 0.15s ease',
   },
   yearBtnActive: {
-    background: '#0055A5', color: '#fff',
-    borderColor: '#0055A5', boxShadow: '0 4px 12px rgba(0,85,165,0.25)',
+    background: '#58A6FF', color: '#fff',
+    borderColor: '#58A6FF', boxShadow: '0 4px 12px rgba(0,85,165,0.25)',
   },
 
   /* ── Bento Grid ── */
@@ -305,8 +305,8 @@ const sr = {
     gap: 12,
   },
   cell: {
-    background: '#fff',
-    border: '1px solid rgba(0,0,0,0.08)',
+    background: 'var(--color-surface)',
+    border: '1px solid rgba(255,255,255,0.08)',
     borderRadius: 14,
     padding: 18,
     display: 'flex',
@@ -315,7 +315,7 @@ const sr = {
     boxShadow: '0 1px 4px rgba(0,0,0,0.04)',
   },
   cellTitle: {
-    fontSize: 11, fontWeight: 700, color: '#4A5568',
+    fontSize: 11, fontWeight: 700, color: 'var(--color-text-muted)',
     textTransform: 'uppercase', letterSpacing: '0.08em', margin: 0,
   },
 
@@ -344,15 +344,15 @@ const sr = {
   /* Mini stats dentro de la celda de aros */
   miniStats: {
     display: 'flex', alignItems: 'center', justifyContent: 'center',
-    gap: 0, background: 'rgba(0,0,0,0.025)', borderRadius: 10, padding: '10px 16px',
+    gap: 0, background: 'rgba(255,255,255,0.03)', borderRadius: 10, padding: '10px 16px',
   },
   miniStat: { display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '0 16px' },
-  miniVal: { fontSize: 16, fontWeight: 800, color: '#1A202C' },
-  miniLab: { fontSize: 10, color: '#718096', marginTop: 1, textTransform: 'uppercase', letterSpacing: '0.06em' },
-  miniDivider: { width: 1, height: 28, background: 'rgba(0,0,0,0.08)' },
+  miniVal: { fontSize: 16, fontWeight: 800, color: 'var(--color-text)' },
+  miniLab: { fontSize: 10, color: 'var(--color-text-muted)', marginTop: 1, textTransform: 'uppercase', letterSpacing: '0.06em' },
+  miniDivider: { width: 1, height: 28, background: 'rgba(255,255,255,0.08)' },
 
   badge: {
     fontSize: 10, fontWeight: 700, padding: '3px 10px',
-    background: 'rgba(0,85,165,0.08)', color: '#0055A5', borderRadius: 20,
+    background: 'rgba(47,129,208,0.12)', color: '#58A6FF', borderRadius: 20,
   },
 }

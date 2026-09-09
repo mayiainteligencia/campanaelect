@@ -21,7 +21,7 @@ function MiniRing({ pct, color, size = 52, label }) {
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 5 }}>
       <div style={{ position: 'relative', width: size, height: size }}>
         <svg width={size} height={size} style={{ transform: 'rotate(-90deg)' }}>
-          <circle cx={size/2} cy={size/2} r={r} fill="none" stroke="rgba(0,0,0,0.06)" strokeWidth={stroke} />
+          <circle cx={size/2} cy={size/2} r={r} fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth={stroke} />
           <circle cx={size/2} cy={size/2} r={r} fill="none" stroke={color} strokeWidth={stroke}
             strokeDasharray={circ} strokeDashoffset={offset} strokeLinecap="round"
             style={{ transition: 'stroke-dashoffset 1s ease' }}
@@ -31,7 +31,7 @@ function MiniRing({ pct, color, size = 52, label }) {
           <span style={{ fontSize: 11, fontWeight: 800, color }}>{Math.round(pct)}%</span>
         </div>
       </div>
-      {label && <span style={{ fontSize: 10, color: '#718096', textAlign: 'center', maxWidth: 60 }}>{label}</span>}
+      {label && <span style={{ fontSize: 10, color: 'var(--color-text-muted)', textAlign: 'center', maxWidth: 60 }}>{label}</span>}
     </div>
   )
 }
@@ -40,22 +40,22 @@ function MiniRing({ pct, color, size = 52, label }) {
 function ColRow({ c, i }) {
   const dangerLevel = c.pct_nulos >= 50 ? '#E1251B' : c.pct_nulos >= 20 ? '#B45309' : '#007A33'
   return (
-    <div style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '8px 0', borderBottom: '1px solid rgba(0,0,0,0.04)' }}>
-      <span style={{ width: 20, fontSize: 10, fontWeight: 800, color: '#A0AEC0', flexShrink: 0 }}>{i + 1}</span>
-      <div style={{ flex: 1, minWidth: 0 }}>
+    <div style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '8px 0', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
+      <span style={{ width: 20, fontSize: 10, fontWeight: 800, color: 'var(--color-text-dim)', flexShrink: 0 }}>{i + 1}</span>
+      <div style={{ flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column', gap: 3 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 6, flexWrap: 'wrap' }}>
-          <span style={{ fontSize: 12, fontWeight: 700, color: '#1A202C' }}>{c.nombre}</span>
-          <span style={{ fontSize: 9, fontFamily: 'monospace', color: '#A0AEC0', background: 'rgba(0,0,0,0.04)', borderRadius: 4, padding: '1px 5px' }}>{c.tipo}</span>
+          <span style={{ fontSize: 12, fontWeight: 700, color: 'var(--color-text)' }}>{c.nombre}</span>
+          <span style={{ fontSize: 9, fontFamily: 'monospace', color: 'var(--color-text-dim)', background: 'rgba(255,255,255,0.06)', borderRadius: 4, padding: '1px 5px' }}>{c.tipo}</span>
           {c.notas.map(n => (
             <span key={n} style={{ fontSize: 9, fontWeight: 700, padding: '1px 6px', borderRadius: 10,
-              background: n === 'PII' ? 'rgba(225,37,27,0.08)' : n === 'llave' ? 'rgba(0,122,51,0.08)' : 'rgba(0,0,0,0.05)',
-              color: n === 'PII' ? '#E1251B' : n === 'llave' ? '#007A33' : '#718096',
+              background: n === 'PII' ? 'rgba(248,81,73,0.12)' : n === 'llave' ? 'rgba(63,185,80,0.12)' : 'rgba(255,255,255,0.06)',
+              color: n === 'PII' ? '#F85149' : n === 'llave' ? '#3FB950' : 'var(--color-text-muted)',
             }}>{n}</span>
           ))}
         </div>
         {c.pct_nulos > 0 && (
           <div style={{ marginTop: 4, display: 'flex', alignItems: 'center', gap: 6 }}>
-            <div style={{ flex: 1, height: 3, background: 'rgba(0,0,0,0.05)', borderRadius: 3, overflow: 'hidden', maxWidth: 120 }}>
+            <div style={{ flex: 1, height: 3, background: 'rgba(255,255,255,0.06)', borderRadius: 3, overflow: 'hidden', maxWidth: 120 }}>
               <div style={{ width: `${c.pct_nulos}%`, height: '100%', background: dangerLevel, borderRadius: 3 }} />
             </div>
             <span style={{ fontSize: 10, color: dangerLevel, fontWeight: 700 }}>{c.pct_nulos}% vacíos</span>
@@ -68,16 +68,16 @@ function ColRow({ c, i }) {
 
 /* ─── Vista previa de datos ───────────────────────────────────── */
 function DataPreview({ rows }) {
-  if (!rows?.length) return <div style={{ fontSize: 13, color: '#A0AEC0', textAlign: 'center', padding: 24 }}>Sin datos de preview</div>
+  if (!rows?.length) return <div style={{ fontSize: 13, color: 'var(--color-text-dim)', textAlign: 'center', padding: 24 }}>Sin datos de preview</div>
   const cols = Object.keys(rows[0])
   return (
     <div style={{ overflowX: 'auto' }}>
       <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 12, whiteSpace: 'nowrap' }}>
         <thead>
-          <tr style={{ background: 'rgba(0,0,0,0.025)' }}>
+          <tr style={{ background: 'rgba(255,255,255,0.03)' }}>
             {cols.map(c => (
-              <th key={c} style={{ padding: '8px 12px', textAlign: 'left', fontSize: 10, fontWeight: 700,
-                color: '#718096', textTransform: 'uppercase', letterSpacing: '0.05em', borderBottom: '1px solid rgba(0,0,0,0.08)' }}>
+              <th key={c} style={{ padding: '6px 10px', fontSize: 10, fontWeight: 700, textAlign: 'left',
+                color: 'var(--color-text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em', borderBottom: '1px solid rgba(255,255,255,0.08)' }}>
                 {c}
               </th>
             ))}
@@ -85,10 +85,10 @@ function DataPreview({ rows }) {
         </thead>
         <tbody>
           {rows.slice(0, 10).map((r, i) => (
-            <tr key={i} style={{ borderBottom: '1px solid rgba(0,0,0,0.04)' }}>
+            <tr key={i} style={{ borderBottom: '1px solid rgba(255,255,255,0.04)' }}>
               {cols.map(c => (
-                <td key={c} style={{ padding: '7px 12px', maxWidth: 180, overflow: 'hidden', textOverflow: 'ellipsis',
-                  color: r[c] == null ? '#A0AEC0' : '#1A202C', fontStyle: r[c] == null ? 'italic' : 'normal' }}>
+                <td key={c} style={{ padding: '5px 10px', fontSize: 12,
+                  color: r[c] == null ? 'var(--color-text-dim)' : 'var(--color-text)', fontStyle: r[c] == null ? 'italic' : 'normal' }}>
                   {r[c] == null ? 'null' : String(r[c])}
                 </td>
               ))}
@@ -213,8 +213,8 @@ export default function Datos() {
               { label: 'PII',       val: fmt(conPII) },
             ].map(m => (
               <div key={m.label} style={sd.metricItem}>
-                <span style={{ fontSize: 16, fontWeight: 800, color: '#1A202C' }}>{m.val}</span>
-                <span style={{ fontSize: 9, color: '#A0AEC0', textTransform: 'uppercase', letterSpacing: '0.06em' }}>{m.label}</span>
+                <span style={{ fontSize: 16, fontWeight: 800, color: 'var(--color-text)' }}>{m.val}</span>
+                <span style={{ fontSize: 9, color: 'var(--color-text-dim)', textTransform: 'uppercase', letterSpacing: '0.06em' }}>{m.label}</span>
               </div>
             ))}
           </div>
@@ -229,7 +229,7 @@ export default function Datos() {
               </div>
               <p style={{ ...sd.cellTitle, color: '#E1251B' }}>Datos personales detectados</p>
             </div>
-            <p style={{ fontSize: 12, color: '#4A5568', lineHeight: 1.6, margin: 0 }}>
+            <p style={{ fontSize: 12, color: 'var(--color-text-muted)', lineHeight: 1.6, margin: 0 }}>
               {conPII} {conPII === 1 ? 'columna contiene' : 'columnas contienen'} información
               identificable (PII). Asegúrate de protegerlas antes de compartir el dataset.
             </p>
@@ -252,7 +252,7 @@ export default function Datos() {
           </div>
           <div style={{ flex: 1, overflowY: 'auto', maxHeight: 280 }}>
             {perfil?.columnas.map((c, i) => <ColRow key={c.nombre} c={c} i={i} />) ?? (
-              <p style={{ fontSize: 13, color: '#A0AEC0', textAlign: 'center', padding: 24 }}>Sin perfilado disponible</p>
+              <p style={{ fontSize: 13, color: 'var(--color-text-dim)', textAlign: 'center', padding: 24 }}>Sin perfilado disponible</p>
             )}
           </div>
         </div>
@@ -271,24 +271,24 @@ export default function Datos() {
 /* ─── Estilos ─────────────────────────────────────────────────── */
 const sd = {
   head:   { display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 12, flexWrap: 'wrap' },
-  kicker: { fontSize: 10, fontWeight: 700, color: '#E1251B', textTransform: 'uppercase', letterSpacing: '0.10em', marginBottom: 2 },
-  title:  { fontSize: 22, fontWeight: 800, color: '#1A202C', letterSpacing: '-0.02em' },
-  sub:    { fontSize: 13, color: '#718096', marginTop: 2 },
+  kicker: { fontSize: 10, fontWeight: 700, color: '#58A6FF', textTransform: 'uppercase', letterSpacing: '0.10em', marginBottom: 2 },
+  title:  { fontSize: 22, fontWeight: 800, color: 'var(--color-text)', letterSpacing: '-0.02em' },
+  sub:    { fontSize: 13, color: 'var(--color-text-muted)', marginTop: 2 },
   verdict: { fontSize: 12, fontWeight: 800, padding: '6px 14px', borderRadius: 20, flexShrink: 0, alignSelf: 'flex-start', marginTop: 4 },
-  verdictOk:   { color: '#007A33', background: 'rgba(0,122,51,0.08)', border: '1px solid rgba(0,122,51,0.20)' },
-  verdictWarn: { color: '#E1251B', background: 'rgba(225,37,27,0.08)', border: '1px solid rgba(225,37,27,0.20)' },
+  verdictOk:   { color: '#3FB950', background: 'rgba(63,185,80,0.12)', border: '1px solid rgba(63,185,80,0.25)' },
+  verdictWarn: { color: '#F85149', background: 'rgba(248,81,73,0.12)', border: '1px solid rgba(248,81,73,0.25)' },
 
   /* Tabs de hojas */
   tabsRow: { display: 'flex', gap: 6, flexWrap: 'wrap' },
   tab: {
     display: 'flex', alignItems: 'center', gap: 6,
     fontSize: 12, fontWeight: 700, padding: '8px 16px', borderRadius: 20,
-    border: '1px solid rgba(0,0,0,0.10)', background: '#fff',
-    color: '#4A5568', cursor: 'pointer', transition: 'all 0.15s',
+    border: '1px solid rgba(255,255,255,0.10)', background: 'var(--color-surface)',
+    color: 'var(--color-text-muted)', cursor: 'pointer', transition: 'all 0.15s',
   },
   tabActive: {
-    background: '#E1251B', color: '#fff', borderColor: '#E1251B',
-    boxShadow: '0 4px 12px rgba(225,37,27,0.25)',
+    background: '#2F81D0', color: '#fff', borderColor: '#2F81D0',
+    boxShadow: '0 4px 12px rgba(47,129,208,0.30)',
   },
 
   /* Acciones */
@@ -296,22 +296,22 @@ const sd = {
   actBtn: {
     display: 'flex', alignItems: 'center', gap: 6,
     fontSize: 12, fontWeight: 700, padding: '9px 18px', borderRadius: 10,
-    background: '#E1251B', color: '#fff', border: 'none', cursor: 'pointer',
-    boxShadow: '0 4px 12px rgba(225,37,27,0.20)', transition: 'all 0.15s',
+    background: '#2F81D0', color: '#fff', border: 'none', cursor: 'pointer',
+    boxShadow: '0 4px 12px rgba(47,129,208,0.25)', transition: 'all 0.15s',
   },
   actGhost: {
-    background: '#fff', color: '#4A5568', boxShadow: 'none',
-    border: '1px solid rgba(0,0,0,0.10)',
+    background: 'var(--color-surface)', color: 'var(--color-text-muted)', boxShadow: 'none',
+    border: '1px solid rgba(255,255,255,0.10)',
   },
 
   /* Bento */
   bento: { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 },
   cell: {
-    background: '#fff', border: '1px solid rgba(0,0,0,0.08)', borderRadius: 14,
+    background: 'var(--color-surface)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 14,
     padding: 18, display: 'flex', flexDirection: 'column', gap: 14,
-    boxShadow: '0 1px 4px rgba(0,0,0,0.04)',
+    boxShadow: '0 1px 4px rgba(0,0,0,0.15)',
   },
-  cellTitle:   { fontSize: 11, fontWeight: 700, color: '#4A5568', textTransform: 'uppercase', letterSpacing: '0.08em', margin: 0 },
+  cellTitle:   { fontSize: 11, fontWeight: 700, color: 'var(--color-text-muted)', textTransform: 'uppercase', letterSpacing: '0.08em', margin: 0 },
   cellRings:   { gridColumn: '1 / 2' },
   cellPii:     { gridColumn: '2 / 3' },
   cellProfile: { gridColumn: '1 / 3' },
@@ -319,15 +319,15 @@ const sd = {
 
   metricsRow: {
     display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 0,
-    background: 'rgba(0,0,0,0.025)', borderRadius: 10, overflow: 'hidden',
+    background: 'rgba(255,255,255,0.03)', borderRadius: 10, overflow: 'hidden',
   },
   metricItem: {
     display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3,
-    padding: '10px 6px', background: '#fff',
-    borderRight: '1px solid rgba(0,0,0,0.04)',
+    padding: '10px 6px', background: 'var(--color-surface)',
+    borderRight: '1px solid rgba(255,255,255,0.05)',
   },
   countBadge: {
     fontSize: 10, fontWeight: 700, padding: '3px 9px',
-    background: 'rgba(0,0,0,0.05)', color: '#718096', borderRadius: 20,
+    background: 'rgba(255,255,255,0.06)', color: 'var(--color-text-muted)', borderRadius: 20,
   },
 }

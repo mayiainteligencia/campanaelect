@@ -146,7 +146,7 @@ export default function Header({ title, crumbs = [], collapsed, isMobile, onTogg
         )}
       </div>
 
-      {/* ── Avatar con azul PAN ─────────────────────── */}}
+      {/* ── Avatar con azul PAN ─────────────────────── */}
       <div style={s.avatar} title="Usuario">
         <IconUser />
       </div>
@@ -160,7 +160,7 @@ export default function Header({ title, crumbs = [], collapsed, isMobile, onTogg
   )
 }
 
-/* ── Styles (Tema Claro Institucional PAN) ─────────────────────── */
+/* ── Styles (Tema Oscuro Institucional PAN) ─────────────────────── */
 const s = {
   circuitLeft: {
     display: 'flex',
@@ -190,9 +190,9 @@ const s = {
     width: 28, height: 28,
     display: 'flex', alignItems: 'center', justifyContent: 'center',
     borderRadius: 8,
-    color: '#4A5568',
-    background: 'rgba(0,0,0,0.04)',
-    border: '1px solid rgba(0,0,0,0.08)',
+    color: 'var(--color-text-muted)',
+    background: 'rgba(255,255,255,0.06)',
+    border: '1px solid rgba(255,255,255,0.08)',
     transition: 'all 0.15s ease',
     flexShrink: 0,
     cursor: 'pointer',
@@ -209,7 +209,6 @@ const s = {
     height: 22,
     width: 'auto',
     objectFit: 'contain',
-    /* Logo original sin efectos en modo claro */
   },
   breadcrumb: {
     display: 'flex',
@@ -217,20 +216,20 @@ const s = {
     fontSize: 12,
     gap: 4,
     flex: 1,
-    minWidth: 0, /* permite truncar hijos */
+    minWidth: 0,
   },
   crumbSection: {
-    color: '#718096',
+    color: 'var(--color-text-muted)',
     fontWeight: 500,
     flexShrink: 0,
   },
   crumbSep: {
-    color: '#A0AEC0',
+    color: 'var(--color-text-dim)',
     fontSize: 10,
     flexShrink: 0,
   },
   crumbTitle: {
-    color: '#1A202C',
+    color: 'var(--color-text)',
     fontWeight: 700,
     fontSize: 11,
     letterSpacing: '0.01em',
@@ -242,18 +241,18 @@ const s = {
   divider: {
     width: 1,
     height: 18,
-    background: 'rgba(0,0,0,0.10)',
+    background: 'rgba(255,255,255,0.10)',
     flexShrink: 0,
   },
   searchPill: {
     display: 'flex',
     alignItems: 'center',
     gap: 6,
-    background: 'rgba(0,0,0,0.04)',
-    border: '1px solid rgba(0,0,0,0.10)',
+    background: 'rgba(255,255,255,0.06)',
+    border: '1px solid rgba(255,255,255,0.10)',
     borderRadius: 16,
     padding: '4px 10px',
-    color: '#718096',
+    color: 'var(--color-text-muted)',
     minWidth: 130,
     maxWidth: 200,
     cursor: 'text',
@@ -263,16 +262,16 @@ const s = {
     background: 'none',
     border: 'none',
     outline: 'none',
-    color: '#1A202C',
+    color: 'var(--color-text)',
     fontSize: 12,
     flex: 1,
     width: '100%',
   },
   searchShortcut: {
     fontSize: 9,
-    color: '#A0AEC0',
-    background: 'rgba(0,0,0,0.04)',
-    border: '1px solid rgba(0,0,0,0.08)',
+    color: 'var(--color-text-dim)',
+    background: 'rgba(255,255,255,0.06)',
+    border: '1px solid rgba(255,255,255,0.08)',
     borderRadius: 4,
     padding: '1px 4px',
     flexShrink: 0,
@@ -286,14 +285,14 @@ const s = {
   statusDot: {
     width: 6, height: 6,
     borderRadius: '50%',
-    background: '#0055A5',   /* Azul PAN */
+    background: 'var(--color-primary)',
     display: 'inline-block',
-    boxShadow: '0 0 6px rgba(0,85,165,0.5)',
+    boxShadow: '0 0 6px var(--color-primary-glow)',
     animation: 'dotPulse 2s ease-in-out infinite',
   },
   statusText: {
     fontSize: 11,
-    color: '#0055A5',
+    color: 'var(--color-primary)',
     fontWeight: 600,
     letterSpacing: '0.04em',
   },
@@ -301,9 +300,9 @@ const s = {
     width: 30, height: 30,
     display: 'flex', alignItems: 'center', justifyContent: 'center',
     borderRadius: 50,
-    color: '#4A5568',
-    background: 'rgba(0,0,0,0.04)',
-    border: '1px solid rgba(0,0,0,0.08)',
+    color: 'var(--color-text-muted)',
+    background: 'rgba(255,255,255,0.06)',
+    border: '1px solid rgba(255,255,255,0.08)',
     transition: 'all 0.15s ease',
     position: 'relative',
     flexShrink: 0,
@@ -312,21 +311,21 @@ const s = {
   badge: {
     position: 'absolute', top: -4, right: -4,
     width: 15, height: 15,
-    background: '#0055A5',    /* Azul PAN */
+    background: 'var(--color-primary)',
     borderRadius: '50%',
     fontSize: 8,
     fontWeight: 700,
     color: '#fff',
     display: 'flex', alignItems: 'center', justifyContent: 'center',
-    border: '1.5px solid rgba(255,255,255,0.95)',
-    boxShadow: '0 0 6px rgba(0,85,165,0.35)',
+    border: '1.5px solid rgba(13,17,23,0.95)',
+    boxShadow: '0 0 6px var(--color-primary-glow)',
   },
   notifPanel: {
     position: 'absolute', top: 40, right: 0, width: 300, maxWidth: 'calc(100vw - 24px)',
-    background: 'rgba(255,255,255,0.98)',
-    border: '1px solid rgba(0,0,0,0.10)',
+    background: 'rgba(22,27,34,0.98)',
+    border: '1px solid rgba(255,255,255,0.10)',
     borderRadius: 14,
-    boxShadow: '0 16px 40px rgba(0,0,0,0.12)',
+    boxShadow: '0 16px 40px rgba(0,0,0,0.40)',
     zIndex: 500,
     overflow: 'hidden',
     animation: 'slideInUp 0.2s ease both',
@@ -335,32 +334,32 @@ const s = {
   notifHead: {
     display: 'flex', alignItems: 'center', justifyContent: 'space-between',
     padding: '10px 14px',
-    borderBottom: '1px solid rgba(0,0,0,0.08)',
+    borderBottom: '1px solid rgba(255,255,255,0.08)',
   },
   notifTitle: {
     display: 'inline-flex', alignItems: 'center', gap: 6,
-    fontSize: 12, fontWeight: 800, color: '#1A202C',
+    fontSize: 12, fontWeight: 800, color: 'var(--color-text)',
   },
   notifClear: {
     background: 'none', border: 'none',
-    color: '#0055A5', fontSize: 11, fontWeight: 700, cursor: 'pointer',
+    color: 'var(--color-primary)', fontSize: 11, fontWeight: 700, cursor: 'pointer',
   },
   notifList: { maxHeight: 340, overflowY: 'auto' },
   notifEmpty: {
-    fontSize: 12, color: '#718096',
+    fontSize: 12, color: 'var(--color-text-muted)',
     padding: '18px 14px', textAlign: 'center',
   },
-  notifItem: { padding: '10px 14px', borderBottom: '1px solid rgba(0,0,0,0.06)' },
-  notifItemTitle: { fontSize: 12, fontWeight: 700, color: '#1A202C', lineHeight: 1.3 },
-  notifItemDetail: { fontSize: 11, color: '#718096', lineHeight: 1.4, marginTop: 2 },
+  notifItem: { padding: '10px 14px', borderBottom: '1px solid rgba(255,255,255,0.06)' },
+  notifItemTitle: { fontSize: 12, fontWeight: 700, color: 'var(--color-text)', lineHeight: 1.3 },
+  notifItemDetail: { fontSize: 11, color: 'var(--color-text-muted)', lineHeight: 1.4, marginTop: 2 },
   avatar: {
     width: 30, height: 30,
     borderRadius: '50%',
-    background: 'linear-gradient(135deg, #0055A5, #003D7A)',   /* Azul PAN */
+    background: 'linear-gradient(135deg, var(--color-primary), var(--color-primary-dark))',
     display: 'flex', alignItems: 'center', justifyContent: 'center',
     color: '#fff',
     flexShrink: 0,
     cursor: 'pointer',
-    boxShadow: '0 2px 8px rgba(0,85,165,0.25)',
+    boxShadow: '0 2px 8px var(--color-primary-glow)',
   },
 }

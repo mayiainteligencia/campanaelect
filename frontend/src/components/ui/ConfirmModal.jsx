@@ -144,12 +144,12 @@ const m = {
     animation: 'fadeIn 0.15s ease',
   },
   modal: {
-    background: '#fff',
+    background: 'var(--color-surface)',
     borderRadius: 18,
     padding: 24,
     width: '100%',
     maxWidth: 380,
-    boxShadow: '0 24px 60px rgba(0,0,0,0.18), 0 0 0 1px rgba(0,0,0,0.06)',
+    boxShadow: '0 24px 60px rgba(0,0,0,0.40), 0 0 0 1px rgba(255,255,255,0.08)',
     animation: 'slideInUp 0.2s cubic-bezier(0.34,1.56,0.64,1)',
   },
   iconWrap: {
@@ -160,24 +160,24 @@ const m = {
   closeBtn: {
     width: 28, height: 28,
     display: 'flex', alignItems: 'center', justifyContent: 'center',
-    background: 'rgba(0,0,0,0.05)', border: 'none', borderRadius: 8,
-    color: '#718096', cursor: 'pointer',
+    background: 'rgba(255,255,255,0.06)', border: 'none', borderRadius: 8,
+    color: 'var(--color-text-muted)', cursor: 'pointer',
     transition: 'background 0.15s',
   },
   title: {
-    fontSize: 16, fontWeight: 800, color: '#1A202C',
+    fontSize: 16, fontWeight: 800, color: 'var(--color-text)',
     letterSpacing: '-0.01em', marginBottom: 6,
   },
   desc: {
-    fontSize: 13, color: '#718096', lineHeight: 1.6,
+    fontSize: 13, color: 'var(--color-text-muted)', lineHeight: 1.6,
   },
   actions: {
     display: 'flex', gap: 8, marginTop: 20,
   },
   discardBtn: {
     flex: 1, padding: '11px 0', borderRadius: 10, fontSize: 13, fontWeight: 700,
-    background: 'rgba(0,0,0,0.05)', border: '1px solid rgba(0,0,0,0.09)',
-    color: '#4A5568', cursor: 'pointer', transition: 'all 0.15s',
+    background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.10)',
+    color: 'var(--color-text-muted)', cursor: 'pointer', transition: 'all 0.15s',
   },
   acceptBtn: {
     flex: 1.4, padding: '11px 0', borderRadius: 10, fontSize: 13, fontWeight: 700,
